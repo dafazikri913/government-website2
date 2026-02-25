@@ -1,0 +1,29 @@
+Berikut adalah daftar file dan penggantian warna yang diperlukan:
+
+PENGGANTIAN GLOBAL:
+#EE0000 -> #10B981 (green-500)
+#CC0000 -> #059669 (green-600)  
+bg-red-50 -> bg-green-50
+bg-red-600 -> bg-green-600
+text-red-600 -> text-green-600
+border-red-100 -> border-green-100
+border-red-500 -> border-green-500
+
+FILE YANG PERLU DIGANTI:
+- /components/News.tsx
+- /components/Events.tsx
+- /components/Footer.tsx
+- /components/MarketPrice.tsx
+- /components/AccessToSumbawa.tsx
+- /components/BusinessGallery.tsx
+- /pages/AccessToSumbawaPage.tsx
+- /pages/NewsPage.tsx
+- /pages/ArticlePage.tsx
+- /pages/EventsPage.tsx
+- /pages/MarketPricePage.tsx
+
+STATUS:
+✅ /components/Navbar.tsx - DONE
+✅ /components/Hero.tsx - DONE
+✅ /components/About.tsx - DONE
+⏳ Sisanya - IN PROGRESS
