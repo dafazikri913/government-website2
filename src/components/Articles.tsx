@@ -1,4 +1,3 @@
-import image_a77fb3eb15b008561d074d077f87c6810d61bd73 from 'figma:asset/a77fb3eb15b008561d074d077f87c6810d61bd73.png';
 import { User, ArrowRight, Eye } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
@@ -10,11 +9,20 @@ export function Articles() {
   // Fungsi untuk parse tanggal Indonesia ke Date object
   const parseIndonesianDate = (dateStr: string) => {
     const months: { [key: string]: number } = {
-      'Januari': 0, 'Februari': 1, 'Maret': 2, 'April': 3,
-      'Mei': 4, 'Juni': 5, 'Juli': 6, 'Agustus': 7,
-      'September': 8, 'Oktober': 9, 'November': 10, 'Desember': 11
+      Januari: 0,
+      Februari: 1,
+      Maret: 2,
+      April: 3,
+      Mei: 4,
+      Juni: 5,
+      Juli: 6,
+      Agustus: 7,
+      September: 8,
+      Oktober: 9,
+      November: 10,
+      Desember: 11,
     };
-    const parts = dateStr.split(' ');
+    const parts = dateStr.split(" ");
     const day = parseInt(parts[0]);
     const month = months[parts[1]];
     const year = parseInt(parts[2]);
@@ -30,8 +38,12 @@ export function Articles() {
 
   // Filter berdasarkan articleType
   const allArticles = sortedArticles.slice(0, 4);
-  const artikelOnly = sortedArticles.filter(item => item.articleType === "artikel").slice(0, 4);
-  const pengumumanOnly = sortedArticles.filter(item => item.articleType === "pengumuman").slice(0, 4);
+  const artikelOnly = sortedArticles
+    .filter((item) => item.articleType === "artikel")
+    .slice(0, 4);
+  const pengumumanOnly = sortedArticles
+    .filter((item) => item.articleType === "pengumuman")
+    .slice(0, 4);
 
   return (
     <section id="articles" className="py-20 bg-white">
@@ -54,20 +66,17 @@ export function Articles() {
           <TabsList className="mb-8 bg-gray-100 p-1 rounded-lg inline-flex">
             <TabsTrigger
               value="semua"
-              className="data-[state=active]:bg-[#84CC16] data-[state=active]:text-white"
-            >
+              className="data-[state=active]:bg-[#84CC16] data-[state=active]:text-white">
               Semua
             </TabsTrigger>
             <TabsTrigger
               value="artikel"
-              className="data-[state=active]:bg-[#84CC16] data-[state=active]:text-white"
-            >
+              className="data-[state=active]:bg-[#84CC16] data-[state=active]:text-white">
               Artikel
             </TabsTrigger>
             <TabsTrigger
               value="pengumuman"
-              className="data-[state=active]:bg-[#84CC16] data-[state=active]:text-white"
-            >
+              className="data-[state=active]:bg-[#84CC16] data-[state=active]:text-white">
               Pengumuman
             </TabsTrigger>
           </TabsList>
@@ -105,8 +114,7 @@ export function Articles() {
           <Link to="/artikel">
             <Button
               variant="outline"
-              className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16] shadow-md hover:shadow-lg"
-            >
+              className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16] shadow-md hover:shadow-lg">
               Lihat Semua Artikel
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
@@ -163,7 +171,8 @@ function ArticleCard({ article }: { article: any }) {
             <div className="mt-3 flex items-center justify-between">
               <span className="text-gray-500 text-sm">{article.date}</span>
               <span className="text-[#84CC16] flex items-center gap-1 text-sm group-hover:underline">
-                Baca {article.articleType === "artikel" ? "Artikel" : "Pengumuman"}
+                Baca{" "}
+                {article.articleType === "artikel" ? "Artikel" : "Pengumuman"}
                 <ArrowRight className="w-4 h-4" />
               </span>
             </div>

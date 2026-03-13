@@ -64,7 +64,7 @@ export function ArticlePage() {
                 </p>
                 <h1 className="text-black mb-3">Artikel & Pengumuman</h1>
                 <p className="text-gray-600 text-lg">
-                  Artikel berkualitas dan pengumuman resmi dari pemerintah daerah
+                  Artikel Dari Pemerintah Daerah Sumbawa
                 </p>
               </div>
             </div>

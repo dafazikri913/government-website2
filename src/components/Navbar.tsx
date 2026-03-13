@@ -11,6 +11,7 @@ import {
   SheetDescription,
   SheetTrigger,
 } from "./ui/sheet";
+import logoImage from "../assets/Frame 45.png";
 
 interface SubMenuItem {
   name: string;
@@ -42,46 +43,55 @@ export function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeSidebarMenu, setActiveSidebarMenu] = useState<string | null>(
-    null
+    null,
   );
   const [activeSection, setActiveSection] = useState<string>("about");
 
   // Set active section based on current pathname
   useEffect(() => {
     const pathname = location.pathname;
-    
+
     // Map pathnames to sections
-    if (pathname === '/') {
+    if (pathname === "/") {
       // On home page, active section will be determined by scroll
       return;
-    } else if (pathname.startsWith('/berita')) {
-      setActiveSection('news');
-    } else if (pathname.startsWith('/artikel')) {
-      setActiveSection('articles');
-    } else if (pathname.startsWith('/events')) {
-      setActiveSection('events');
-    } else if (pathname.startsWith('/daftar-usaha')) {
-      setActiveSection('business-gallery');
-    } else if (pathname.startsWith('/market-price')) {
-      setActiveSection('market-price');
-    } else if (pathname.startsWith('/akses-sumbawa')) {
-      setActiveSection('access');
-    } else if (pathname.startsWith('/galeri')) {
-      setActiveSection('gallery');
+    } else if (pathname.startsWith("/berita")) {
+      setActiveSection("news");
+    } else if (pathname.startsWith("/artikel")) {
+      setActiveSection("articles");
+    } else if (pathname.startsWith("/events")) {
+      setActiveSection("events");
+    } else if (pathname.startsWith("/daftar-usaha")) {
+      setActiveSection("business-gallery");
+    } else if (pathname.startsWith("/market-price")) {
+      setActiveSection("market-price");
+    } else if (pathname.startsWith("/akses-sumbawa")) {
+      setActiveSection("access");
+    } else if (pathname.startsWith("/galeri")) {
+      setActiveSection("gallery");
     } else {
-      setActiveSection('about');
+      setActiveSection("about");
     }
   }, [location.pathname]);
 
   // Intersection Observer untuk mendeteksi section yang sedang aktif (hanya di home page)
   useEffect(() => {
     // Only run scroll observer on home page
-    if (location.pathname !== '/') {
+    if (location.pathname !== "/") {
       return;
     }
 
-    const sections = ["about", "gallery", "news", "articles", "events", "business-gallery", "market-price", "access"];
-    
+    const sections = [
+      "about",
+      "gallery",
+      "news",
+      "articles",
+      "events",
+      "business-gallery",
+      "market-price",
+      "access",
+    ];
+
     // Function to determine active section based on scroll position
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 200; // Offset untuk navbar
@@ -102,17 +112,17 @@ export function Navbar() {
     handleScroll();
 
     // Add scroll listener
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   // Fungsi untuk smooth scroll ke section
   const scrollToSection = (sectionId: string) => {
     // Check if we're already on the home page
-    if (location.pathname === '/') {
+    if (location.pathname === "/") {
       // If on home page, just scroll to section
       const element = document.getElementById(sectionId);
       if (element) {
@@ -421,12 +431,7 @@ export function Navbar() {
     },
     {
       title: "Data IPKD",
-      items: [
-        "2022",
-        "2023",
-        "2024",
-        "2025",
-      ],
+      items: ["2022", "2023", "2024", "2025"],
     },
   ];
 
@@ -437,15 +442,12 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex flex-col">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-9 h-9 bg-[#84CC16] flex items-center justify-center">
-                <span className="text-white text-sm">G</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <span className="text-black text-sm whitespace-nowrap">SumbawaKab.</span>
-                <span className="text-gray-400">|</span>
-                <span className="text-[#84CC16] text-sm whitespace-nowrap">Situs Resmi</span>
-              </div>
+            <Link to="/" className="flex items-center">
+              <img
+                src={logoImage}
+                alt="SumbawaKab - Website Resmi Pemerintah Daerah Sumbawa"
+                className="h-10"
+              />
             </Link>
           </div>
 
@@ -455,8 +457,7 @@ export function Navbar() {
               <div key={key} className="relative">
                 <button
                   onClick={() => toggleMenu(key)}
-                  className="flex items-center gap-0.5 px-2.5 py-2 text-black hover:text-[#84CC16] transition-colors text-sm whitespace-nowrap"
-                >
+                  className="flex items-center gap-0.5 px-2.5 py-2 text-black hover:text-[#84CC16] transition-colors text-sm whitespace-nowrap">
                   {menu.title}
                   <ChevronDown
                     className={`w-3.5 h-3.5 transition-transform duration-200 ${
@@ -485,7 +486,9 @@ export function Navbar() {
                   <span className="text-sm">Arsip</span>
                 </button>
               </SheetTrigger>
-              <SheetContent side="right" className="bg-white w-80 overflow-y-auto">
+              <SheetContent
+                side="right"
+                className="bg-white w-80 overflow-y-auto">
                 <SheetHeader className="px-6">
                   <SheetTitle className="text-black">Daftar Arsip</SheetTitle>
                   <SheetDescription className="text-gray-600">
@@ -497,8 +500,7 @@ export function Navbar() {
                     <div key={idx} className="border-b border-gray-200 pb-3">
                       <button
                         className="flex items-center justify-between w-full py-2 text-black hover:text-[#84CC16] transition-colors"
-                        onClick={() => toggleSidebarMenu(menu.title)}
-                      >
+                        onClick={() => toggleSidebarMenu(menu.title)}>
                         <span>{menu.title}</span>
                         <ChevronDown
                           className={`w-4 h-4 transition-transform duration-200 ${
@@ -512,8 +514,7 @@ export function Navbar() {
                             <a
                               key={itemIdx}
                               href="#"
-                              className="text-gray-600 hover:text-[#84CC16] block py-1.5 transition-colors"
-                            >
+                              className="text-gray-600 hover:text-[#84CC16] block py-1.5 transition-colors">
                               {item}
                             </a>
                           ))}
@@ -529,8 +530,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             className="lg:hidden p-2"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X /> : <Menu />}
           </button>
         </div>
@@ -540,7 +540,8 @@ export function Navbar() {
       {activeMenu && (
         <div className="hidden lg:block absolute left-0 right-0 w-full bg-white border-t border-b border-gray-200 shadow-lg animate-in slide-in-from-top-4 duration-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className={`grid gap-8 ${activeMenu === 'profile' ? 'grid-cols-2' : 'grid-cols-3'}`}>
+            <div
+              className={`grid gap-8 ${activeMenu === "profile" ? "grid-cols-2" : "grid-cols-3"}`}>
               {megaMenus[activeMenu as keyof typeof megaMenus].sections.map(
                 (section, idx) => (
                   <div key={idx} className="space-y-4">
@@ -556,9 +557,10 @@ export function Navbar() {
                             <div>
                               <button
                                 onClick={() => toggleSubMenu(item.name)}
-                                className="w-full flex items-center justify-between text-gray-600 hover:text-[#84CC16] hover:bg-gray-50 transition-colors py-1 px-2 rounded group text-left"
-                              >
-                                <span className="text-justify">{item.name}</span>
+                                className="w-full flex items-center justify-between text-gray-600 hover:text-[#84CC16] hover:bg-gray-50 transition-colors py-1 px-2 rounded group text-left">
+                                <span className="text-justify">
+                                  {item.name}
+                                </span>
                                 <ChevronDown
                                   className={`w-4 h-4 transition-transform duration-200 flex-shrink-0 ml-2 ${
                                     activeSubMenu === item.name
@@ -573,8 +575,7 @@ export function Navbar() {
                                     <li key={subIdx}>
                                       <a
                                         href={subItem.href}
-                                        className="text-gray-500 hover:text-[#84CC16] hover:bg-gray-50 transition-colors block py-1 px-2 rounded text-sm text-left"
-                                      >
+                                        className="text-gray-500 hover:text-[#84CC16] hover:bg-gray-50 transition-colors block py-1 px-2 rounded text-sm text-left">
                                         {subItem.name}
                                       </a>
                                     </li>
@@ -585,8 +586,7 @@ export function Navbar() {
                           ) : (
                             <a
                               href={item.href}
-                              className="text-gray-600 hover:text-[#84CC16] hover:bg-gray-50 transition-colors block py-1 px-2 rounded text-left"
-                            >
+                              className="text-gray-600 hover:text-[#84CC16] hover:bg-gray-50 transition-colors block py-1 px-2 rounded text-left">
                               {item.name}
                             </a>
                           )}
@@ -594,7 +594,7 @@ export function Navbar() {
                       ))}
                     </ul>
                   </div>
-                )
+                ),
               )}
             </div>
           </div>
@@ -609,8 +609,7 @@ export function Navbar() {
               <div key={key}>
                 <button
                   className="flex items-center justify-between w-full py-2 text-black"
-                  onClick={() => toggleMenu(key)}
-                >
+                  onClick={() => toggleMenu(key)}>
                   {menu.title}
                   <ChevronDown
                     className={`w-4 h-4 transition-transform duration-200 ${
@@ -630,8 +629,7 @@ export function Navbar() {
                                 <div>
                                   <button
                                     onClick={() => toggleSubMenu(item.name)}
-                                    className="w-full flex items-center justify-between text-gray-600 hover:text-[#84CC16] py-1"
-                                  >
+                                    className="w-full flex items-center justify-between text-gray-600 hover:text-[#84CC16] py-1">
                                     <span>{item.name}</span>
                                     <ChevronDown
                                       className={`w-4 h-4 transition-transform duration-200 ${
@@ -647,8 +645,7 @@ export function Navbar() {
                                         <li key={subIdx}>
                                           <a
                                             href={subItem.href}
-                                            className="text-gray-500 hover:text-[#84CC16] block py-1 text-sm"
-                                          >
+                                            className="text-gray-500 hover:text-[#84CC16] block py-1 text-sm">
                                             {subItem.name}
                                           </a>
                                         </li>
@@ -659,8 +656,7 @@ export function Navbar() {
                               ) : (
                                 <a
                                   href={item.href}
-                                  className="text-gray-600 hover:text-[#84CC16] block py-1"
-                                >
+                                  className="text-gray-600 hover:text-[#84CC16] block py-1">
                                   {item.name}
                                 </a>
                               )}
@@ -707,50 +703,42 @@ export function Navbar() {
             <div className="inline-flex items-center bg-white rounded-lg shadow-sm border border-gray-200 my-3 overflow-hidden">
               <button
                 onClick={() => scrollToSection("about")}
-                className={`px-4 py-2.5 text-sm font-medium border-r border-gray-200 whitespace-nowrap transition-all ${activeSection === "about" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}
-              >
+                className={`px-4 py-2.5 text-sm font-medium border-r border-gray-200 whitespace-nowrap transition-all ${activeSection === "about" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}>
                 Tentang
               </button>
               <button
                 onClick={() => scrollToSection("gallery")}
-                className={`px-4 py-2.5 text-sm font-medium border-r border-gray-200 whitespace-nowrap transition-all ${activeSection === "gallery" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}
-              >
+                className={`px-4 py-2.5 text-sm font-medium border-r border-gray-200 whitespace-nowrap transition-all ${activeSection === "gallery" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}>
                 Galeri
               </button>
               <button
                 onClick={() => scrollToSection("news")}
-                className={`px-4 py-2.5 text-sm font-medium border-r border-gray-200 whitespace-nowrap transition-all ${activeSection === "news" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}
-              >
+                className={`px-4 py-2.5 text-sm font-medium border-r border-gray-200 whitespace-nowrap transition-all ${activeSection === "news" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}>
                 Berita
               </button>
               <button
                 onClick={() => scrollToSection("articles")}
-                className={`px-4 py-2.5 text-sm font-medium border-r border-gray-200 whitespace-nowrap transition-all ${activeSection === "articles" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}
-              >
+                className={`px-4 py-2.5 text-sm font-medium border-r border-gray-200 whitespace-nowrap transition-all ${activeSection === "articles" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}>
                 Artikel
               </button>
               <button
                 onClick={() => scrollToSection("events")}
-                className={`px-4 py-2.5 text-sm font-medium border-r border-gray-200 whitespace-nowrap transition-all ${activeSection === "events" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}
-              >
+                className={`px-4 py-2.5 text-sm font-medium border-r border-gray-200 whitespace-nowrap transition-all ${activeSection === "events" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}>
                 Acara
               </button>
               <button
                 onClick={() => handleSectionClick("business-gallery")}
-                className={`px-4 py-2.5 text-sm font-medium border-r border-gray-200 whitespace-nowrap transition-all ${activeSection === "business-gallery" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}
-              >
+                className={`px-4 py-2.5 text-sm font-medium border-r border-gray-200 whitespace-nowrap transition-all ${activeSection === "business-gallery" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}>
                 Daftar Usaha
               </button>
               <button
                 onClick={() => scrollToSection("market-price")}
-                className={`px-4 py-2.5 text-sm font-medium border-r border-gray-200 whitespace-nowrap transition-all ${activeSection === "market-price" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}
-              >
+                className={`px-4 py-2.5 text-sm font-medium border-r border-gray-200 whitespace-nowrap transition-all ${activeSection === "market-price" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}>
                 Harga Pasar
               </button>
               <button
                 onClick={() => scrollToSection("access")}
-                className={`px-4 py-2.5 text-sm font-medium whitespace-nowrap transition-all ${activeSection === "access" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}
-              >
+                className={`px-4 py-2.5 text-sm font-medium whitespace-nowrap transition-all ${activeSection === "access" ? "bg-[#84CC16] text-white shadow-md" : "text-gray-700 hover:text-[#84CC16] hover:bg-[#84CC16]/10"}`}>
                 Akses Sumbawa
               </button>
             </div>

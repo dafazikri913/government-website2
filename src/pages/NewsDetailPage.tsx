@@ -1,9 +1,21 @@
 import { useParams, Link } from "react-router";
 import { useEffect } from "react";
-import { Calendar, Clock, User, ArrowLeft, ArrowRight, Tag } from "lucide-react";
+import {
+  Calendar,
+  Clock,
+  User,
+  ArrowLeft,
+  ArrowRight,
+  Tag,
+} from "lucide-react";
 import { Button } from "../components/ui/button";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "../components/ui/tabs";
 import { newsData } from "../data/newsData";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
@@ -42,10 +54,14 @@ export function NewsDetailPage() {
   const index = newsItems.indexOf(newsItem);
   const previousNews = index > 0 ? newsItems[index - 1] : null;
   const nextNews = index < newsItems.length - 1 ? newsItems[index + 1] : null;
-  
+
   // Filter berita berdasarkan kategori
-  const regionalNews = newsItems.filter((item) => item.newsCategory === "daerah");
-  const nationalNews = newsItems.filter((item) => item.newsCategory === "nasional");
+  const regionalNews = newsItems.filter(
+    (item) => item.newsCategory === "daerah",
+  );
+  const nationalNews = newsItems.filter(
+    (item) => item.newsCategory === "nasional",
+  );
   const currentNews = newsItem;
 
   return (
@@ -58,8 +74,7 @@ export function NewsDetailPage() {
             <Link to="/">
               <Button
                 variant="outline"
-                className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]"
-              >
+                className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Kembali ke Beranda
               </Button>
@@ -76,7 +91,7 @@ export function NewsDetailPage() {
                       Berita Lainnya
                     </h3>
                   </div>
-                  
+
                   <Tabs defaultValue="daerah" className="w-full">
                     <TabsList className="w-full grid grid-cols-2 rounded-none border-b">
                       <TabsTrigger value="daerah" className="rounded-none">
@@ -86,17 +101,20 @@ export function NewsDetailPage() {
                         Nasional
                       </TabsTrigger>
                     </TabsList>
-                    
-                    <TabsContent value="daerah" className="p-6 max-h-[calc(100vh-280px)] overflow-y-auto">
+
+                    <TabsContent
+                      value="daerah"
+                      className="p-6 max-h-[calc(100vh-280px)] overflow-y-auto">
                       <div className="space-y-4">
                         {regionalNews.slice(0, 10).map((item) => (
                           <Link
                             key={item.id}
                             to={`/berita/${item.id}`}
                             className={`block group ${
-                              item.id === currentNews.id ? "opacity-50 pointer-events-none" : ""
-                            }`}
-                          >
+                              item.id === currentNews.id
+                                ? "opacity-50 pointer-events-none"
+                                : ""
+                            }`}>
                             <div className="flex gap-3">
                               <ImageWithFallback
                                 src={item.image}
@@ -107,24 +125,29 @@ export function NewsDetailPage() {
                                 <h4 className="text-sm line-clamp-2 group-hover:text-[#84CC16] transition-colors mb-1">
                                   {item.title}
                                 </h4>
-                                <p className="text-xs text-gray-500">{item.date}</p>
+                                <p className="text-xs text-gray-500">
+                                  {item.date}
+                                </p>
                               </div>
                             </div>
                           </Link>
                         ))}
                       </div>
                     </TabsContent>
-                    
-                    <TabsContent value="nasional" className="p-6 max-h-[calc(100vh-280px)] overflow-y-auto">
+
+                    <TabsContent
+                      value="nasional"
+                      className="p-6 max-h-[calc(100vh-280px)] overflow-y-auto">
                       <div className="space-y-4">
                         {nationalNews.slice(0, 10).map((item) => (
                           <Link
                             key={item.id}
                             to={`/berita/${item.id}`}
                             className={`block group ${
-                              item.id === currentNews.id ? "opacity-50 pointer-events-none" : ""
-                            }`}
-                          >
+                              item.id === currentNews.id
+                                ? "opacity-50 pointer-events-none"
+                                : ""
+                            }`}>
                             <div className="flex gap-3">
                               <ImageWithFallback
                                 src={item.image}
@@ -135,7 +158,9 @@ export function NewsDetailPage() {
                                 <h4 className="text-sm line-clamp-2 group-hover:text-[#84CC16] transition-colors mb-1">
                                   {item.title}
                                 </h4>
-                                <p className="text-xs text-gray-500">{item.date}</p>
+                                <p className="text-xs text-gray-500">
+                                  {item.date}
+                                </p>
                               </div>
                             </div>
                           </Link>
@@ -162,56 +187,56 @@ export function NewsDetailPage() {
                       Berita {newsItem.newsCategory}
                     </span>
                   </div>
-
-                  {/* Title */}
-                  <h1 className="text-4xl text-black mb-6 leading-tight font-bold">
-                    {newsItem.title}
-                  </h1>
-
-                  {/* Meta Information */}
-                  <div className="flex flex-wrap items-center gap-6 text-gray-600 pb-6 border-b border-gray-200">
-                    <div className="flex items-center gap-2">
-                      <User className="w-5 h-5" />
-                      <span>{newsItem.author}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-5 h-5" />
-                      <span>{newsItem.date}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-5 h-5" />
-                      <span>{newsItem.readTime}</span>
-                    </div>
-                  </div>
                 </div>
 
-                {/* Featured Image */}
-                <div className="px-8 py-8">
-                  <ImageWithFallback
-                    src={newsItem.image}
-                    alt={newsItem.title}
-                    className="w-full h-96 object-cover rounded-xl"
-                  />
-                </div>
+                {/* Title */}
+                <h1 className="text-4xl text-black mb-6 leading-tight font-bold">
+                  {newsItem.title}
+                </h1>
 
-                {/* Content */}
-                <div className="px-8 pb-8">
-                  <div className="prose prose-lg max-w-none">
-                    {/* Excerpt */}
-                    <p className="text-xl text-gray-700 leading-relaxed mb-8 font-medium border-l-4 border-[#84CC16] pl-6 italic">
-                      {newsItem.excerpt}
-                    </p>
-
-                    {/* Main Content */}
-                    <div className="space-y-6 text-gray-700 leading-relaxed">
-                      {newsItem.content.map((paragraph, index) => (
-                        <p key={index} className="text-lg">
-                          {paragraph}
-                        </p>
-                      ))}
-                    </div>
+                {/* Meta Information */}
+                <div className="flex flex-wrap items-center gap-6 text-gray-600 pb-6 border-b border-gray-200">
+                  <div className="flex items-center gap-2">
+                    <User className="w-5 h-5" />
+                    <span>{newsItem.author}</span>
                   </div>
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-5 h-5" />
+                    <span>{newsItem.date}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-5 h-5" />
+                    <span>{newsItem.readTime}</span>
+                  </div>
+                </div>
+              </div>
 
+              {/* Featured Image */}
+              <div className="px-8 py-8">
+                <ImageWithFallback
+                  src={newsItem.image}
+                  alt={newsItem.title}
+                  className="w-full h-96 object-cover rounded-xl"
+                />
+              </div>
+
+              {/* Content */}
+              <div className="px-8 pb-8">
+                <div className="prose prose-lg max-w-none">
+                  {/* Excerpt */}
+                  <p className="text-xl text-gray-700 leading-relaxed mb-8 font-medium border-l-4 border-[#84CC16] pl-6 italic">
+                    {newsItem.excerpt}
+                  </p>
+
+                  {/* Main Content */}
+                  <div className="space-y-6 text-gray-700 leading-relaxed">
+                    {/* Kita potong string berdasarkan baris kosong (\n\n) untuk jadi array lagi secara instan */}
+                    {newsItem.content.split("\n\n").map((paragraph, index) => (
+                      <p key={index} className="text-lg">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
                   {/* Tags */}
                   <div className="mt-12 pt-8 border-t border-gray-200">
                     <div className="flex flex-wrap gap-2">
@@ -233,20 +258,17 @@ export function NewsDetailPage() {
                     <div className="flex gap-3">
                       <Button
                         variant="outline"
-                        className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]"
-                      >
+                        className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]">
                         Facebook
                       </Button>
                       <Button
                         variant="outline"
-                        className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]"
-                      >
+                        className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]">
                         Twitter
                       </Button>
                       <Button
                         variant="outline"
-                        className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]"
-                      >
+                        className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]">
                         WhatsApp
                       </Button>
                     </div>
@@ -259,7 +281,9 @@ export function NewsDetailPage() {
                 {previousNews && (
                   <Link to={`/berita/${previousNews.id}`}>
                     <div className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-shadow group">
-                      <p className="text-sm text-gray-600 mb-2">← Berita Sebelumnya</p>
+                      <p className="text-sm text-gray-600 mb-2">
+                        ← Berita Sebelumnya
+                      </p>
                       <h4 className="text-black group-hover:text-[#84CC16] transition-colors">
                         {previousNews.title}
                       </h4>
@@ -269,7 +293,9 @@ export function NewsDetailPage() {
                 {nextNews && (
                   <Link to={`/berita/${nextNews.id}`}>
                     <div className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-shadow group text-right">
-                      <p className="text-sm text-gray-600 mb-2">Berita Selanjutnya →</p>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Berita Selanjutnya →
+                      </p>
                       <h4 className="text-black group-hover:text-[#84CC16] transition-colors">
                         {nextNews.title}
                       </h4>

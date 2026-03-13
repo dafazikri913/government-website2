@@ -1,13 +1,18 @@
 import { useState, useEffect } from "react";
-import { ArrowRight, ChevronLeft, ChevronRight, Calendar, Cloud } from "lucide-react";
+import {
+  ArrowRight,
+  ChevronLeft,
+  ChevronRight,
+  Calendar,
+  Cloud,
+} from "lucide-react";
 import { Button } from "./ui/button";
 import { motion, AnimatePresence } from "motion/react";
+import foto1 from "../assets/Hero_pic/20260303102139.png";
+import foto2 from "../assets/Hero_pic/2017_04_06_24712_1491469437._large.jpg";
+import foto3 from "../assets/Hero_pic/Tari-Nguri-dari-Suku-Samawa-Sumbawa-sumber-ig-@firmanananda72.jpg";
 
-const slides = [
-  "https://images.unsplash.com/photo-1573181759662-1c146525b21f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb3Zlcm5tZW50JTIwYnVpbGRpbmd8ZW58MXx8fHwxNzY0NjYyNzYyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-  "https://images.unsplash.com/photo-1560204383-381e211286c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaXR5JTIwaGFsbCUyMGFyY2hpdGVjdHVyZXxlbnwxfHx8fDE3NjQ1NjQ3NTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-  "https://images.unsplash.com/photo-1764476751235-82addb009cd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwdWJsaWMlMjBhZG1pbmlzdHJhdGlvbiUyMG9mZmljZXxlbnwxfHx8fDE3NjQ2NjI3NjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-];
+const slides = [foto1, foto2, foto3];
 
 export function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -55,8 +60,7 @@ export function Hero() {
               duration: 1.2,
               ease: "easeInOut",
             }}
-            className="absolute inset-0"
-          >
+            className="absolute inset-0">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
@@ -111,7 +115,7 @@ export function Hero() {
                   <span className="text-sm">{currentDate}</span>
                 </div>
               </div>
-              
+
               <div className="bg-white/10 backdrop-blur-sm border border-white/30 rounded-lg px-4 py-2.5 flex items-center gap-2 text-white">
                 <Cloud className="w-4 h-4" />
                 <div className="flex flex-col">
@@ -128,15 +132,13 @@ export function Hero() {
       <button
         onClick={prevSlide}
         className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/15 backdrop-blur-md hover:bg-black/25 border border-white/20 rounded-full flex items-center justify-center text-white transition-all z-10"
-        aria-label="Previous slide"
-      >
+        aria-label="Previous slide">
         <ChevronLeft className="w-5 h-5" />
       </button>
       <button
         onClick={nextSlide}
         className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/15 backdrop-blur-md hover:bg-black/25 border border-white/20 rounded-full flex items-center justify-center text-white transition-all z-10"
-        aria-label="Next slide"
-      >
+        aria-label="Next slide">
         <ChevronRight className="w-5 h-5" />
       </button>
 

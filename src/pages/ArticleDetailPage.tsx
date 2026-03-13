@@ -51,8 +51,7 @@ export function ArticleDetailPage() {
           <Link to="/artikel">
             <Button
               variant="outline"
-              className="mb-8 border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]"
-            >
+              className="mb-8 border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Kembali ke Daftar Artikel
             </Button>
@@ -71,8 +70,7 @@ export function ArticleDetailPage() {
                       <Link
                         key={item.id}
                         to={`/artikel/${item.id}`}
-                        className="block group"
-                      >
+                        className="block group">
                         <div className="flex gap-3">
                           <ImageWithFallback
                             src={item.image}
@@ -101,7 +99,9 @@ export function ArticleDetailPage() {
                   <div className="flex items-center gap-2 mb-4">
                     <Tag className="w-4 h-4 text-[#84CC16]" />
                     <span className="text-sm uppercase tracking-wider text-[#84CC16] capitalize">
-                      {article.articleType === "artikel" ? "Artikel" : "Pengumuman"}
+                      {article.articleType === "artikel"
+                        ? "Artikel"
+                        : "Pengumuman"}
                     </span>
                   </div>
 
@@ -129,13 +129,14 @@ export function ArticleDetailPage() {
 
                 {/* Featured Image */}
                 <div className="px-8 py-8">
-                  <ImageWithFallback
-                    src={article.image}
-                    alt={article.title}
-                    className="w-full h-96 object-cover rounded-xl"
-                  />
+                  <div className="flex justify-center bg-gray-100 rounded-xl overflow-hidden">
+                    <ImageWithFallback
+                      src={article.image}
+                      alt={article.title}
+                      className="max-w-full max-h-[600px] object-contain rounded-xl"
+                    />
+                  </div>
                 </div>
-
                 {/* Content */}
                 <div className="px-8 pb-8">
                   <div className="prose prose-lg max-w-none">
@@ -146,7 +147,7 @@ export function ArticleDetailPage() {
 
                     {/* Main Content */}
                     <div className="space-y-6 text-gray-700 leading-relaxed">
-                      {article.content.map((paragraph, index) => (
+                      {article.content.split("\n\n").map((paragraph, index) => (
                         <p key={index} className="text-lg">
                           {paragraph}
                         </p>
@@ -161,7 +162,9 @@ export function ArticleDetailPage() {
                         {article.articleType}
                       </span>
                       <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">
-                        {article.articleType === "artikel" ? "Artikel Terkini" : "Pengumuman Resmi"}
+                        {article.articleType === "artikel"
+                          ? "Artikel Terkini"
+                          : "Pengumuman Resmi"}
                       </span>
                     </div>
                   </div>
@@ -172,20 +175,17 @@ export function ArticleDetailPage() {
                     <div className="flex gap-3">
                       <Button
                         variant="outline"
-                        className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]"
-                      >
+                        className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]">
                         Facebook
                       </Button>
                       <Button
                         variant="outline"
-                        className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]"
-                      >
+                        className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]">
                         Twitter
                       </Button>
                       <Button
                         variant="outline"
-                        className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]"
-                      >
+                        className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]">
                         WhatsApp
                       </Button>
                     </div>
@@ -198,9 +198,14 @@ export function ArticleDetailPage() {
                 {article.id > 1 && (
                   <Link to={`/artikel/${article.id - 1}`}>
                     <div className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-shadow group">
-                      <p className="text-sm text-gray-600 mb-2">← Artikel Sebelumnya</p>
+                      <p className="text-sm text-gray-600 mb-2">
+                        ← Artikel Sebelumnya
+                      </p>
                       <h4 className="text-black group-hover:text-[#84CC16] transition-colors">
-                        {articles.find((item) => item.id === article.id - 1)?.title}
+                        {
+                          articles.find((item) => item.id === article.id - 1)
+                            ?.title
+                        }
                       </h4>
                     </div>
                   </Link>
@@ -208,9 +213,14 @@ export function ArticleDetailPage() {
                 {article.id < articles.length && (
                   <Link to={`/artikel/${article.id + 1}`}>
                     <div className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-shadow group text-right">
-                      <p className="text-sm text-gray-600 mb-2">Artikel Selanjutnya →</p>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Artikel Selanjutnya →
+                      </p>
                       <h4 className="text-black group-hover:text-[#84CC16] transition-colors">
-                        {articles.find((item) => item.id === article.id + 1)?.title}
+                        {
+                          articles.find((item) => item.id === article.id + 1)
+                            ?.title
+                        }
                       </h4>
                     </div>
                   </Link>
