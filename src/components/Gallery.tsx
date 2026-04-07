@@ -23,8 +23,7 @@ export const allGalleryItems: GalleryItem[] = [
     category: "foto",
     date: "17 Agustus 2024",
     description: "Wonderful Sail to Indonesia 2019",
-    thumbnail:
-      "https://images.unsplash.com/photo-1601652411497-70aa36e04fb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "/Gallery_pic/20161216093338.jpg",
   },
   {
     id: 2,
@@ -32,8 +31,7 @@ export const allGalleryItems: GalleryItem[] = [
     category: "foto",
     date: "15 Agustus 2024",
     description: "Wonderful Sail to Indonesia 2019",
-    thumbnail:
-      "https://images.unsplash.com/photo-1660745796794-69126967e5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "/Gallery_pic/20170127025413.jpg",
   },
   {
     id: 3,
@@ -41,8 +39,7 @@ export const allGalleryItems: GalleryItem[] = [
     category: "foto",
     date: "10 Agustus 2024",
     description: "Wonderful Sail to Indonesia 2019",
-    thumbnail:
-      "https://images.unsplash.com/photo-1771432528393-0320cc169762?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "/Gallery_pic/20170127025717.jpg",
   },
   {
     id: 4,
@@ -51,8 +48,7 @@ export const allGalleryItems: GalleryItem[] = [
     date: "5 Agustus 2024",
     description:
       "Peresmian jembatan baru yang menghubungkan desa-desa di wilayah timur",
-    thumbnail:
-      "https://images.unsplash.com/photo-1771905602962-3bb738314c43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "/Gallery_pic/20170127030420.jpg",
   },
   {
     id: 5,
@@ -60,8 +56,7 @@ export const allGalleryItems: GalleryItem[] = [
     category: "foto",
     date: "1 Agustus 2024",
     description: "Kegiatan vaksinasi massal untuk masyarakat Kabupaten Sumbawa",
-    thumbnail:
-      "https://images.unsplash.com/photo-1620821620529-9da72072847c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "/Gallery_pic/20191025093842.jpeg",
   },
   {
     id: 6,
@@ -70,8 +65,7 @@ export const allGalleryItems: GalleryItem[] = [
     date: "25 Juli 2024",
     description:
       "Pasar murah yang diselenggarakan menjelang bulan Ramadan untuk meringankan beban masyarakat",
-    thumbnail:
-      "https://images.unsplash.com/photo-1562988330-1dbb410b4bfa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "Gallery_pic/20191025093243.jpeg",
   },
   {
     id: 13,
@@ -80,8 +74,7 @@ export const allGalleryItems: GalleryItem[] = [
     date: "22 Juli 2024",
     description:
       "Program pelatihan untuk meningkatkan kemampuan digital marketing pelaku UMKM lokal",
-    thumbnail:
-      "https://images.unsplash.com/photo-1758272421243-3213b95006e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "Gallery_pic/20191025094552.jpeg",
   },
   {
     id: 14,
@@ -90,8 +83,7 @@ export const allGalleryItems: GalleryItem[] = [
     date: "20 Juli 2024",
     description:
       "Distribusi bantuan sosial kepada masyarakat yang terdampak bencana alam",
-    thumbnail:
-      "https://images.unsplash.com/photo-1761666507437-9fb5a6ef7b0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "Gallery_pic/20191028120901.jpeg",
   },
   {
     id: 15,
@@ -100,8 +92,7 @@ export const allGalleryItems: GalleryItem[] = [
     date: "18 Juli 2024",
     description:
       "Forum musyawarah untuk merumuskan rencana pembangunan daerah tahun depan",
-    thumbnail:
-      "https://images.unsplash.com/photo-1640200330428-9fe2ab926de1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "Gallery_pic/20191028121834.jpeg",
   },
   {
     id: 16,
@@ -110,8 +101,7 @@ export const allGalleryItems: GalleryItem[] = [
     date: "15 Juli 2024",
     description:
       "Kompetisi kreativitas untuk mengembangkan potensi generasi muda Kabupaten Sumbawa",
-    thumbnail:
-      "https://images.unsplash.com/photo-1760228142186-971a12718dbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "Gallery_pic/20191028121908.jpeg",
   },
   {
     id: 17,
@@ -120,8 +110,7 @@ export const allGalleryItems: GalleryItem[] = [
     date: "12 Juli 2024",
     description:
       "Pembukaan fasilitas kesehatan modern untuk meningkatkan layanan kepada masyarakat",
-    thumbnail:
-      "https://images.unsplash.com/photo-1720180244267-67c2eb52f3a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "Gallery_pic/20191028123351.jpeg",
   },
   {
     id: 18,
@@ -130,8 +119,7 @@ export const allGalleryItems: GalleryItem[] = [
     date: "10 Juli 2024",
     description:
       "Rapat koordinasi lintas sektor untuk program pencegahan dan penanganan stunting",
-    thumbnail:
-      "https://images.unsplash.com/photo-1616992510024-f1293eb00e41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "Gallery_pic/20191028121947.jpeg",
   },
   {
     id: 19,
@@ -150,8 +138,7 @@ export const allGalleryItems: GalleryItem[] = [
     date: "5 Juli 2024",
     description:
       "Kegiatan penanaman pohon mangrove untuk pelestarian lingkungan pesisir",
-    thumbnail:
-      "https://images.unsplash.com/photo-1719214970646-71a827f691b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "Gallery_pic/20191028122024.jpeg",
   },
   {
     id: 21,
@@ -160,8 +147,7 @@ export const allGalleryItems: GalleryItem[] = [
     date: "3 Juli 2024",
     description:
       "Peluncuran program gerakan literasi untuk meningkatkan minat baca masyarakat",
-    thumbnail:
-      "https://images.unsplash.com/photo-1534580235139-e2ef095e1972?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "Gallery_pic/20191028122428.jpeg",
   },
   {
     id: 22,
@@ -170,8 +156,7 @@ export const allGalleryItems: GalleryItem[] = [
     date: "1 Juli 2024",
     description:
       "Kegiatan senam pagi bersama untuk meningkatkan kesehatan pegawai negeri sipil",
-    thumbnail:
-      "https://images.unsplash.com/photo-1746966708731-004e79308357?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "Gallery_pic/20191028123139.jpeg",
   },
   {
     id: 23,
@@ -180,8 +165,7 @@ export const allGalleryItems: GalleryItem[] = [
     date: "28 Juni 2024",
     description:
       "Pameran produk pertanian dan perkebunan unggulan dari petani lokal",
-    thumbnail:
-      "https://images.unsplash.com/photo-1638030113612-49da9d59a4f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "Gallery_pic/20191028123213.jpeg",
   },
   {
     id: 24,
@@ -190,8 +174,7 @@ export const allGalleryItems: GalleryItem[] = [
     date: "25 Juni 2024",
     description:
       "Workshop untuk meningkatkan kapasitas aparatur dalam tata kelola pemerintahan",
-    thumbnail:
-      "https://images.unsplash.com/photo-1768796370577-c6e8b708b980?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800&h=600&fit=crop",
+    thumbnail: "Gallery_pic/20191028123351 (1).jpeg",
   },
   // Video
   {

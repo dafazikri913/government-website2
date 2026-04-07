@@ -1,5 +1,3 @@
-import image_fde05e0699fa67252c0d3a9d4e081c5876a30832 from 'figma:asset/fde05e0699fa67252c0d3a9d4e081c5876a30832.png';
-import image_cdd7ddbb9cbabb605c2ccb985c4fef2eb6619d7f from 'figma:asset/cdd7ddbb9cbabb605c2ccb985c4fef2eb6619d7f.png';
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
@@ -11,11 +9,20 @@ export function News() {
   // Fungsi untuk parse tanggal Indonesia ke Date object
   const parseIndonesianDate = (dateStr: string) => {
     const months: { [key: string]: number } = {
-      'Januari': 0, 'Februari': 1, 'Maret': 2, 'April': 3,
-      'Mei': 4, 'Juni': 5, 'Juli': 6, 'Agustus': 7,
-      'September': 8, 'Oktober': 9, 'November': 10, 'Desember': 11
+      Januari: 0,
+      Februari: 1,
+      Maret: 2,
+      April: 3,
+      Mei: 4,
+      Juni: 5,
+      Juli: 6,
+      Agustus: 7,
+      September: 8,
+      Oktober: 9,
+      November: 10,
+      Desember: 11,
     };
-    const parts = dateStr.split(' ');
+    const parts = dateStr.split(" ");
     const day = parseInt(parts[0]);
     const month = months[parts[1]];
     const year = parseInt(parts[2]);
@@ -30,8 +37,12 @@ export function News() {
   });
 
   // Filter berita daerah dan nasional, masing-masing maksimal 5
-  const regionalNews = sortedNews.filter(item => item.newsCategory === "daerah").slice(0, 5);
-  const nationalNews = sortedNews.filter(item => item.newsCategory === "nasional").slice(0, 5);
+  const regionalNews = sortedNews
+    .filter((item) => item.newsCategory === "daerah")
+    .slice(0, 5);
+  const nationalNews = sortedNews
+    .filter((item) => item.newsCategory === "nasional")
+    .slice(0, 5);
 
   return (
     <section id="news" className="py-12 bg-gray-50">
@@ -44,7 +55,8 @@ export function News() {
             </p>
             <h2 className="text-black mb-2">Berita & Pengumuman</h2>
             <p className="text-gray-600">
-              Tetap terinformasi dengan berita dan pembaruan terkini dari pemerintah
+              Tetap terinformasi dengan berita dan pembaruan terkini dari
+              pemerintah
             </p>
           </div>
         </div>
@@ -87,7 +99,9 @@ export function News() {
                       <h4 className="text-black mb-2 line-clamp-2 group-hover:text-[#84CC16] transition-colors">
                         {regionalNews[0].title}
                       </h4>
-                      <p className="text-gray-600 text-sm mb-3 line-clamp-2">{regionalNews[0].excerpt}</p>
+                      <p className="text-gray-600 text-sm mb-3 line-clamp-2">
+                        {regionalNews[0].excerpt}
+                      </p>
                       <span className="text-[#84CC16] hover:underline flex items-center gap-1 text-sm">
                         Baca Selengkapnya
                         <ArrowRight className="w-3 h-3" />
@@ -192,7 +206,9 @@ export function News() {
                       <h4 className="text-black mb-2 line-clamp-2 group-hover:text-[#84CC16] transition-colors">
                         {nationalNews[0].title}
                       </h4>
-                      <p className="text-gray-600 text-sm mb-3 line-clamp-2">{nationalNews[0].excerpt}</p>
+                      <p className="text-gray-600 text-sm mb-3 line-clamp-2">
+                        {nationalNews[0].excerpt}
+                      </p>
                       <span className="text-[#84CC16] hover:underline flex items-center gap-1 text-sm">
                         Baca Selengkapnya
                         <ArrowRight className="w-3 h-3" />
@@ -274,8 +290,7 @@ export function News() {
           <Link to="/berita">
             <Button
               variant="outline"
-              className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16] shadow-md hover:shadow-lg"
-            >
+              className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16] shadow-md hover:shadow-lg">
               Lihat Semua Berita
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>

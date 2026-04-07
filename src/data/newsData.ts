@@ -92,86 +92,191 @@ Pemerintah memastikan bahwa setiap proyek kerja sama dengan swasta harus memberi
   },
   {
     id: 5,
-    title: "Presiden Resmikan Ibu Kota Negara Nusantara",
+    title: "PJS BUPATI SAMBUT KEDATANGAN WAKIL MENTERI PKP RI",
     excerpt:
-      "Presiden meresmikan Ibu Kota Negara (IKN) Nusantara sebagai pusat pemerintahan baru...",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Presiden Republik Indonesia secara resmi meresmikan Ibu Kota Negara (IKN) Nusantara sebagai pusat pemerintahan baru Indonesia. Peresmian ini menandai babak baru dalam sejarah Indonesia dengan konsep kota yang modern, berkelanjutan, dan ramah lingkungan.
-
-IKN Nusantara dirancang dengan konsep forest city yang mengintegrasikan ruang hijau dan infrastruktur modern. Kota ini dilengkapi dengan teknologi smart city terkini untuk memberikan pelayanan publik yang efisien dan berkualitas.
-
-Pembangunan IKN menggunakan energi terbarukan dengan target mencapai net zero emission pada tahun 2045. Sistem transportasi massal berbasis listrik dan jalur pedestrian yang luas menjadi prioritas dalam perencanaan kota.
-
-Perpindahan pusat pemerintahan diharapkan dapat memeratakan pembangunan ekonomi di seluruh Indonesia dan mengurangi beban Jakarta sebagai ibu kota yang sudah sangat padat.`,
+      "Pjs Bupati Sumbawa Sambut Kedatangan Wakil Menteri Perumahan dan Kawasan Permukiman Republik Indonesia...",
+    content: `Pjs Bupati Sumbawa Sambut Kedatangan Wakil Menteri Perumahan dan Kawasan Permukiman Republik Indonesia (PKP RI), Beserta Rombongannya. Kedatangan Wakil Menteri PKP RI ini dalam rangka Kunjungan kerja terkait Program Nasional “3 Juta Rumah Sehat dan Layak Huni” bagi masyarakat Indonesia, terutama Masyarakat Berpenghasilan Rendah (MBR). Penyambutan ini, berlangsung di Aula H. Madilaoe ADT Lantai 3 Kantor Bupati Sumbawa pada Sabtu, (16/11/2024). 
+    Hadir juga Pjs Bupati Sumbawa Barat, Sekretaris Daerah Kabupaten Sumbawa, Forkopimda Kabupaten Sumbawa, Para Asisten Pemkab Sumbawa, OPD Terkait, serta Sejumlah Kepala Desa se-Kabupaten Sumbawa. Wakil Menteri PKP RI, H. Fahri Hamzah, S.E., menyampaikan kunjungan ini berkaitan dengan Program Nasional 3 Juta Rumah Sehat dan Layak Huni bagi Rakyat Indonesia, terutama Masyarakat Berpenghasilan Rendah (MBR). Kementerian PKP, memiliki tugas penting dalam menyelesaikan salah satu kebutuhan pokok manusia, yakni tempat tinggal atau rumah. Masih banyak masyarakat Indonesia terutama di Sumbawa yang masih belum punya rumah layak huni. Oleh sebab itu, penting program pembangunan 3 juta rumah ini, sebagai solusi untuk menyelesaikan persoalan perumahan bagi masyarakat. 
+    Dengan target 1 juta rumah di kawasan perkotaan dan 2 juta rumah di desa. Sumbawa memiliki potensi besar untuk menjadi pilot project program ini. Antusiasme dan kesiapan pemerintah daerah serta masyarakat adalah modal penting untuk kesuksesan program nasional ini. Ujarnya. Pjs Bupati Sumbawa, Dr. Najamuddin Amy, S.Sos., M.M., menyampaikan kehadiran Wakil Menteri di Kabupaten Sumbawa ini, sebagai kunjungan perdana yang tidak boleh disia-siakan kesempatan ini untuk membangun Kabupaten Sumbawa. Pemerintah Kabupaten Sumbawa sendiri siap berkontribusi dalam menjalankan program 3 Juta Rumah bagi masyarakat miskin ataupun berpenghasilan rendah dengan aset tanah yang dimiliki pemerintah Kabupaten Sumbawa. Oleh karena itu, koordinasi antara pemerintah Pusat, Provinsi dan Kabupaten/Kota sangatlah dibutuhkan dalam menyukseskan program nasional ini. Pemerintah Kabupaten Sumbawa dan Sumbawa Barat berharap, Kementerian PKP RI dapat menjadikan Sumbawa sebagai Pilot Project dari program nasional ini. Cetusnya.`,
     date: "15 Oktober 2025",
     readTime: "7 menit",
     category: "Berita Utama",
     newsCategory: "nasional",
     author: "Admin SumbawaKab",
-    image:
-      "https://images.unsplash.com/photo-1762344685696-39a3ce45fba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjYXBpdGFsJTIwY2l0eSUyMGFyY2hpdGVjdHVyZXxlbnwxfHx8fDE3NzA2OTA2NzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/News_pic/20241116064414.jpg",
     views: "5.2k",
   },
   {
     id: 6,
-    title: "Pemerintah Luncurkan Program Kartu Sakti Kesehatan",
+    title:
+      "PRESIDEN JOKOWI DORONG INDUSTRIALISASI PERTANIAN DI KABUPATEN SUMBAWA",
     excerpt:
-      "Program kartu kesehatan digital yang memberikan akses gratis ke fasilitas kesehatan...",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pemerintah meluncurkan program Kartu Sakti Kesehatan yang memberikan akses gratis ke seluruh fasilitas kesehatan pemerintah. Program ini merupakan evolusi dari sistem jaminan kesehatan nasional yang lebih terintegrasi.
+      "Presiden Republik Indonesia, Ir. H. Joko Widodo, melakukan kunjungan kerja ke Kabupaten Sumbawa, Provinsi Nusa Tenggara Barat...",
+    content: `Presiden Republik Indonesia, Ir. H. Joko Widodo, melakukan kunjungan kerja ke Kabupaten Sumbawa, Provinsi Nusa Tenggara Barat, Pada Kamis, (2/5/2024). Adapun kunjungan kerja yang akan dilakukan Presiden RI yang dilakukan yaitu Blusukan ke Pasar Seketeng, Kabupaten dan Ikut serta dalam Panen Raya Jagung yang berlangsung di Samota, Kabupaten Sumbawa
 
-Kartu digital ini dapat diakses melalui aplikasi mobile dan terintegrasi dengan rekam medis elektronik. Pasien dapat dengan mudah mengakses riwayat kesehatan, membuat janji temu, dan mendapatkan resep digital secara praktis.
+Turut juga menyertai Presiden kunjungan kerja ini, Menteri Perdagangan, Menteri Pertanian, dan Menteri Pekerjaan Umum dan Perumahan Rakyat (PUPR). Hadir juga Pj. Gubernur Provinsi Nusa Tenggara Barat beserta jajarannya, Bupati dan Wakil Bupati Sumbawa beserta Jajarannya.
 
-Seluruh warga negara Indonesia berhak mendapatkan Kartu Sakti Kesehatan tanpa biaya pendaftaran. Cakupan layanan mencakup pemeriksaan kesehatan rutin, pengobatan, operasi, hingga perawatan intensif.
-
-Pemerintah mengalokasikan anggaran khusus untuk memastikan kualitas layanan kesehatan tetap optimal. Fasilitas kesehatan di seluruh Indonesia telah dipersiapkan untuk mengimplementasikan sistem ini secara serentak.`,
-    date: "14 Oktober 2025",
+Presiden RI yang akrap di sapa Jokowi, menyampaikan Harga Jagung turun gara-gara over Supply. Hal ini terjadi dikarenakan Panen Besar Jagung yang baru Panen di Sumbawa, Dompu, Maupun Gorontalo Seminggu yang lalu.
+ Turunnya harga ini, baik untuk Peternak namun, tidak baik untuk Petani, menjaga keseimbangan ini tidak mudah namun, yang paling penting produktivitasnya meningkatkan. Oleh karena itu, Perlu adanya industrialisasi yang dekat dengan lahan Pertanian dan Hal ini akan terus di dorong dengan tujuan harga dapat lebih stabil apabila industrinya dekat dengan Lahan Pertanian. Jelasnya.`,
+    date: "02 Mei 2024",
     readTime: "5 menit",
     category: "Kebijakan Nasional",
     newsCategory: "nasional",
     author: "Admin SumbawaKab",
-    image:
-      "https://images.unsplash.com/photo-1758887248912-03a0c34a2f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWFsdGglMjBjYXJkJTIwbWVkaWNhbCUyMHNlcnZpY2VzfGVufDF8fHx8MTc3MDY5MDY3NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/News_pic/20240502021645.jpeg",
     views: "5.2k",
   },
   {
     id: 7,
-    title: "Menteri Pendidikan Umumkan Kurikulum Merdeka Versi 2.0",
+    title:
+      "Fasilitasi MoU antara Pemkab Sumbawa dan Investor, Badan Pangan Nasional Dorong Percepatan Pembangunan Pelabuhan Pangan Teluk Santong Sumbawa",
     excerpt:
-      "Pembaruan kurikulum merdeka dengan fokus pada pengembangan keterampilan digital...",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Menteri Pendidikan mengumumkan pembaruan Kurikulum Merdeka versi 2.0 yang lebih fokus pada pengembangan keterampilan digital dan pembentukan karakter siswa.
+      "Keberadaan fasilitas logistik pangan di suatu wilayah bisa mendorong peningkatan kesejahteraan petani sekaligus menjaga agar komoditas pangan tetap terjangkau...",
+    content: `JAKARTA - Keberadaan fasilitas logistik pangan di suatu wilayah bisa mendorong peningkatan kesejahteraan petani sekaligus menjaga agar komoditas pangan tetap terjangkau di tingkat konsumen. Fasilitas logistik seperti pelabuhan secara signifikan berdampak langsung terhadap efisiensi proses distribusi pangan dan peningkatan nilai tambah komoditas unggulan daerah.
 
-Pembaruan mencakup penambahan mata pelajaran coding, digital literacy, dan critical thinking. Metode pembelajaran lebih menekankan pada project-based learning dan kolaborasi antar siswa untuk memecahkan masalah nyata.
 
-Guru diberikan pelatihan intensif untuk dapat mengimplementasikan kurikulum baru ini dengan efektif. Platform digital juga disediakan untuk mendukung proses belajar mengajar yang lebih interaktif dan menyenangkan.
+Hal tersebut mengemuka dalam diskusi Pembangunan Pelabuhan Teluk Santong, Sumbawa, Nusa Tenggara Barat (NTB) sekaligus Penandatanganan Memorandum of Understanding (MoU) antara PT Mitra Buana Bahari dan Pemerintah Kabupaten Sumbawa, tentang Pengembangan Fasilitas Logistik dan Distribusi Komoditas Pangan Teluk Santong Sumbawa, Jumat, (3/3/2023), di Jakarta. Hadir dalam kesempatan tersebut Kepala Badan Pangan Nasional/National Food Agency (NFA) Arief Prasetyo Adi, Tenaga Ahli Menteri Perhubungan Andre Mulpyana, Bupati Sumbawa Mahmud Abdullah, Kepala Dinas Ketahanan Pangan Provinsi NTB Abdul Azis, President Director PT Mitra Buana Bahari/FKS Multiagro Indarto Gondo, Serta jajaran Eselon 1 NFA.
 
-Evaluasi pembelajaran tidak hanya fokus pada nilai akademik tetapi juga pada pengembangan soft skills seperti komunikasi, kreativitas, dan kemampuan beradaptasi di lingkungan yang cepat berubah.`,
-    date: "13 Oktober 2025",
-    readTime: "4 menit",
+
+Arief mengatakan, sesuai komitmen awal NFA mendukung penuh dilakukan percepatan pembangunan pelabuhan Teluk Santong. Pelabuhan tersebut akan menjadi fasilitas logistik yang sangat penting bagi sentra produksi pangan wilayah timur, khususnya untuk meningkatkan pendistribusian jagung yang merupakan komoditas unggulan di Sumbawa dan Dompu, NTB.
+
+
+“Saya sering komunikasi dengan Pak Gubernur NTB, setiap musim panen jagung, petani jagung di Sumbawa dan Dompu ini bingung menjual dan mendistribusikan hasil panennya, karena hasil panennya melimpah sementara sarana pengangkutan dan pendistribusian masih terbatas,” ungkapnya.
+
+
+Pihaknya lalu memberikan solusi agar dibangun pelabuhan dengan fasilitas logistik pangan yang memadai di wilayah Sumbawa, langkah ini untuk mempercepat pendistribusian komoditas pangan unggulan sehingga dapat menolong para petani jagung. Menindaklanjuti, menurut Arief, pada Januari 2023 lalu, NFA telah menginisiasi pertemuan antara Gubernur NTB, Bupati Sumbawa, dan calon investor swasta dari PT Mitra Buana Bahari (MBB)/FKS Multiagro.
+
+
+“Menindaklanjuti rencana pembangunan pelabuhan, hari ini kita lakukan penandatanganan nota kesepahama oleh Bupati Sumbawa dengan President Director MBB. Ini juga merupakan bagian dari tugas NFA, yaitu menghubungkan para pihak yang punya semangat sama dalam memajukan pangan nasional, agar terjalin kolaborasi yang baik untuk percepatan ketahanan pangan,” ungkapnya.
+
+
+Arief berpesan kepada Pemkab Sumbawa, MBB, serta para pihak yang berperan dalam pembangunan pelabuhan ini agar dapat mengeksekusi semua tahapan persiapan dan pembangunan dengan cepat, namun tetap sesuai dengan tata kelola pemerintahan yang baik.
+
+
+“Tidak usah sungkan-sungkan apa yang menjadi hambatan segera laporkan. Kalau butuh support di sini kita sudah barsama Kemenhub, Pemprov NTB, Pemkab, termasuk NFA. Karena ini untuk memajukan pangan nasional jadi tolong benar-benar kita kawal bersama. Dalam dua minggu nanti kita akan cek dan turun langsung lagi ke Sumbawa,” ujarnya.
+
+
+Adapun tahapan selanjutnya setelah MoU ini adalah Penandatangan Perjanjian Kerja Sama (PKS) antara MBB dengan Pemkab Sumbawa yang ditargetkan terlaksana di minggu ke tiga Maret 2023, lalu pengurusan perizinan baik di tingkat Pemkab Sumbawa maupun MBB, Persetujuan KSOP, Rekomendasi BPKP, serta Perizinan Konsesi. Pelaksanaan pembangunan ditargetkan mulai berjalan di April 2023.
+
+
+Pelabuhan Teluk Santong sendiri akan dilengkapi fasilitas yang bisa mempercepat bongkar-muat komoditas pangan, serta fasilitas penyimpanan seperti silo dengan kapasitas sekitar 30 ribu ton untuk persiapan panen tahun berikutnya. Arief mengatakan, selain sebagai investor, MBB juga didorong agar bisa turut berperan sebagai off taker jagung petani setempat.
+
+
+“Kita bangun secara terintegrasi, sehingga petani jagung bisa fokus meningkatkan produksinya dan tidak perlu khawatir, karena berapa pun yang diproduksi akan bisa terserap. Apabila kebutuhan dalam negeri sudah terpenuhi, dengan ketersediaan pelabuhan kita bisa ekspor,” terangnya.
+
+
+Arief meyakini, melalui skema ini, potensi jagung sebagai volatile food atau pangan yang bergejolak bisa ditekan. “Jagung memiliki impact yang besar terutama kepada sektor peternakan unggas. Jadi satu paket, kalau jagung harganya tinggi, daging ayam, ayam hidup, dan telur ayam ikut tinggi. Sehingga dalam regulasi Harga Acuan Pembelian/Penjualan atau HAP yang kita susun dibuat satu paket aturan, jagung, ayam, dan telur,” ujarnya.
+
+
+Lebih lanjut, Arief menuturkan, langkah membangun konektivitas pangan ini juga sejalan dengan arahan Presiden RI Joko Widodo, yang menekankan agar Kementerian/Lembaga dan Pemerintah Daerah, bersama pelaku usaha berkolaborasi guna meningkatkan investasi di daerah.
+
+
+Sementara itu, Bupati Sumbawa Mahmud Abdullah mengatakan, Pemerintah Kabupaten Sumbawa berkomitmen untuk memastikan pelabuhan ini terealisasi dengan baik, mengingat pembangunan ini disiapkan untuk memajukan sektor pangan daerah dan nasional. Ia beserta jajarannya mengaku siap bekerja sama dengan MBB untuk menjalankan setiap tahapan pembangunan yang sudah direncanakan.
+
+
+"Saat ini, untuk status lahan sudah disiapkan dan dibebaskan," ujarnya.
+
+
+Selanjutnya dengan potensi pangan Sumbawa yang besar, ia berharap, sarana pelabuhan tersebut bisa dimanfaatkan tidak hanya untuk jagung saja tetapi juga untuk seluruh komoditas pangan yang ada di Sumbawa, seperti beras dan lainnya.
+
+
+“Sumbawa ini memiliki potensi yang baik di sektor pangan, apa yang terjadi terkait turunnya harga karena susahnya kita keluarkan, angkutannya yang terbatas,” ungkapnya.
+
+
+President Director MBB/FKS Multiagro Indarto Gondo mengatakan, MBB siap mendukung program pemerintah memperkuat ketahanan pangan, salah satunya dari sisi penguatan fasilitas logistik melalui pembangunan pelabuhan.
+
+
+"Pangan bisa murah kalau pelaksanaan logistik bisa efisien dan memadai," terangnya.
+
+
+Menurutnya, Sumbawa memiliki produktivitas jagung yang sangat baik maka harus didukung dengan fasilitas logistik yang baik juga. “Sumbawa saat ini jagungnya sangat melimpah, kita tahu kebutuhan jagung di Indonesia juga sangat besar, dan beberapa tahun ini banyak jagung yang mulai bisa diekpor. Jadi pertumbuhan jagung di Sumbawa sangat pesat dan hari ini saya rasa harus diimbangi dengan logistik yang lebih besar dan lebih cepat,” paparnya.
+
+
+Tenaga Ahli Menteri Perhubungan Andre Mulpyana mengatakan, Kementerian Perhubungan mendukung upaya NFA dan Pemerintah Daerah NTB membangun sarana pelabuhan sebagai solusi bagi keluaran pangan yang banyak diproduksi oleh Sumbawa dan sejumlah wilayah di NTB.
+
+
+Menurutnya, langkah ini merupakan improvement yang baik untuk meningkatkan pendistribusian jagung, mengingat produksi jagung NTB pertahun sebesar 1,5 juta ton namun yang bisa didistribusikan keluar sekitar 1 juta ton.
+
+
+*Siaran Pers*
+
+
+*Badan Pangan Nasional/National Food Agency (NFA)*
+
+
+039/R-NFA/III/2023
+
+
+3 Maret 2023.`,
+    date: "03 Maret 2023",
+    readTime: "9 menit",
     category: "Pendidikan",
     newsCategory: "nasional",
     author: "Admin SumbawaKab",
-    image:
-      "https://images.unsplash.com/photo-1654153699546-19f15256855d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlZHVjYXRpb24lMjBzdHVkZW50cyUyMGxlYXJuaW5nfGVufDF8fHx8MTc3MDY5MDY3NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/News_pic/20230308075407.jpg",
     views: "5.2k",
   },
   {
     id: 8,
-    title: "Indonesia Perkuat Kemitraan dengan ASEAN dalam Ekonomi Digital",
+    title:
+      "Badan Pangan Nasional Dorong Pemerintah Daerah, BUMN Pangan, dan Swasta Kolaborasi Tingkatkan Investasi Fasilitas Logistik Pangan",
     excerpt:
-      "Pemerintah Indonesia memimpin inisiatif kerja sama regional ASEAN...",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Indonesia memimpin inisiatif penguatan kerja sama ekonomi digital di kawasan ASEAN. Kemitraan ini bertujuan untuk menciptakan ekosistem ekonomi digital yang terintegrasi.
+      "genda pemerintah dalam memajukan dan memperkuat pangan nasional harus didukung ketersediaan fasilitas dan sarana logistik pangan yang memadai....",
+    content: `CILEGON, BANTEN - Agenda pemerintah dalam memajukan dan memperkuat pangan nasional harus didukung ketersediaan fasilitas dan sarana logistik pangan yang memadai. Untuk itu, pembangunan fasilitas logistik pangan baru serta modern harus terus didorong dan ditingkatkan melalui kolaborasi antara sektor Pemerintah, BUMN, dan swasta.
 
-Kerja sama mencakup harmonisasi regulasi e-commerce, perlindungan data konsumen, dan fasilitasi transaksi digital lintas negara. Platform pembayaran digital regional juga akan dikembangkan untuk memudahkan transaksi antar negara ASEAN.
 
-Program pertukaran talenta digital dan pelatihan bersama akan diadakan untuk meningkatkan kompetensi sumber daya manusia di bidang teknologi. Indonesia berkomitmen untuk berbagi best practices dalam pengembangan startup.
+Pernyataan tersebut disampaikan Kepala Badan Pangan Nasional/National Food Agency (NFA) Arief Prasetyo Adi saat melakukan kunjungan kerja bersama meninjau sarana dan fasilitas logistik pangan milik PT FKS Multi Agro Tbk di Krakatau International Port, Cilegon, Banten, Minggu, (15/1/2023). Dalam keterangannya ia mengatakan, fasilitas logistik pangan merupakan sarana yang sangat penting dan harus dimiliki di setiap daerah karena merupakan faktor penentu dalam mendukung kelancaran distribusi pangan nasional, baik itu distribusi antara daerah maupun dari dan ke mancanegara.
 
-Target dari kerja sama ini adalah meningkatkan kontribusi ekonomi digital terhadap GDP negara-negara ASEAN hingga 20% pada tahun 2030. Investasi bersama dalam infrastruktur digital juga akan diperkuat.`,
-    date: "11 Oktober 2025",
+
+“Hari ini NFA bersama Menteri Perdagangan, Satgas Pangan Polri, unsur Pemerintah Daerah yang diwakili Gubernur Banten, Gubernur NTB, Bupati Sumbawa, Perwakilan Pemprov DKI Jakarta, Pemprov Jawa Barat, serta BUMN Pangan dari Perum Bulog dan ID Food, bersama-sama melihat fasilitas logistik pangan di Krakatau International Port. serta melihat bagaimana fasilitas tersebut bekerja dalam mendukung proses distribusi pangan,” jelasnya.
+
+
+Sejumlah fasilitas logistik yang dikunjungi seperti fasilitas grain pump dan integrated warehouse kapasitas 200 ribu ton, automatic modern terminal transit system yang menghubungkan dermaga dan gudang dengan kapasitas transfer konveyor hingga 1.300 MT/jam yang dikelola PT Sentral Grain Terminal. Selain itu, juga dilakukan kunjungan ke Pabrik Pengolahan Jagung PT. Tereos FKS Indonesia dan Pabrik Tepung Terigu PT Bungasari Flour Mills Indonesia.
+
+
+Arief mengatakan, sudah menjadi keharusan fasilitas logistik pangan yang terstandarisasi seperti di Krakatau International Port ini terdapat secara merata di seluruh wilayah Indonesia khususnya di sentra-sentra produksi pangan. “Fasilitas logistik pangan di Krakatau International Port ini dapat menjadi benchmark. Apabila terpasang di pelabuhan-pelabuhan di Indonesia maka distribusi pangan dapat lebih masif, cepat, dan efisien,” ujarnya.
+
+
+Arief mengatakan, untuk membangun fasilitas logistik pangan yang modern dan terintegrasi tentunya tidak mudah karena diperlukan kompetensi dan pengalaman. Maka dari itu, ia mendorong Pemerintah Daerah, BUMN Pangan, dan pihak swasta yang telah memiliki pengalaman dapat saling berkolaborasi. “Hal ini juga sejalan dengan arahan Presiden RI Joko Widodo terkait peningkatan investasi. Presiden sering menekankan Kementerian/Lembaga dan Pemerintah Daerah tidak ragu untuk membuka peluang investasi di berbagai sektor, mengingat investasi adalah salah satu kunci pertumbuhan ekonomi,” papar Arief.
+
+
+Arief mengatakan, upaya membuka peluang investasi fasilitas logistik pangan ini telah dimulai baru-baru ini di Nusa Tenggara Barat (NTB) melalui rencana pembangunan Pelabuhan Teluk Santong, di Sumbawa, Nusa Tenggara Barat (NTB). Pelabuhan tersebut merupakan bentuk kolaborasi Pemerintah Daerah dengan swasta.
+
+
+“Kita telah melakukan peletakan batu pertamanya 11 Januari lalu. Pelabuhan ini dipersiapkan sebagai pusat distribusi jagung produksi Sumbawa dan Dompu sehingga akan dilengkapi infrastruktur dermaga serta silo dengan kapasitas sekitar 30 ribu ton,” ungkapnya.
+
+
+Arief berharap, daerah lain mengikuti langkah Pemerintah Provinsi NTB yang telah berhasil membuka keran investasi pembangunan fasilitas logistik pangan di wilayahnya. Pelabuhan tersebut dapat meningkatkan nilai tambah dan daya saing jagung sebagai komoditas unggulan daerah.
+
+
+“Apabila setiap komoditas pangan strategis nasional yang mengalami surplus bisa kita kelola dengan baik pendistribusiannya, maka stabilisasi stok dan harga dalam negeri bisa lebih terjaga. Hal tersebut juga dapat mengurangi inflasi dan mendorong pertumbuhan ekonomi. Selain itu, kita bisa menambah devisa negara karena peluang ekspor lebih terbuka,” katanya.
+
+
+Berdasarkan data Prognosa Neraca Pangan Nasional periode Januari-Desember 2023, sejumlah komoditas pangan strategis diproyeksikan mengalami surplus di akhir 2023, diantaranya jagung sekitar 3,2 juta ton, daging ayam ras sekitar 689 ribu ton, dan beras sekitar 6,3 juta ton.
+
+
+Menanggapi urgensi pengembangan fasilitas logistik pangan, Gubernur NTB Zulkieflimansyah mengatakan, investasi fasilitas logistik pangan yang tepat bisa menyelesaikan berbagai persoalan mendasar di daerah, misalnya untuk NTB, terkait distribusi jagung yang stoknya melimpah saat panen. Ia mendukung penuh masuknya investasi pembangunan pelabuhan Teluk Santong dan berharap fasilitas tersebut segera beroperasi.
+
+
+Sementara itu, Bupati Sumbawa Mahmud Abdullah mengaku, mendapatkan banyak insight baru dalam kunjungan kerja meninjau fasilitas logistik pangan di Krakatau International Port. Ia berharap apa yang sudah berjalan di sini dapat dilaksanakan juga di Pelabuhan Teluk Santong yang akan segera dibangun.
+
+
+Terkait penyediaan fasilitas logistik pangan di Kawasan Krakatau International Port tersebut, Menteri Perdagangan Zulkifli Hasan menyampaikan apresiasi kepada pengusaha swasta yang telah melakukan investasi pengembangan fasilitas logistik pangan sehingga membuat proses distribusi dan pengolahan pangan menjadi lebih efisien.
+
+
+“Pengusaha-pengusaha ini kalau bisa bikin efisien harga kita bisa jadi bagus. Kalau mereka kerjanya bagus, tambah efisien, tambah lingkungan nyaman, tenaga kerja kompak, tentu akan menguntungkan semua pihak,” ujarnya.
+
+
+PJ Gubernur Banten Al Muktabar pada kesempatan yang sama mengatakan, fasilitas logistik pangan di Krakatau International Port merupakan salah satu aset penting di Provinsi Banten. Keberadaan pelabuhan ini merupakan bentuk dukungan pemerintah daerah dalam penguatan ketahanan pangan Nasional, baik dari sisi produksi maupun logistik pangan.
+
+
+Country Head FKS Group Yanuar Samron mengatakan, FKS Group sebagai mitra pemerintah dalam menjaga ketahanan pangan nasional, selalu siap berkolaborasi bersama pemerintah mendukung kelancaran distribusi komoditas pangan melalui penyediaan dan pembangunan fasilitas logistik yang terintegrasi.`,
+    date: "15 Januari 2023",
     readTime: "6 menit",
     category: "Hubungan Internasional",
     newsCategory: "nasional",
     author: "Admin SumbawaKab",
-    image:
-      "https://images.unsplash.com/photo-1660795938451-118f95a34e38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBU0VBTiUyMGRpZ2l0YWwlMjBlY29ub215JTIwcGFydG5lcnNoaXB8ZW58MXx8fHwxNzcwNjkwNjc1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/public/News_pic/20230119025043.jpg",
     views: "5.2k",
   },
 ];

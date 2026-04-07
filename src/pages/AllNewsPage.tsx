@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
-import { Calendar, Clock, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  Calendar,
+  Clock,
+  ArrowRight,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { Button } from "../components/ui/button";
@@ -434,7 +440,8 @@ export function AllNewsPage() {
               </p>
               <h1 className="text-black mb-3">Berita & Pengumuman</h1>
               <p className="text-gray-600 text-lg">
-                Informasi terbaru dan terlengkap dari pemerintah daerah dan nasional
+                Informasi terbaru dan terlengkap dari pemerintah daerah dan
+                nasional
               </p>
             </div>
           </div>
@@ -451,8 +458,7 @@ export function AllNewsPage() {
                       activeCategory === tab.id
                         ? "text-[#84CC16] border-b-2 border-[#84CC16]"
                         : "text-gray-600 hover:text-gray-900"
-                    }`}
-                  >
+                    }`}>
                     <span>{tab.label}</span>
                   </button>
                 );
@@ -511,35 +517,34 @@ export function AllNewsPage() {
                 variant="outline"
                 onClick={() => handlePageChange(currentPage - 1)}
                 disabled={currentPage === 1}
-                className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16] disabled:opacity-50"
-              >
+                className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16] disabled:opacity-50">
                 <ChevronLeft className="w-4 h-4 mr-1" />
                 Sebelumnya
               </Button>
 
               <div className="flex gap-2">
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                  <Button
-                    key={page}
-                    variant={currentPage === page ? "default" : "outline"}
-                    onClick={() => handlePageChange(page)}
-                    className={
-                      currentPage === page
-                        ? "bg-[#84CC16] hover:bg-[#84CC16]/90 text-white"
-                        : "border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]"
-                    }
-                  >
-                    {page}
-                  </Button>
-                ))}
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                  (page) => (
+                    <Button
+                      key={page}
+                      variant={currentPage === page ? "default" : "outline"}
+                      onClick={() => handlePageChange(page)}
+                      className={
+                        currentPage === page
+                          ? "bg-[#84CC16] hover:bg-[#84CC16]/90 text-white"
+                          : "border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16]"
+                      }>
+                      {page}
+                    </Button>
+                  ),
+                )}
               </div>
 
               <Button
                 variant="outline"
                 onClick={() => handlePageChange(currentPage + 1)}
                 disabled={currentPage === totalPages}
-                className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16] disabled:opacity-50"
-              >
+                className="border-gray-300 hover:border-[#84CC16] hover:text-[#84CC16] disabled:opacity-50">
                 Selanjutnya
                 <ChevronRight className="w-4 h-4 ml-1" />
               </Button>
