@@ -1,45 +1,62 @@
-import { Facebook, Twitter, Linkedin, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import {
+  Facebook,
+  Twitter,
+  Linkedin,
+  Youtube,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 
 export function Footer() {
   const footerLinks = {
     services: {
-      title: "Layanan",
+      title: "Situs relevan",
       links: [
-        "Layanan Masyarakat",
-        "Layanan Bisnis",
-        "Portal Online",
-        "Layanan Dokumen",
-        "Izin & Perizinan",
+        { label: "Kotaku|Kota Tanpa Kumuh", url: "http://kotaku.pu.go.id" },
+        {
+          label: "INFO HARGA BARANG POKOK DAN PENTING ANTAR PASAR",
+          url: "https://hargapangan.id",
+        },
+        { label: "Informasi Tentang Stunting", url: "https://stunting.go.id" },
+        {
+          label: "Yayasan Plan International Indonesia",
+          url: "https://planindonesia.org/",
+        },
+        { label: "JAGA.ID", url: "https://jaga.id" },
       ],
     },
     about: {
-      title: "Tentang",
+      title: "Situs relevan Lainnya",
       links: [
-        "Tentang Kami",
-        "Pimpinan",
-        "Departemen",
-        "Karir",
-        "Hubungi Kami",
+        { label: "SILAMO", url: "https://silamo.sumbawakab.go.id" },
+        {
+          label: "SUMBAWA TANGKAL COVID-19",
+          url: "https://covid19.sumbawakab.go.id",
+        },
+        { label: "Biro Pusat Statistik", url: "https://bps.go.id" },
+        { label: "BPS Kabupaten Sumbawa", url: "https://sumbawakab.bps.go.id" },
+        { label: "BMKG", url: "https://bmkg.go.id" },
       ],
     },
     resources: {
       title: "Sumber Daya",
       links: [
-        "Berita & Update",
-        "Kalender Acara",
-        "Publikasi",
-        "Formulir & Download",
-        "FAQ",
+        { label: "Berita & Update", url: "/berita" },
+        { label: "Kalender Acara", url: "/events" },
+        { label: "Publikasi", url: "#" },
+        { label: "Formulir & Download", url: "#" },
+        { label: "FAQ", url: "#" },
       ],
     },
     legal: {
       title: "Hukum",
       links: [
-        "Kebijakan Privasi",
-        "Syarat Layanan",
-        "Aksesibilitas",
-        "Hak Cipta",
-        "Disclaimer",
+        { label: "Kebijakan Privasi", url: "#" },
+        { label: "Syarat Layanan", url: "#" },
+        { label: "Aksesibilitas", url: "#" },
+        { label: "Hak Cipta", url: "#" },
+        { label: "Disclaimer", url: "#" },
       ],
     },
   };
@@ -61,11 +78,11 @@ export function Footer() {
               </div>
             </div>
             <p className="text-gray-400 mb-6">
-              Portal layanan pemerintah yang menyediakan berbagai informasi 
-              dan layanan publik untuk memudahkan masyarakat dalam mengakses 
+              Portal layanan pemerintah yang menyediakan berbagai informasi dan
+              layanan publik untuk memudahkan masyarakat dalam mengakses
               berbagai keperluan administrasi.
             </p>
-            
+
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-start gap-3">
@@ -102,10 +119,11 @@ export function Footer() {
                 {section.links.map((link, index) => (
                   <li key={index}>
                     <a
-                      href="#"
-                      className="text-gray-400 hover:text-[#EE0000] transition-colors"
-                    >
-                      {link}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-[#EE0000] transition-colors">
+                      {link.label}
                     </a>
                   </li>
                 ))}
@@ -122,26 +140,22 @@ export function Footer() {
               <div className="flex gap-4">
                 <a
                   href="#"
-                  className="w-10 h-10 bg-gray-800 hover:bg-[#EE0000] rounded-lg flex items-center justify-center transition-colors"
-                >
+                  className="w-10 h-10 bg-gray-800 hover:bg-[#EE0000] rounded-lg flex items-center justify-center transition-colors">
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 bg-gray-800 hover:bg-[#EE0000] rounded-lg flex items-center justify-center transition-colors"
-                >
+                  className="w-10 h-10 bg-gray-800 hover:bg-[#EE0000] rounded-lg flex items-center justify-center transition-colors">
                   <Twitter className="w-5 h-5" />
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 bg-gray-800 hover:bg-[#EE0000] rounded-lg flex items-center justify-center transition-colors"
-                >
+                  className="w-10 h-10 bg-gray-800 hover:bg-[#EE0000] rounded-lg flex items-center justify-center transition-colors">
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 bg-gray-800 hover:bg-[#EE0000] rounded-lg flex items-center justify-center transition-colors"
-                >
+                  className="w-10 h-10 bg-gray-800 hover:bg-[#EE0000] rounded-lg flex items-center justify-center transition-colors">
                   <Youtube className="w-5 h-5" />
                 </a>
               </div>
@@ -178,26 +192,22 @@ export function Footer() {
             <div className="flex gap-6">
               <a
                 href="#"
-                className="text-gray-400 hover:text-[#EE0000] transition-colors"
-              >
+                className="text-gray-400 hover:text-[#EE0000] transition-colors">
                 Privasi
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-[#EE0000] transition-colors"
-              >
+                className="text-gray-400 hover:text-[#EE0000] transition-colors">
                 Syarat
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-[#EE0000] transition-colors"
-              >
+                className="text-gray-400 hover:text-[#EE0000] transition-colors">
                 Sitemap
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-[#EE0000] transition-colors"
-              >
+                className="text-gray-400 hover:text-[#EE0000] transition-colors">
                 Aksesibilitas
               </a>
             </div>
