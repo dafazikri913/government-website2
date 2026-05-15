@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wireframe — SumbawaKab. Website</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f0f0; color: #111; font-size: 13px; }
+    .legend { position: fixed; top: 16px; right: 16px; background: white; border: 1.5px solid #ccc; border-radius: 8px; padding: 14px 16px; z-index: 9999; width: 220px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+    .legend h4 { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #555; margin-bottom: 10px; }
+    .legend-item { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 12px; }
+    .legend-dot { width: 14px; height: 14px; border-radius: 3px; flex-shrink: 0; }
+    .page { max-width: 1200px; margin: 0 auto; background: white; }
+    .ph-text { background: #e4e4e4; height: 10px; border-radius: 2px; margin: 3px 0; }
+    .ph-text.short { width: 60%; } .ph-text.medium { width: 80%; }
+    .ph-btn { display: inline-block; padding: 6px 14px; border-radius: 4px; font-size: 11px; font-weight: 700; border: 2px solid; text-align: center; margin-top: 6px; }
+    .sec-lime { background: #f7ffe6; border-left: 4px solid #84CC16; }
+    .sec-emerald { background: #ecfdf5; border-left: 4px solid #10B981; }
+    .sec-teal { background: #f0fdfa; border-left: 4px solid #14B8A6; }
+    .sec-green { background: #f0fdf4; border-left: 4px solid #22C55E; }
+    .tag-lime { background: #84CC16; color: white; padding: 2px 8px; border-radius: 3px; font-size: 10px; font-weight: 700; }
+    .tag-emerald { background: #10B981; color: white; padding: 2px 8px; border-radius: 3px; font-size: 10px; font-weight: 700; }
+    .tag-teal { background: #14B8A6; color: white; padding: 2px 8px; border-radius: 3px; font-size: 10px; font-weight: 700; }
+    .tag-green { background: #22C55E; color: white; padding: 2px 8px; border-radius: 3px; font-size: 10px; font-weight: 700; }
+    .accent-lime { background: #84CC16; color: white; border-color: #84CC16; }
+    .section { padding: 28px 32px; border-bottom: 2px dashed #e0e0e0; }
+    .section-title-bar { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+    .section-name { font-size: 15px; font-weight: 800; color: #111; }
+    .section-desc { font-size: 11px; color: #888; margin-left: auto; font-style: italic; }
+    .divider { background: #222; color: white; text-align: center; padding: 6px; font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    .annotation { display: flex; align-items: flex-start; gap: 8px; background: #fffbe6; border: 1px solid #f0d050; border-radius: 4px; padding: 6px 10px; font-size: 10px; color: #7a5a00; margin-top: 8px; }
+    .annotation::before { content: 'i'; font-size: 12px; font-weight: 900; }
+    .navbar { display: flex; align-items: center; padding: 0 24px; height: 56px; background: #84CC16; }
+    .navbar-logo { font-size: 16px; font-weight: 900; color: white; margin-right: 24px; white-space: nowrap; }
+    .navbar-logo span { font-size: 10px; display: block; font-weight: 400; opacity: 0.8; }
+    .nav-links { display: flex; gap: 2px; flex: 1; }
+    .nav-item { padding: 8px 12px; font-size: 11px; font-weight: 600; color: white; background: rgba(255,255,255,0.15); border-radius: 4px; white-space: nowrap; }
+    .nav-item.active { background: rgba(0,0,0,0.25); }
+    .navbar-right { display: flex; gap: 8px; align-items: center; margin-left: 12px; }
+    .nav-search-box { background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.4); border-radius: 4px; padding: 4px 10px; font-size: 11px; color: white; width: 120px; }
+    .topbar { background: #1a1a1a; padding: 5px 24px; display: flex; justify-content: space-between; font-size: 10px; color: #aaa; }
+    .mega-menu-wrap { background: white; border: 1.5px solid #e0e0e0; border-top: 3px solid #84CC16; padding: 20px 24px; box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+    .mega-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .mega-col-title { font-size: 11px; font-weight: 800; color: #84CC16; text-transform: uppercase; border-bottom: 1.5px solid #e8e8e8; padding-bottom: 6px; margin-bottom: 8px; }
+    .mega-col-item { font-size: 11px; color: #444; padding: 3px 0; border-bottom: 1px dashed #f0f0f0; }
+    .mega-col-item::before { content: '> '; color: #84CC16; font-weight: 700; }
+    .hero { position: relative; height: 420px; background: linear-gradient(135deg, #1a2e1a 0%, #2d4a2d 100%); overflow: hidden; display: flex; flex-direction: column; }
+    .hero-img-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 11px; color: rgba(255,255,255,0.2); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    .hero-gradient { position: absolute; inset: 0; background: linear-gradient(to right, rgba(0,0,0,0.75) 40%, rgba(0,0,0,0.2) 100%); }
+    .hero-content { position: relative; z-index: 2; padding: 50px 48px; max-width: 580px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+    .hero-tag { background: #84CC16; color: black; font-size: 9px; font-weight: 800; letter-spacing: 1.5px; padding: 3px 10px; border-radius: 3px; display: inline-block; margin-bottom: 12px; text-transform: uppercase; }
+    .hero-h1 { font-size: 28px; font-weight: 900; color: white; line-height: 1.2; margin-bottom: 10px; }
+    .hero-h1 .highlight { color: #84CC16; }
+    .hero-p { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.6; margin-bottom: 18px; }
+    .hero-btns { display: flex; gap: 10px; }
+    .btn-primary { background: #84CC16; color: black; padding: 8px 18px; border-radius: 4px; font-size: 11px; font-weight: 800; display: inline-block; }
+    .btn-secondary { background: transparent; color: white; padding: 8px 18px; border-radius: 4px; font-size: 11px; font-weight: 700; border: 1.5px solid rgba(255,255,255,0.5); display: inline-block; }
+    .hero-dots { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; z-index: 3; }
+    .hero-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.4); }
+    .hero-dot.active { background: #84CC16; width: 20px; border-radius: 4px; }
+    .hero-sidebar { position: absolute; right: 0; top: 0; bottom: 0; width: 220px; background: rgba(0,0,0,0.5); z-index: 2; padding: 20px 14px; display: flex; flex-direction: column; gap: 8px; }
+    .hero-sidebar-title { font-size: 10px; font-weight: 800; color: #84CC16; text-transform: uppercase; margin-bottom: 4px; }
+    .hero-stat-item { background: rgba(255,255,255,0.08); border: 1px solid rgba(132,204,22,0.2); border-radius: 4px; padding: 8px 10px; }
+    .hero-stat-num { font-size: 18px; font-weight: 900; color: #84CC16; }
+    .hero-stat-label { font-size: 9px; color: rgba(255,255,255,0.65); margin-top: 1px; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .about-img { height: 180px; background: #c8d8b0; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #7a9a60; font-size: 11px; font-weight: 700; }
+    .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+    .stat-card { background: #f9f9f9; border: 1px solid #e8e8e8; border-radius: 6px; padding: 10px 12px; text-align: center; }
+    .stat-card .num { font-size: 20px; font-weight: 900; color: #84CC16; }
+    .stat-card .label { font-size: 10px; color: #777; margin-top: 2px; }
+    .news-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+    .news-card { border: 1px solid #e8e8e8; border-radius: 6px; overflow: hidden; }
+    .news-card-img { height: 100px; background: #d0d8c4; display: flex; align-items: center; justify-content: center; color: #8a9a7a; font-size: 10px; font-weight: 700; }
+    .news-card-body { padding: 10px 12px; }
+    .news-date { font-size: 9px; color: #aaa; margin-bottom: 4px; }
+    .news-card-title { font-size: 12px; font-weight: 700; color: #222; line-height: 1.35; }
+    .news-card-excerpt { font-size: 10px; color: #777; margin-top: 5px; line-height: 1.5; }
+    .events-tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+    .events-tab { padding: 5px 14px; border-radius: 4px; font-size: 11px; font-weight: 600; border: 1.5px solid #10B981; color: #10B981; }
+    .events-tab.active { background: #10B981; color: white; }
+    .events-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .event-card { border: 1px solid #d1fae5; border-radius: 6px; overflow: hidden; background: #f9fffe; }
+    .event-date-bar { background: #10B981; color: white; padding: 5px 10px; font-size: 10px; font-weight: 700; display: flex; align-items: center; gap: 6px; }
+    .event-date-day { font-size: 22px; font-weight: 900; }
+    .event-body { padding: 10px 12px; }
+    .event-title { font-size: 12px; font-weight: 700; color: #111; margin-bottom: 4px; }
+    .event-meta { font-size: 10px; color: #888; }
+    .market-search { display: flex; gap: 8px; margin-bottom: 16px; }
+    .market-search-input { flex: 1; border: 1.5px solid #14B8A6; border-radius: 4px; padding: 7px 12px; font-size: 12px; color: #333; background: white; }
+    .market-search-btn { background: #14B8A6; color: white; border: none; border-radius: 4px; padding: 7px 16px; font-size: 11px; font-weight: 700; }
+    .market-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+    .market-table th { background: #14B8A6; color: white; padding: 8px 10px; text-align: left; font-weight: 700; }
+    .market-table td { padding: 7px 10px; border-bottom: 1px solid #e0faf8; color: #333; }
+    .market-table tr:nth-child(even) td { background: #f0fdfa; }
+    .price-up { color: #10B981; font-weight: 700; }
+    .price-down { color: #ef4444; font-weight: 700; }
+    .expand-row td { padding: 10px 14px; font-size: 10px; color: #555; background: #e0faf8 !important; }
+    .biz-cats { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+    .biz-cat { padding: 4px 12px; border-radius: 20px; font-size: 10px; font-weight: 700; border: 1.5px solid #84CC16; color: #84CC16; }
+    .biz-cat.active { background: #84CC16; color: white; }
+    .biz-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .biz-card { border: 1px solid #e8e8e8; border-radius: 6px; overflow: hidden; }
+    .biz-img { height: 90px; background: #d8e8c0; display: flex; align-items: center; justify-content: center; color: #7a9a60; font-size: 10px; font-weight: 700; }
+    .biz-body { padding: 8px 10px; }
+    .biz-name { font-size: 11px; font-weight: 700; color: #222; }
+    .biz-type { font-size: 10px; color: #888; margin-top: 2px; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .gallery-img { height: 80px; background: #c8d8c0; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: #7a9a6a; font-size: 9px; font-weight: 700; }
+    .gallery-item.featured { grid-column: span 2; }
+    .gallery-item.featured .gallery-img { height: 170px; }
+    .access-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .access-card { border: 1px solid #bbf7d0; border-radius: 6px; padding: 14px 12px; text-align: center; background: #f9fffe; }
+    .access-icon { width: 36px; height: 36px; background: #22C55E; border-radius: 8px; margin: 0 auto 8px; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+    .access-title { font-size: 12px; font-weight: 700; color: #111; }
+    .access-desc { font-size: 10px; color: #888; margin-top: 3px; }
+    .sidebar-demo { background: white; border: 1.5px solid #e0e0e0; border-radius: 6px; overflow: hidden; }
+    .sidebar-header { background: #84CC16; color: white; padding: 10px 14px; font-size: 12px; font-weight: 800; }
+    .sidebar-item { padding: 9px 16px; font-size: 12px; border-bottom: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; color: #333; }
+    .sidebar-item.active { background: #f7ffe6; color: #5a8a00; font-weight: 700; border-left: 3px solid #84CC16; }
+    .sidebar-sub { padding: 6px 28px; font-size: 11px; color: #666; border-bottom: 1px solid #f5f5f5; background: #fafafa; }
+    .sidebar-sub::before { content: '> '; color: #84CC16; font-weight: 800; }
+    .footer { background: #111; color: #aaa; padding: 28px 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 24px; margin-bottom: 20px; }
+    .footer-brand { font-size: 16px; font-weight: 900; color: white; }
+    .footer-brand-sub { font-size: 10px; color: #666; margin-top: 4px; margin-bottom: 10px; }
+    .footer-desc { font-size: 10px; color: #777; line-height: 1.6; }
+    .footer-col-title { font-size: 11px; font-weight: 800; color: white; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 10px; }
+    .footer-link { font-size: 11px; color: #777; margin-bottom: 5px; }
+    .footer-link::before { content: '> '; color: #84CC16; }
+    .footer-bottom { border-top: 1px solid #2a2a2a; padding-top: 14px; display: flex; justify-content: space-between; font-size: 10px; color: #555; }
+    .search-result-item { border: 1px solid #e8e8e8; border-radius: 4px; padding: 10px 12px; margin-bottom: 8px; display: flex; gap: 10px; }
+    .search-result-tag { font-size: 9px; font-weight: 800; padding: 2px 8px; border-radius: 3px; background: #84CC16; color: white; flex-shrink: 0; height: fit-content; }
+    .search-result-title { font-size: 12px; font-weight: 700; color: #111; }
+    .search-result-snippet { font-size: 10px; color: #888; margin-top: 2px; }
+    .page-header { text-align: center; padding: 40px 20px 20px; background: #f8f8f8; border-bottom: 2px solid #e8e8e8; }
+    .page-header h1 { font-size: 22px; font-weight: 900; color: #111; }
+    .page-header p { font-size: 12px; color: #888; margin-top: 6px; }
+    .badge { display: inline-block; background: #111; color: white; padding: 4px 14px; border-radius: 20px; font-size: 10px; font-weight: 700; letter-spacing: 1px; margin-bottom: 12px; }
+    @media print { .legend { position: relative; top: auto; right: auto; margin-bottom: 20px; } body { background: white; } }
+  </style>
+</head>
+<body>
+
+<div class="legend">
+  <h4>Legenda Warna</h4>
+  <div class="legend-item"><div class="legend-dot" style="background:#84CC16"></div> Lime — Navbar/Hero/About/News/Gallery</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#10B981"></div> Emerald — Events</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#14B8A6"></div> Teal — Harga Pasar</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#22C55E"></div> Green — Akses ke Sumbawa</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ddd; border:1px solid #ccc"></div> Placeholder Gambar</div>
+  <div style="margin-top:10px; font-size:10px; color:#888; line-height:1.6;">
+    <strong>Screenshot seluruh halaman:</strong><br>
+    Chrome F12 &gt; Ctrl+Shift+P<br>
+    &gt; ketik "screenshot"<br>
+    &gt; Capture full size screenshot
+  </div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <div class="badge">WIREFRAME DOKUMEN</div>
+    <h1>SumbawaKab. — Website Pemerintahan</h1>
+    <p>Layout &amp; Struktur Halaman Utama &middot; Font: Inter &middot; Mei 2026</p>
+  </div>
+
+  <div class="divider">1 &middot; TOPBAR</div>
+  <div class="section" style="padding:0;">
+    <div class="topbar">
+      <span>Kamis, 15 Mei 2026 | 28C Sumbawa | Selamat Datang di Portal Resmi Pemerintah Kabupaten Sumbawa</span>
+      <span>ID | EN | Aksesibilitas</span>
+    </div>
+  </div>
+
+  <div class="divider">2 &middot; NAVBAR + MEGA MENU (KLIK)</div>
+  <div class="section sec-lime" style="padding:0 0 16px 0;">
+    <div class="navbar">
+      <div class="navbar-logo">SumbawaKab.<span>Pemerintah Kabupaten Sumbawa</span></div>
+      <div class="nav-links">
+        <div class="nav-item active">Beranda</div>
+        <div class="nav-item">Profil v</div>
+        <div class="nav-item">Pemerintahan v</div>
+        <div class="nav-item">Layanan v</div>
+        <div class="nav-item">Berita v</div>
+        <div class="nav-item">Informasi v</div>
+      </div>
+      <div class="navbar-right">
+        <div class="nav-search-box">Cari...</div>
+        <div style="width:28px;height:28px;background:rgba(255,255,255,0.2);border-radius:4px;display:flex;align-items:center;justify-content:center;color:white;font-size:14px;">&#9776;</div>
+      </div>
+    </div>
+    <div class="mega-menu-wrap">
+      <div style="font-size:10px;color:#84CC16;font-weight:700;margin-bottom:12px;">Mega Menu — muncul saat nav item diklik (full-width, bukan hover)</div>
+      <div class="mega-cols">
+        <div>
+          <div class="mega-col-title">Profil Daerah</div>
+          <div class="mega-col-item">Sejarah Kabupaten</div>
+          <div class="mega-col-item">Visi &amp; Misi</div>
+          <div class="mega-col-item">Lambang &amp; Arti</div>
+          <div class="mega-col-item">Geografi &amp; Topografi</div>
+          <div class="mega-col-item">Kependudukan</div>
+        </div>
+        <div>
+          <div class="mega-col-title">Pemerintahan</div>
+          <div class="mega-col-item">Bupati &amp; Wakil Bupati</div>
+          <div class="mega-col-item">DPRD Kabupaten</div>
+          <div class="mega-col-item">Sekretariat Daerah</div>
+          <div class="mega-col-item">OPD &amp; Dinas</div>
+          <div class="mega-col-item">Kecamatan</div>
+        </div>
+        <div>
+          <div class="mega-col-title">Layanan Publik</div>
+          <div class="mega-col-item">e-KTP &amp; Adminduk</div>
+          <div class="mega-col-item">Perizinan Online</div>
+          <div class="mega-col-item">Pengaduan Masyarakat</div>
+          <div class="mega-col-item">PPID</div>
+          <div class="mega-col-item">Lapor! SP4N</div>
+        </div>
+        <div>
+          <div class="mega-col-title">Informasi</div>
+          <div class="mega-col-item">Berita Terkini</div>
+          <div class="mega-col-item">Agenda Kegiatan</div>
+          <div class="mega-col-item">Harga Pasar</div>
+          <div class="mega-col-item">Dokumen Daerah</div>
+          <div class="mega-col-item">Galeri Foto &amp; Video</div>
+        </div>
+      </div>
+    </div>
+    <div class="annotation" style="margin:0 16px;">4 kolom kategori dengan sub-item bertingkat. Tutup dengan klik di luar area menu.</div>
+  </div>
+
+  <div class="divider">3 &middot; HERO SECTION (AUTO SLIDER + STATISTIK SIDEBAR)</div>
+  <div class="section sec-lime" style="padding:0;">
+    <div class="hero">
+      <div class="hero-img-placeholder">[ FOTO FULL WIDTH — SLIDER OTOMATIS SETIAP 5 DETIK ]</div>
+      <div class="hero-gradient"></div>
+      <div class="hero-content">
+        <div class="hero-tag">Berita Utama</div>
+        <div class="hero-h1">Membangun <span class="highlight">Sumbawa</span><br>Yang Maju &amp; Sejahtera</div>
+        <div class="hero-p">Program pembangunan daerah yang inklusif dan berkelanjutan untuk seluruh masyarakat Kabupaten Sumbawa.</div>
+        <div class="hero-btns">
+          <div class="btn-primary">Selengkapnya</div>
+          <div class="btn-secondary">Lihat Profil</div>
+        </div>
+      </div>
+      <div class="hero-sidebar">
+        <div class="hero-sidebar-title">Statistik Daerah</div>
+        <div class="hero-stat-item"><div class="hero-stat-num">24</div><div class="hero-stat-label">Kecamatan</div></div>
+        <div class="hero-stat-item"><div class="hero-stat-num">165</div><div class="hero-stat-label">Desa / Kelurahan</div></div>
+        <div class="hero-stat-item"><div class="hero-stat-num">450K+</div><div class="hero-stat-label">Jiwa Penduduk</div></div>
+        <div class="hero-stat-item"><div class="hero-stat-num">6.643</div><div class="hero-stat-label">km2 Luas Wilayah</div></div>
+      </div>
+      <div class="hero-dots">
+        <div class="hero-dot active"></div>
+        <div class="hero-dot"></div>
+        <div class="hero-dot"></div>
+        <div class="hero-dot"></div>
+      </div>
+    </div>
+    <div class="annotation" style="margin:8px 16px 4px;">Gambar full-width + gradient gelap kiri-kanan. Slider otomatis 5 detik. Sidebar kanan: 4 statistik daerah. Dots indikator bawah tengah.</div>
+  </div>
+
+  <div class="divider">4 &middot; ABOUT / PROFIL DAERAH</div>
+  <div class="section sec-lime">
+    <div class="section-title-bar">
+      <span class="tag-lime">Tentang Kami</span>
+      <span class="section-name">Profil Kabupaten Sumbawa</span>
+      <span class="section-desc">Warna: Lime #84CC16</span>
+    </div>
+    <div class="about-grid">
+      <div>
+        <div class="about-img">[ FOTO PETA / LANDMARK SUMBAWA ]</div>
+        <div class="about-stats">
+          <div class="stat-card"><div class="num">24</div><div class="label">Kecamatan</div></div>
+          <div class="stat-card"><div class="num">165</div><div class="label">Desa/Kel.</div></div>
+          <div class="stat-card"><div class="num">450K</div><div class="label">Penduduk</div></div>
+          <div class="stat-card"><div class="num">6.643</div><div class="label">km2 Luas</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="ph-text" style="width:40%;background:#cde890;height:8px;"></div>
+        <div style="height:8px;"></div>
+        <div class="ph-text medium" style="height:14px;background:#d8eeaa;"></div>
+        <div style="height:10px;"></div>
+        <div class="ph-text" style="height:9px;"></div>
+        <div class="ph-text medium" style="height:9px;"></div>
+        <div class="ph-text short" style="height:9px;"></div>
+        <div style="height:12px;"></div>
+        <div class="ph-text" style="height:9px;"></div>
+        <div class="ph-text medium" style="height:9px;"></div>
+        <div class="ph-text short" style="height:9px;"></div>
+        <div style="height:14px;"></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <div class="ph-btn accent-lime">Baca Selengkapnya</div>
+          <div class="ph-btn" style="border-color:#84CC16;color:#84CC16;">Unduh Profil PDF</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider">5 &middot; BERITA TERKINI</div>
+  <div class="section sec-lime">
+    <div class="section-title-bar">
+      <span class="tag-lime">Berita</span>
+      <span class="section-name">Berita Terkini</span>
+      <span class="section-desc">Warna: Lime #84CC16 &middot; 3 kolom grid</span>
+    </div>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-card-img">[ FOTO BERITA 1 ]</div>
+        <div class="news-card-body">
+          <div class="news-date">12 Mei 2026 &middot; Pemerintahan</div>
+          <div class="news-card-title">Bupati Sumbawa Resmikan Infrastruktur Jalan Baru di Kecamatan Alas</div>
+          <div class="news-card-excerpt">Pembangunan jalan sepanjang 12 km ini diharapkan meningkatkan konektivitas antar desa...</div>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-card-img">[ FOTO BERITA 2 ]</div>
+        <div class="news-card-body">
+          <div class="news-date">10 Mei 2026 &middot; Ekonomi</div>
+          <div class="news-card-title">Festival Produk Lokal UMKM Sumbawa 2026 Resmi Dibuka</div>
+          <div class="news-card-excerpt">Lebih dari 200 pelaku UMKM turut serta dalam festival tahunan...</div>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-card-img">[ FOTO BERITA 3 ]</div>
+        <div class="news-card-body">
+          <div class="news-date">8 Mei 2026 &middot; Pendidikan</div>
+          <div class="news-card-title">Program Beasiswa Daerah 2026 Dibuka untuk 500 Pelajar Berprestasi</div>
+          <div class="news-card-excerpt">Pemerintah daerah mengalokasikan anggaran khusus untuk generasi muda...</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:14px;">
+      <div class="ph-btn accent-lime" style="display:inline-block;">Lihat Semua Berita</div>
+    </div>
+  </div>
+
+  <div class="divider">6 &middot; EVENTS / AGENDA KEGIATAN</div>
+  <div class="section sec-emerald">
+    <div class="section-title-bar">
+      <span class="tag-emerald">Agenda</span>
+      <span class="section-name">Kegiatan &amp; Acara Daerah</span>
+      <span class="section-desc">Warna: Emerald #10B981 &middot; Maks. 3 event/kategori</span>
+    </div>
+    <div class="events-tabs">
+      <div class="events-tab active">Semua</div>
+      <div class="events-tab">Pemerintahan</div>
+      <div class="events-tab">Olahraga</div>
+      <div class="events-tab">Budaya</div>
+      <div class="events-tab">Pendidikan</div>
+    </div>
+    <div class="events-grid">
+      <div class="event-card">
+        <div class="event-date-bar">
+          <div><div class="event-date-day">20</div><div style="font-size:9px;">MEI 2026</div></div>
+          <div style="font-size:9px;opacity:0.85;margin-left:4px;">Pendopo Bupati</div>
+        </div>
+        <div class="event-body">
+          <div class="event-title">Musrenbang RKPD Kabupaten Sumbawa 2027</div>
+          <div class="event-meta">Perencanaan Pembangunan &middot; Terbuka Umum</div>
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-date-bar">
+          <div><div class="event-date-day">25</div><div style="font-size:9px;">MEI 2026</div></div>
+          <div style="font-size:9px;opacity:0.85;margin-left:4px;">GOR Sumbawa</div>
+        </div>
+        <div class="event-body">
+          <div class="event-title">Turnamen Sepak Bola Piala Bupati 2026</div>
+          <div class="event-meta">Olahraga &middot; Antar Kecamatan</div>
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-date-bar">
+          <div><div class="event-date-day">01</div><div style="font-size:9px;">JUN 2026</div></div>
+          <div style="font-size:9px;opacity:0.85;margin-left:4px;">Alun-alun Sumbawa</div>
+        </div>
+        <div class="event-body">
+          <div class="event-title">Festival Budaya Sumbawa ke-32</div>
+          <div class="event-meta">Budaya &amp; Seni &middot; Seluruh Masyarakat</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:14px;">
+      <div style="display:inline-block;background:#10B981;color:white;border-radius:4px;padding:7px 16px;font-size:11px;font-weight:700;">Lihat Semua Acara</div>
+    </div>
+    <div class="annotation">Tombol "Lihat Semua" muncul dinamis hanya jika event dalam kategori lebih dari 3 item.</div>
+  </div>
+
+  <div class="divider">7 &middot; HARGA PASAR (TABEL + SEARCH + EXPAND)</div>
+  <div class="section sec-teal">
+    <div class="section-title-bar">
+      <span class="tag-teal">Harga Pasar</span>
+      <span class="section-name">Data Harga Komoditas Pasar Harian</span>
+      <span class="section-desc">Warna: Teal #14B8A6 &middot; Pencarian real-time + expand baris</span>
+    </div>
+    <div class="market-search">
+      <input class="market-search-input" placeholder="Cari komoditas... (misal: beras, ayam, cabai)" readonly />
+      <button class="market-search-btn">Cari</button>
+      <div style="display:flex;gap:6px;margin-left:auto;">
+        <div style="padding:6px 10px;border:1px solid #14B8A6;border-radius:4px;font-size:10px;color:#14B8A6;font-weight:600;">Filter Kategori</div>
+        <div style="padding:6px 10px;border:1px solid #14B8A6;border-radius:4px;font-size:10px;color:#14B8A6;font-weight:600;">Unduh CSV</div>
+      </div>
+    </div>
+    <table class="market-table">
+      <thead>
+        <tr><th>No</th><th>Komoditas</th><th>Satuan</th><th>Harga Kemarin</th><th>Harga Hari Ini</th><th>Perubahan</th><th>Pasar</th><th>Detail</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Beras Premium</td><td>kg</td><td>Rp 13.500</td><td>Rp 13.800</td><td class="price-up">+2.2%</td><td>Pasar Besar</td><td><span style="color:#14B8A6;font-size:11px;font-weight:700;">Expand</span></td></tr>
+        <tr><td colspan="8" class="expand-row">Riwayat 7 Hari: 13.200 - 13.300 - 13.400 - 13.500 - 13.600 - 13.500 - 13.800 | Pasar: Besar, Seketeng, Utan | Catatan: Musim panen tertunda</td></tr>
+        <tr><td>2</td><td>Cabai Merah</td><td>kg</td><td>Rp 38.000</td><td>Rp 35.000</td><td class="price-down">-7.9%</td><td>Pasar Seketeng</td><td><span style="color:#14B8A6;font-size:11px;font-weight:700;">Expand</span></td></tr>
+        <tr><td>3</td><td>Ayam Broiler</td><td>ekor</td><td>Rp 45.000</td><td>Rp 46.500</td><td class="price-up">+3.3%</td><td>Pasar Utan</td><td><span style="color:#14B8A6;font-size:11px;font-weight:700;">Expand</span></td></tr>
+        <tr><td>4</td><td>Minyak Goreng</td><td>liter</td><td>Rp 17.500</td><td>Rp 17.500</td><td style="color:#888;">Stabil</td><td>Semua Pasar</td><td><span style="color:#14B8A6;font-size:11px;font-weight:700;">Expand</span></td></tr>
+      </tbody>
+    </table>
+    <div class="annotation">Klik "Expand" untuk riwayat 7 hari, daftar pasar, dan catatan komoditas.</div>
+  </div>
+
+  <div class="divider">8 &middot; GALERI USAHA / UMKM (6 KATEGORI)</div>
+  <div class="section sec-lime">
+    <div class="section-title-bar">
+      <span class="tag-lime">UMKM</span>
+      <span class="section-name">Galeri Usaha &amp; UMKM Sumbawa</span>
+      <span class="section-desc">Warna: Lime #84CC16 &middot; 6 kategori filter</span>
+    </div>
+    <div class="biz-cats">
+      <div class="biz-cat active">Semua</div>
+      <div class="biz-cat">Kuliner</div>
+      <div class="biz-cat">Kerajinan</div>
+      <div class="biz-cat">Pertanian</div>
+      <div class="biz-cat">Perikanan</div>
+      <div class="biz-cat">Pariwisata</div>
+      <div class="biz-cat">Jasa</div>
+    </div>
+    <div class="biz-grid">
+      <div class="biz-card"><div class="biz-img">[ USAHA 1 ]</div><div class="biz-body"><div class="biz-name">Madu Sumbawa Asli</div><div class="biz-type">Kuliner &middot; Kec. Sumbawa</div></div></div>
+      <div class="biz-card"><div class="biz-img">[ USAHA 2 ]</div><div class="biz-body"><div class="biz-name">Tenun Tradisional Samawa</div><div class="biz-type">Kerajinan &middot; Kec. Unter Iwes</div></div></div>
+      <div class="biz-card"><div class="biz-img">[ USAHA 3 ]</div><div class="biz-body"><div class="biz-name">Kebun Manggis Organik</div><div class="biz-type">Pertanian &middot; Kec. Moyo Hilir</div></div></div>
+      <div class="biz-card"><div class="biz-img">[ USAHA 4 ]</div><div class="biz-body"><div class="biz-name">Lobster Segar Maluk</div><div class="biz-type">Perikanan &middot; Kec. Maluk</div></div></div>
+      <div class="biz-card"><div class="biz-img">[ USAHA 5 ]</div><div class="biz-body"><div class="biz-name">Homestay Pantai Saliper</div><div class="biz-type">Pariwisata &middot; Kec. Sumbawa</div></div></div>
+      <div class="biz-card"><div class="biz-img">[ USAHA 6 ]</div><div class="biz-body"><div class="biz-name">Konveksi Batik Samawa</div><div class="biz-type">Kerajinan &middot; Kec. Labuan Badas</div></div></div>
+    </div>
+  </div>
+
+  <div class="divider">9 &middot; GALERI FOTO (MASONRY GRID)</div>
+  <div class="section sec-lime">
+    <div class="section-title-bar">
+      <span class="tag-lime">Galeri</span>
+      <span class="section-name">Galeri Foto Daerah</span>
+      <span class="section-desc">Warna: Lime #84CC16 &middot; Masonry grid &middot; 2 item featured</span>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item featured"><div class="gallery-img">[ FOTO FEATURED — PANORAMA ]</div></div>
+      <div class="gallery-item"><div class="gallery-img">[ FOTO 2 ]</div></div>
+      <div class="gallery-item"><div class="gallery-img">[ FOTO 3 ]</div></div>
+      <div class="gallery-item"><div class="gallery-img">[ FOTO 4 ]</div></div>
+      <div class="gallery-item"><div class="gallery-img">[ FOTO 5 ]</div></div>
+      <div class="gallery-item featured"><div class="gallery-img">[ FOTO FEATURED 2 ]</div></div>
+      <div class="gallery-item"><div class="gallery-img">[ FOTO 7 ]</div></div>
+      <div class="gallery-item"><div class="gallery-img">[ FOTO 8 ]</div></div>
+    </div>
+  </div>
+
+  <div class="divider">10 &middot; AKSES KE SUMBAWA</div>
+  <div class="section sec-green">
+    <div class="section-title-bar">
+      <span class="tag-green">Akses</span>
+      <span class="section-name">Cara Mengakses Kabupaten Sumbawa</span>
+      <span class="section-desc">Warna: Green #22C55E &middot; 4 moda transportasi</span>
+    </div>
+    <div class="access-grid">
+      <div class="access-card"><div class="access-icon">&#9992;</div><div class="access-title">Udara</div><div class="access-desc">Bandara Sultan Muhammad Kaharuddin III</div></div>
+      <div class="access-card"><div class="access-icon">&#9972;</div><div class="access-title">Laut</div><div class="access-desc">Pelabuhan Badas &middot; Dari Lombok &amp; Bima</div></div>
+      <div class="access-card"><div class="access-icon">&#128652;</div><div class="access-title">Darat</div><div class="access-desc">Terminal Sumbawa Besar &middot; Trans-Sumbawa</div></div>
+      <div class="access-card"><div class="access-icon">&#128506;</div><div class="access-title">Peta Lokasi</div><div class="access-desc">Google Maps &middot; 8.29S 117.25E</div></div>
+    </div>
+  </div>
+
+  <div class="divider">11 &middot; SIDEBAR / HAMBURGER MENU</div>
+  <div class="section" style="background:#f8f8f8;">
+    <div class="section-title-bar">
+      <span class="section-name">Sidebar — Dibuka via Tombol Hamburger</span>
+      <span class="section-desc">Animasi instan &middot; tanpa efek slide &middot; overlay gelap di belakang</span>
+    </div>
+    <div style="display:grid;grid-template-columns:240px 1fr;gap:20px;align-items:start;">
+      <div class="sidebar-demo">
+        <div class="sidebar-header">Menu Cepat</div>
+        <div class="sidebar-item active">Agenda Kegiatan</div>
+        <div class="sidebar-item">Dokumen Daerah</div>
+        <div class="sidebar-sub">Peraturan Daerah</div>
+        <div class="sidebar-sub">Keputusan Bupati</div>
+        <div class="sidebar-sub">RPJMD 2021-2026</div>
+        <div class="sidebar-item">Statistik</div>
+        <div class="sidebar-sub">BPS Kabupaten</div>
+        <div class="sidebar-sub">Kependudukan</div>
+        <div class="sidebar-item">Transparansi Anggaran</div>
+        <div class="sidebar-item">Data IPKD</div>
+        <div class="sidebar-sub">2022</div>
+        <div class="sidebar-sub">2023</div>
+        <div class="sidebar-sub">2024</div>
+        <div class="sidebar-sub">2025</div>
+      </div>
+      <div>
+        <div class="annotation" style="background:#fff8e1;border-color:#f0c040;color:#6a4800;">
+          Sidebar tampil INSTAN tanpa animasi slide. Background overlay gelap semi-transparan. Klik di luar untuk menutup. 5 kategori: Agenda, Dokumen Daerah, Statistik, Transparansi Anggaran, Data IPKD (2022-2025).
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider">12 &middot; HALAMAN PENCARIAN GLOBAL (/search)</div>
+  <div class="section" style="background:#fafafa;">
+    <div class="section-title-bar">
+      <span class="section-name">SearchPage.tsx — Pencarian Global</span>
+      <span class="section-desc">Route: /search &middot; Filter: Semua / Berita / Acara / Harga / Dokumen / Layanan</span>
+    </div>
+    <div style="background:white;border:2px solid #84CC16;border-radius:6px;padding:10px 16px;display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+      <input style="flex:1;border:none;outline:none;font-size:13px;color:#333;" placeholder="Cari berita, harga beras, acara budaya..." readonly />
+      <button style="background:#84CC16;color:white;border:none;border-radius:4px;padding:6px 16px;font-size:11px;font-weight:800;">Cari</button>
+    </div>
+    <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;">
+      <div style="padding:4px 12px;background:#84CC16;color:white;border-radius:20px;font-size:10px;font-weight:700;">Semua</div>
+      <div style="padding:4px 12px;border:1px solid #ddd;border-radius:20px;font-size:10px;color:#666;">Berita</div>
+      <div style="padding:4px 12px;border:1px solid #ddd;border-radius:20px;font-size:10px;color:#666;">Acara</div>
+      <div style="padding:4px 12px;border:1px solid #ddd;border-radius:20px;font-size:10px;color:#666;">Harga Pasar</div>
+      <div style="padding:4px 12px;border:1px solid #ddd;border-radius:20px;font-size:10px;color:#666;">Dokumen</div>
+      <div style="padding:4px 12px;border:1px solid #ddd;border-radius:20px;font-size:10px;color:#666;">Layanan</div>
+    </div>
+    <div class="search-result-item"><div class="search-result-tag">Berita</div><div><div class="search-result-title">Festival Produk Lokal UMKM Sumbawa 2026</div><div class="search-result-snippet">Lebih dari 200 pelaku UMKM turut serta dalam festival tahunan...</div></div></div>
+    <div class="search-result-item"><div class="search-result-tag" style="background:#10B981;">Acara</div><div><div class="search-result-title">Festival Budaya Sumbawa ke-32 — 1 Juni 2026</div><div class="search-result-snippet">Alun-alun Sumbawa &middot; Budaya &amp; Seni tradisional</div></div></div>
+    <div class="search-result-item"><div class="search-result-tag" style="background:#14B8A6;">Harga</div><div><div class="search-result-title">Beras Premium — Rp 13.800/kg</div><div class="search-result-snippet">Pasar Besar Sumbawa &middot; Naik 2.2% dari kemarin</div></div></div>
+  </div>
+
+  <div class="divider">13 &middot; FOOTER</div>
+  <div class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">SumbawaKab.</div>
+        <div class="footer-brand-sub">Pemerintah Kabupaten Sumbawa</div>
+        <div class="footer-desc">Portal resmi Pemerintah Kabupaten Sumbawa. Melayani masyarakat dengan transparan, akuntabel, dan inovatif untuk Sumbawa yang maju dan sejahtera.</div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigasi</div>
+        <div class="footer-link">Beranda</div>
+        <div class="footer-link">Profil Daerah</div>
+        <div class="footer-link">Pemerintahan</div>
+        <div class="footer-link">Layanan Publik</div>
+        <div class="footer-link">Berita</div>
+      </div>
+      <div>
+        <div class="footer-col-title">Layanan</div>
+        <div class="footer-link">e-KTP Online</div>
+        <div class="footer-link">Perizinan</div>
+        <div class="footer-link">Pengaduan</div>
+        <div class="footer-link">PPID</div>
+        <div class="footer-link">Lapor! SP4N</div>
+      </div>
+      <div>
+        <div class="footer-col-title">Kontak</div>
+        <div style="font-size:11px;color:#666;line-height:1.9;">
+          Jl. Garuda No. 1, Sumbawa Besar, NTB 84311<br>
+          Telp: (0371) 21058<br>
+          Fax: (0371) 21059<br>
+          Email: info@sumbawakab.go.id
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>2026 <span style="color:#84CC16;font-weight:700;">SumbawaKab.</span> — Semua Hak Dilindungi</span>
+      <span>Kebijakan Privasi &middot; Syarat Penggunaan &middot; Aksesibilitas</span>
+    </div>
+  </div>
+
+  <div class="divider" style="background:#444;font-size:9px;padding:8px;">
+    AKHIR WIREFRAME &middot; SumbawaKab. Website &middot; Versi 1.0 &middot; Mei 2026
+  </div>
+</div>
+</body>
+</html>

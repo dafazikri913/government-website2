@@ -40,13 +40,13 @@ export function Footer() {
       ],
     },
     resources: {
-      title: "Sumber Daya",
+      title: "Link Cepat",
       links: [
-        { label: "Berita & Update", url: "/berita" },
-        { label: "Kalender Acara", url: "/events" },
-        { label: "Publikasi", url: "#" },
-        { label: "Formulir & Download", url: "#" },
-        { label: "FAQ", url: "#" },
+        { label: "Berita", url: "/berita" },
+        { label: "Artikel dan Pengumuman", url: "/events" },
+        { label: "Daftar Usaha", url: "#" },
+        { label: "Menuju Pulau Sumbawa", url: "#" },
+        { label: "Harga Pasar", url: "#" },
       ],
     },
     legal: {

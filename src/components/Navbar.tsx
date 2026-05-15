@@ -227,19 +227,31 @@ export function Navbar() {
             {
               name: "Gambaran Umum",
               subItems: [
-                { name: "Sejarah", href: "#" },
-                { name: "Geografi", href: "#" },
-                { name: "Demografi", href: "#" },
-                { name: "Kondisi Sosial", href: "#" },
+                { name: "Sejarah", href: "/profil/gambaran-umum/sejarah" },
+                { name: "Geografi", href: "/profil/gambaran-umum/geografi" },
+                { name: "Demografi", href: "/profil/gambaran-umum/demografi" },
+                {
+                  name: "Kondisi Sosial",
+                  href: "/profil/gambaran-umum/kondisi-sosial",
+                },
               ],
             },
             {
               name: "Pemerintahan",
               subItems: [
-                { name: "Struktur Organisasi", href: "#" },
-                { name: "Visi dan Misi", href: "#" },
-                { name: "Pejabat Daerah", href: "#" },
-                { name: "SKPD", href: "#" },
+                { name: "Bupati", href: "/profil/pemerintahan/bupati" },
+                {
+                  name: "Wakil Bupati",
+                  href: "/profil/pemerintahan/wakil-bupati",
+                },
+                {
+                  name: "Visi dan Misi",
+                  href: "/profil/pemerintahan/visi-misi",
+                },
+                {
+                  name: "Lembaga Eksekutif",
+                  href: "/profil/pemerintahan/lembaga-eksekutif",
+                },
               ],
             },
           ],

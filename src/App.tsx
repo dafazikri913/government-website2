@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import { HomePage } from "./pages/HomePage";
 import { AccessToSumbawaPage } from "./pages/AccessToSumbawaPage";
 import { NewsPage } from "./pages/NewsPage";
@@ -11,6 +11,8 @@ import { AllNewsPage } from "./pages/AllNewsPage";
 import GaleriPage from "./pages/GaleriPage";
 import { BusinessListPage } from "./pages/BusinessListPage";
 import { SearchPage } from "./pages/SearchPage";
+import { InformasiUmumPage } from "./pages/InformasiUmumPage";
+import { PemerintahanPage } from "./pages/PemerintahanPage";
 
 export default function App() {
   return (
@@ -28,6 +30,22 @@ export default function App() {
         <Route path="/galeri" element={<GaleriPage />} />
         <Route path="/daftar-usaha" element={<BusinessListPage />} />
         <Route path="/search" element={<SearchPage />} />
+        <Route
+          path="/profil/gambaran-umum"
+          element={<Navigate to="/profil/gambaran-umum/sejarah" replace />}
+        />
+        <Route
+          path="/profil/gambaran-umum/:slug"
+          element={<InformasiUmumPage />}
+        />
+        <Route
+          path="/profil/pemerintahan"
+          element={<Navigate to="/profil/pemerintahan/bupati" replace />}
+        />
+        <Route
+          path="/profil/pemerintahan/:slug"
+          element={<PemerintahanPage />}
+        />
       </Routes>
     </BrowserRouter>
   );
