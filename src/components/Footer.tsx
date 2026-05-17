@@ -52,11 +52,10 @@ export function Footer() {
     legal: {
       title: "Hukum",
       links: [
-        { label: "Kebijakan Privasi", url: "#" },
-        { label: "Syarat Layanan", url: "#" },
-        { label: "Aksesibilitas", url: "#" },
-        { label: "Hak Cipta", url: "#" },
-        { label: "Disclaimer", url: "#" },
+        {
+          label: "Dokumen Dan Informasi Hukum",
+          url: "https://ildis.sumbawakab.go.id/",
+        },
       ],
     },
   };
@@ -89,14 +88,14 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-[#EE0000] mt-0.5" />
                 <div>
                   <div className="text-white">Call Center</div>
-                  <div className="text-gray-400">1500-LAYANAN</div>
+                  <div className="text-gray-400">(0371) 23714.</div>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-[#EE0000] mt-0.5" />
                 <div>
                   <div className="text-white">Email</div>
-                  <div className="text-gray-400">info@pemerintah.go.id</div>
+                  <div className="text-gray-400">sumbawakab@gov.id</div>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -104,7 +103,7 @@ export function Footer() {
                 <div>
                   <div className="text-white">Alamat</div>
                   <div className="text-gray-400">
-                    Jl. Pemerintahan No. 123, Kota
+                    Jl. Bungur No.1, Labuan Sumbawa, Labuhan Badas
                   </div>
                 </div>
               </div>

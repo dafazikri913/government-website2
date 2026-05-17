@@ -10,7 +10,7 @@ import { Button } from "./ui/button";
 import { motion, AnimatePresence } from "motion/react";
 import foto1 from "../assets/Hero_pic/20260303102139.png";
 import foto2 from "../assets/Hero_pic/2017_04_06_24712_1491469437._large.jpg";
-import foto3 from "../assets/Hero_pic/Tari-Nguri-dari-Suku-Samawa-Sumbawa-sumber-ig-@firmanananda72.jpg";
+import foto3 from "../assets/Hero_pic/36784846825_700416431e_b.jpg";
 
 const slides = [foto1, foto2, foto3];
 
