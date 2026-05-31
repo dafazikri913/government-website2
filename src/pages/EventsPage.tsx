@@ -37,7 +37,8 @@ export function EventsPage() {
       time: "09:00 - 17:00 WIB",
       location: "Pusat Konvensi, Aula Utama",
       attendees: "500+ Peserta",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
       type: "Konferensi",
       status: "mendatang",
     },
@@ -50,7 +51,8 @@ export function EventsPage() {
       time: "14:00 - 16:00 WIB",
       location: "Pusat Teknologi, Ruang 101",
       attendees: "100+ Peserta",
-      image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop",
       type: "Workshop",
       status: "mendatang",
     },
@@ -63,7 +65,8 @@ export function EventsPage() {
       time: "18:00 - 20:00 WIB",
       location: "Balai Kota, Auditorium",
       attendees: "300+ Peserta",
-      image: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&h=600&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&h=600&fit=crop",
       type: "Dialog Publik",
       status: "mendatang",
     },
@@ -76,7 +79,8 @@ export function EventsPage() {
       time: "13:00 - 17:00 WIB",
       location: "Hotel Grand Sumbawa, Ballroom",
       attendees: "250+ Peserta",
-      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop",
       type: "Seminar",
       status: "mendatang",
     },
@@ -89,7 +93,8 @@ export function EventsPage() {
       time: "08:00 - 22:00 WIB",
       location: "Lapangan Kota Sumbawa",
       attendees: "5000+ Peserta",
-      image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&h=600&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&h=600&fit=crop",
       type: "Festival",
       status: "berlangsung",
     },
@@ -102,7 +107,8 @@ export function EventsPage() {
       time: "08:00 - 15:00 WIB",
       location: "Kantor Bupati, Ruang Rapat Besar",
       attendees: "200+ Peserta",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
       type: "Rapat",
       status: "berlangsung",
     },
@@ -115,7 +121,8 @@ export function EventsPage() {
       time: "09:00 - 17:00 WIB",
       location: "Hotel Sumbawa Plaza, Ballroom",
       attendees: "450 Peserta",
-      image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&h=600&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&h=600&fit=crop",
       type: "Forum",
       status: "selesai",
     },
@@ -128,7 +135,8 @@ export function EventsPage() {
       time: "08:00 - 16:00 WIB",
       location: "Gedung Serbaguna, Lantai 3",
       attendees: "320 Peserta",
-      image: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=800&h=600&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=800&h=600&fit=crop",
       type: "Summit",
       status: "selesai",
     },
@@ -141,7 +149,8 @@ export function EventsPage() {
       time: "13:00 - 17:00 WIB",
       location: "Balai Desa Sumbawa Besar",
       attendees: "180 Peserta",
-      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop",
       type: "Workshop",
       status: "selesai",
     },
@@ -154,14 +163,15 @@ export function EventsPage() {
       time: "09:00 - 21:00 WIB",
       location: "Pusat Pameran Sumbawa",
       attendees: "3000 Peserta",
-      image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800&h=600&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800&h=600&fit=crop",
       type: "Expo",
       status: "selesai",
     },
   ];
 
   const filteredEvents = allEvents.filter(
-    (event) => event.status === activeTab
+    (event) => event.status === activeTab,
   );
 
   const tabs = [
@@ -202,8 +212,7 @@ export function EventsPage() {
                       activeTab === tab.id
                         ? "text-[#EE0000] border-b-2 border-[#EE0000]"
                         : "text-gray-600 hover:text-gray-900"
-                    }`}
-                  >
+                    }`}>
                     {tab.label}
                   </button>
                 ))}
@@ -215,8 +224,7 @@ export function EventsPage() {
               {filteredEvents.map((event) => (
                 <div
                   key={event.id}
-                  className="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow group"
-                >
+                  className="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow group">
                   {/* Image */}
                   <div className="relative h-56 overflow-hidden">
                     <img
@@ -266,29 +274,6 @@ export function EventsPage() {
                         <span>{event.attendees}</span>
                       </div>
                     </div>
-
-                    {/* Action Button */}
-                    {event.status === "mendatang" && (
-                      <Button className="w-full bg-[#EE0000] hover:bg-[#CC0000] text-white">
-                        Daftar Sekarang
-                      </Button>
-                    )}
-                    {event.status === "berlangsung" && (
-                      <Button
-                        variant="outline"
-                        className="w-full border-[#EE0000] text-[#EE0000] hover:bg-[#EE0000] hover:text-white"
-                      >
-                        Lihat Detail Acara
-                      </Button>
-                    )}
-                    {event.status === "selesai" && (
-                      <Button
-                        variant="outline"
-                        className="w-full border-gray-300 text-gray-600 hover:bg-gray-50"
-                      >
-                        Lihat Dokumentasi
-                      </Button>
-                    )}
                   </div>
                 </div>
               ))}
@@ -299,7 +284,12 @@ export function EventsPage() {
               <div className="text-center py-20">
                 <Calendar className="w-16 h-16 text-gray-300 mx-auto mb-4" />
                 <h3 className="text-gray-600 mb-2">
-                  Tidak ada acara {activeTab === "mendatang" ? "mendatang" : activeTab === "berlangsung" ? "yang sedang berlangsung" : "yang telah selesai"}
+                  Tidak ada acara{" "}
+                  {activeTab === "mendatang"
+                    ? "mendatang"
+                    : activeTab === "berlangsung"
+                      ? "yang sedang berlangsung"
+                      : "yang telah selesai"}
                 </h3>
                 <p className="text-gray-500 text-sm">
                   Silakan cek kembali nanti untuk informasi acara terbaru
