@@ -15,95 +15,208 @@ export interface NewsItem {
 export const newsData: NewsItem[] = [
   {
     id: 1,
-    title: "Peluncuran Program Digitalisasi Layanan Publik",
-    excerpt: "Pemerintah meluncurkan program digitalisasi...",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pemerintah Kabupaten Sumbawa resmi meluncurkan program digitalisasi layanan publik yang bertujuan untuk meningkatkan efisiensi dan kemudahan akses bagi seluruh masyarakat. Program ini merupakan bagian dari transformasi digital yang telah direncanakan sejak awal tahun 2025.
-
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Program digitalisasi ini mencakup berbagai aspek pelayanan publik, mulai dari administrasi kependudukan hingga layanan kesehatan.
-
-Masyarakat kini dapat mengakses berbagai layanan pemerintah melalui aplikasi mobile dan website resmi tanpa harus datang ke kantor. Platform digital ini dilengkapi dengan sistem keamanan berlapis untuk melindungi data pribadi masyarakat.`,
-    date: "12 Oktober 2025",
+    title: "PJS BUPATI SAMBUT KEDATANGAN WAKIL MENTERI PKP RI",
+    excerpt:
+      "Pjs Bupati Sumbawa Sambut Kedatangan Wakil Menteri Perumahan dan Kawasan Permukiman Republik Indonesia ...",
+    content: `Pjs Bupati Sumbawa Sambut Kedatangan Wakil Menteri Perumahan dan Kawasan Permukiman Republik Indonesia (PKP RI), Beserta Rombongannya. Kedatangan Wakil Menteri PKP RI ini dalam rangka Kunjungan kerja terkait Program Nasional “3 Juta Rumah Sehat dan Layak Huni” bagi masyarakat Indonesia, terutama Masyarakat Berpenghasilan Rendah (MBR). Penyambutan ini, berlangsung di Aula H. Madilaoe ADT Lantai 3 Kantor Bupati Sumbawa pada Sabtu, (16/11/2024). Hadir juga Pjs Bupati Sumbawa Barat, Sekretaris Daerah Kabupaten Sumbawa, 
+    Forkopimda Kabupaten Sumbawa, Para Asisten Pemkab Sumbawa, OPD Terkait, serta Sejumlah Kepala Desa se-Kabupaten Sumbawa. Wakil Menteri PKP RI, H. Fahri Hamzah, S.E., menyampaikan kunjungan ini berkaitan dengan Program Nasional 3 Juta Rumah Sehat dan Layak Huni bagi Rakyat Indonesia, terutama Masyarakat Berpenghasilan Rendah (MBR). Kementerian PKP, memiliki tugas penting dalam menyelesaikan salah satu kebutuhan pokok manusia, yakni tempat tinggal atau rumah. Masih banyak masyarakat Indonesia terutama di Sumbawa yang masih belum punya rumah layak huni. Oleh sebab itu, penting program pembangunan 3 juta rumah ini, sebagai solusi untuk menyelesaikan persoalan perumahan bagi masyarakat. Dengan target 1 juta rumah di kawasan perkotaan dan 2 juta rumah di desa. Sumbawa memiliki potensi besar untuk menjadi pilot project program ini. Antusiasme dan kesiapan pemerintah daerah serta masyarakat adalah modal penting untuk kesuksesan program nasional ini. Ujarnya. Pjs Bupati Sumbawa, Dr. Najamuddin Amy, S.Sos., M.M., menyampaikan kehadiran Wakil Menteri di Kabupaten Sumbawa ini, sebagai kunjungan perdana yang tidak boleh disia-siakan kesempatan ini untuk membangun Kabupaten Sumbawa. Pemerintah Kabupaten Sumbawa sendiri siap berkontribusi dalam menjalankan program 3 Juta Rumah bagi masyarakat miskin ataupun berpenghasilan rendah dengan aset tanah yang dimiliki pemerintah Kabupaten Sumbawa. Oleh karena itu, koordinasi antara pemerintah Pusat, Provinsi dan Kabupaten/Kota sangatlah dibutuhkan dalam menyukseskan program nasional ini. Pemerintah Kabupaten Sumbawa dan Sumbawa Barat berharap, Kementerian PKP RI dapat menjadikan Sumbawa sebagai Pilot Project dari program nasional ini. Cetusnya. .`,
+    date: "16 November, 2024",
     readTime: "3 menit",
     category: "Pembaruan Kebijakan",
     newsCategory: "daerah",
     author: "Admin SumbawaKab",
-    image:
-      "https://images.unsplash.com/photo-1649855815366-290064ca5602?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwZ292ZXJubWVudCUyMHNlcnZpY2VzJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NzA2OTA2NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/News_pic/20241116064414.jpg",
     views: "5.2k",
   },
   {
     id: 2,
-    title: "Peningkatan Infrastruktur Teknologi di Seluruh Wilayah",
-    excerpt: "Pembangunan infrastruktur teknologi dilakukan...",
-    content: `Pemerintah daerah melakukan percepatan pembangunan infrastruktur teknologi informasi di seluruh wilayah Kabupaten Sumbawa. Proyek ini mencakup instalasi jaringan fiber optik, pembangunan menara telekomunikasi, dan peningkatan kapasitas data center pemerintah.
+    title: "Pertunjukan Tari Intan Kalanis Meriahkan Festival Adat",
+    excerpt:
+      "Pertunjukan Tari Intan Kalanis yang digelar di Istana Dalam Loka berlangsung meriah dan penuh makna...",
+    content: `Kegiatan ini merupakan bagian dari rangkaian Festival Adat dan Cagar Budaya yang menampilkan berbagai seni tradisional khas Sumbawa sebagai upaya pelestarian budaya daerah sekaligus promosi potensi pariwisata Kabupaten Sumbawa.
 
-Target utama dari program ini adalah memastikan setiap kecamatan memiliki akses internet berkecepatan tinggi. Hal ini akan memudahkan masyarakat dalam mengakses informasi, pendidikan online, dan berbagai layanan digital lainnya.
 
-Dengan infrastruktur teknologi yang memadai, diharapkan dapat meningkatkan daya saing daerah dan membuka peluang investasi baru yang akan membawa dampak positif bagi perekonomian masyarakat.`,
+Kegiatan ini terselenggara atas kerja sama saudari Meilanai Fitria, S.Pd., M.Sn. dengan Kementerian Kebudayaan Republik Indonesia. Melalui kegiatan tersebut, masyarakat diajak untuk lebih mengenal dan mencintai warisan budaya yang dimiliki Tau dan Tana Samawa.
+
+
+Acara dihadiri oleh Wakil Ketua III DPRD Kabupaten Sumbawa, unsur Forkopimda yang diwakili Kapolsek dan Komandan Batalyon, Ketua Dewan Kesenian Kabupaten Sumbawa, Ketua Dharma Wanita Persatuan (DWP), Wakil Ketua IISWARA, tokoh masyarakat, tokoh agama, tokoh adat, para kepala sekolah, pegiat seni, serta tamu undangan lainnya.
+
+
+Dalam sambutannya, Meilanai Fitria, S.Pd., M.Sn. mengungkapkan rasa syukur kepada Allah SWT atas terselenggaranya kegiatan tersebut. Ia juga menyampaikan terima kasih kepada kedua orang tua, keluarga, dan seluruh tim yang telah memberikan dukungan sejak awal hingga terlaksananya kegiatan.
+
+
+Meilanai menjelaskan bahwa kegiatan Festival Adat dan Cagar Budaya sebelumnya telah dibuka melalui pertunjukan permainan tradisional istana, yaitu Karaci. Pada malam ini, masyarakat disuguhkan pertunjukan Tari Intan Kalanis yang tumbuh dan berkembang dalam lingkungan istana. Pemanfaatan kawasan cagar budaya sebagai lokasi pertunjukan menjadi salah satu upaya menghidupkan kembali nilai-nilai sejarah dan budaya Sumbawa.
+
+
+Ia juga menyampaikan bahwa rangkaian kegiatan masih akan berlanjut di Museum Bala Datu Ranga dengan pertunjukan teater kontemporer, serta ditutup di Istana Bala Kuning yang akan mengangkat tema kuliner tradisional Sumbawa.
+
+
+“Budaya harus kita lestarikan bersama. Pelestarian budaya tidak dapat dilakukan oleh satu pihak saja, melainkan membutuhkan dukungan dan partisipasi seluruh elemen masyarakat,” ujarnya.
+
+
+Sementara itu, Ketua Dewan Kesenian Kabupaten Sumbawa, Irfan, SP., MM., menyampaikan apresiasi atas terselenggaranya kegiatan tersebut. Menurutnya, keberhasilan Meilanai dalam meraih program dari Kementerian Kebudayaan menjadi motivasi bagi generasi muda Sumbawa untuk terus berkarya dan berinovasi dalam bidang seni dan budaya.
+
+
+Ia menegaskan bahwa Dewan Kesenian Kabupaten Sumbawa akan terus mendukung karya-karya seniman muda melalui berbagai program pembinaan dan pengembangan seni tradisi. Sejak tahun 2025 hingga memasuki tahun 2026, Dewan Kesenian telah menyiapkan berbagai pelatihan teknis bagi para pelatih dan pengelola sanggar seni di seluruh wilayah Kabupaten Sumbawa.
+
+
+“Kami berharap capaian ini menjadi inspirasi bagi generasi muda lainnya untuk terus membangun semangat berkarya demi kemajuan seni dan budaya Sumbawa,” ungkapnya.
+
+
+Bupati Sumbawa yang dalam kesempatan tersebut diwakili oleh Sekretaris Daerah Kabupaten Sumbawa, Dr. H. Budi Prasetiyo, S.Sos., M.AP., menyampaikan apresiasi yang tinggi kepada Meilanai Fitria atas dedikasi dan kontribusinya dalam pelestarian budaya daerah.
+
+
+Dalam sambutannya, Sekda menegaskan bahwa Kabupaten Sumbawa merupakan satu-satunya kabupaten di Provinsi Nusa Tenggara Barat yang telah memiliki Tim Ahli Cagar Budaya. Hal tersebut menjadi bukti nyata komitmen Pemerintah Daerah dalam menjaga, melindungi, dan mewariskan cagar budaya sebagai bagian penting dari identitas dan sejarah Tau dan Tana Samawa.
+
+
+“Kekuatan kita adalah kekuatan budaya. Menginternalisasi nilai-nilai budaya menjadi sebuah keharusan di tengah kompleksitas tantangan zaman saat ini. Dengan kembali pada nilai-nilai luhur budaya, berbagai persoalan yang kita hadapi dapat diselesaikan dengan lebih bijaksana,” ujarnya.
+
+
+Sekda juga mengingatkan bahwa pertunjukan Karaci yang telah ditampilkan sebelumnya mengandung nilai keberanian, strategi, dan sportivitas yang diwariskan oleh para leluhur. Sementara Tari Intan Kalanis yang dipentaskan malam itu menjadi salah satu bentuk kekayaan budaya yang perlu terus dijaga dan dikembangkan.
+
+
+Pada kesempatan tersebut, Sekda turut menyampaikan terima kasih kepada Kementerian Kebudayaan Republik Indonesia, Indonesiana, LPDP, Balai Pelestarian Kebudayaan, serta seluruh pihak yang telah memberikan dukungan terhadap penyelenggaraan kegiatan Festival Adat dan Cagar Budaya di Kabupaten Sumbawa.
+
+
+Pertunjukan Tari Intan Kalanis berlangsung dengan penuh antusiasme dari masyarakat dan tamu undangan. Kegiatan ini diharapkan menjadi momentum penting dalam memperkuat identitas budaya daerah sekaligus mendorong pelestarian cagar budaya sebagai aset berharga bagi generasi mendatang.
+
+`,
     date: "10 Oktober 2025",
     readTime: "5 menit",
     category: "Pengumuman",
     newsCategory: "daerah",
     author: "Admin SumbawaKab",
-    image:
-      "https://images.unsplash.com/photo-1604869515882-4d10fa4b0492?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXR3b3JrJTIwaW5mcmFzdHJ1Y3R1cmUlMjBmaWJlciUyMG9wdGljfGVufDF8fHx8MTc3MDY5MDY3Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/News_pic/20260615113051.jpg",
     views: "5.2k",
   },
   {
     id: 3,
-    title: "Transparansi Anggaran Daerah Tahun 2025",
+    title: "KARACI MERIAHKAN FESTIVAL ADAT DAN CAGAR BUDAYA",
     excerpt:
-      "Publikasi laporan anggaran daerah untuk meningkatkan transparansi...",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pemerintah Kabupaten Sumbawa mempublikasikan laporan lengkap anggaran pendapatan dan belanja daerah (APBD) tahun 2025. Langkah ini diambil sebagai komitmen terhadap transparansi dan akuntabilitas pengelolaan keuangan publik.
+      " Sekretaris Daerah Kabupaten Sumbawa membuka Pertunjukan Seni Pertarungan Karaci dalam rangka Festival Adat dan Cagar Budaya...",
+    content: ` 
+Sekretaris Daerah Kabupaten Sumbawa, Dr. H. Budi Prasetiyo, S.Sos., M.AP., menyampaikan apresiasi kepada seluruh pihak yang telah menginisiasi terselenggaranya Festival Adat dan Cagar Budaya. Kegiatan ini merupakan bentuk gerakan bersama dalam menjaga dan melestarikan peradaban budaya Sumbawa sebagai warisan berharga yang harus terus dijaga keberlangsungannya, ungkapnya.
 
-Laporan ini dapat diakses secara online melalui portal resmi pemerintah daerah. Masyarakat dapat melihat secara detail alokasi anggaran untuk setiap sektor, mulai dari pendidikan, kesehatan, infrastruktur, hingga program-program kesejahteraan sosial.
 
-Total APBD tahun 2025 mengalami peningkatan dibanding tahun sebelumnya, dengan fokus utama pada pembangunan infrastruktur dan peningkatan kualitas sumber daya manusia. Alokasi terbesar diberikan untuk sektor pendidikan dan kesehatan.
+Sekda melanjutkan, malam pertunjukan Karaci ini bukan sekadar menjadi ajang pertunjukan seni, melainkan sebuah ruang pertemuan antara nilai-nilai masa lalu dengan kehidupan masa kini. Melalui kegiatan tersebut, masyarakat diajak kembali membuka lembaran sejarah yang telah hidup dan berkembang selama ratusan tahun di tengah masyarakat Samawa.
 
-Pemerintah juga membuka ruang bagi masyarakat untuk memberikan masukan dan saran terkait penggunaan anggaran daerah. Forum konsultasi publik akan diadakan secara berkala untuk menampung aspirasi masyarakat.`,
+
+Di tengah derasnya arus modernisasi, lanjut Sekda, keberadaan budaya lokal harus tetap dijaga agar tidak hilang ditelan zaman. Ia berharap generasi muda terus mengenal, memahami, dan mempelajari nilai-nilai budaya sebagai bagian dari identitas dan jati diri masyarakat Sumbawa.
+
+
+Senada dengan hal tersebut, Ketua Penyelenggara Festival Adat dan Cagar Budaya, Meilanie Fitria, S.Pd., M.Sn., menyampaikan bahwa upaya pelestarian cagar budaya, bukan hanya menjadi tanggung jawab segelintir pihak, melainkan tugas bersama seluruh elemen masyarakat.
+
+
+Menurutnya, keterlibatan semua pihak sangat diperlukan agar warisan budaya yang dimiliki dapat terus dilestarikan dan diwariskan kepada generasi mendatang
+
+`,
     date: "8 Oktober 2025",
     readTime: "4 menit",
     category: "Siaran Pers",
     newsCategory: "daerah",
     author: "Admin SumbawaKab",
-    image:
-      "https://images.unsplash.com/photo-1753955900083-b62ee8d97805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidWRnZXQlMjB0cmFuc3BhcmVuY3klMjBmaW5hbmNpYWwlMjBkb2N1bWVudHxlbnwxfHx8fDE3NzA2OTA2NzN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/News_pic/20260615112550.jpg",
     views: "5.2k",
   },
   {
     id: 4,
-    title: "Kerja Sama dengan Sektor Swasta untuk Pembangunan",
-    excerpt: "Pemerintah menjalin kemitraan strategis dengan sektor swasta...",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pemerintah Kabupaten Sumbawa menjalin kemitraan strategis dengan berbagai perusahaan swasta untuk mempercepat program pembangunan daerah. Kerja sama ini mencakup berbagai sektor, termasuk infrastruktur, pariwisata, dan energi terbarukan.
+    title:
+      "WAKIL BUPATI SUMBAWA HADIRI PEMBUKAAN MTQ KE-31 TINGKAT PROVINSI NTB",
+    excerpt:
+      "Wakil Bupati Sumbawa, Drs. H. Mohamad Ansori, menghadiri Pembukaan Musabaqah Tilawatil Qur'an (MTQ) ke-31 Tingkat Provinsi Nusa Tenggara Barat",
+    content: `
+Kehadiran Wakil Bupati Sumbawa dalam ajang syiar Islam terbesar di Provinsi NTB tersebut didampingi langsung oleh istri serta Asisten Pemerintahan dan Kesejahteraan Rakyat (Asisten I) Sekretariat Daerah Kabupaten Sumbawa, Jayakusuma, S.Sos. Wakil Bupati juga hadir bersama rombongan Kafilah Kabupaten Sumbawa yang akan mengikuti berbagai cabang perlombaan pada MTQ ke-31 Tingkat Provinsi NTB.
 
-Model kerja sama yang diterapkan adalah skema public-private partnership (PPP) yang telah terbukti efektif dalam mempercepat pembangunan infrastruktur. Pemerintah memberikan kemudahan regulasi dan insentif bagi investor yang berkomitmen pada pembangunan berkelanjutan.
 
-Beberapa proyek prioritas yang akan dikerjakan melalui skema kerja sama ini antara lain pembangunan kawasan industri terpadu, pengembangan destinasi wisata, dan instalasi pembangkit listrik tenaga surya skala besar.
+MTQ tahun ini mengangkat tema"Masmirah Mendunia, Menebar Rahmatan Lil'Alamin"yang menggambarkan komitmen untuk menjadikan nilai-nilai Al-Qur'an sebagai sumber inspirasi dalam membangun masyarakat yang religius, harmonis, maju, dan berdaya saing di tingkat global.
 
-Pemerintah memastikan bahwa setiap proyek kerja sama dengan swasta harus memberikan manfaat langsung kepada masyarakat, baik dalam bentuk penciptaan lapangan kerja, transfer teknologi, maupun peningkatan kesejahteraan ekonomi lokal.`,
+
+Acara pembukaan dihadiri oleh Gubernur NTB, Wakil Gubernur NTB, para bupati dan wali kota se-NTB, unsur Forkopimda, pimpinan DPRD, tokoh agama, pimpinan lembaga keagamaan, dewan hakim, serta ribuan peserta dan pendamping kafilah dari seluruh kabupaten/kota di Nusa Tenggara Barat.
+
+
+Dalam sambutannya, Bupati Lombok Tengah menyampaikan rasa syukur dan kebanggaannya atas kepercayaan yang diberikan kepada Kabupaten Lombok Tengah sebagai tuan rumah MTQ ke-31 Tingkat Provinsi NTB. Ia menegaskan bahwa MTQ bukan sekadar ajang perlombaan membaca Al-Qur'an, melainkan sarana memperkuat syiar Islam, mempererat ukhuwah Islamiyah, serta membangun generasi Qur'ani yang berakhlak mulia.
+
+
+Bupati Lombok Tengah juga mengajak seluruh pemerintah kabupaten/kota di NTB untuk terus memperkuat sinergi dan kolaborasi dalam membumikan Al-Qur'an melalui berbagai program pembinaan keagamaan. Menurutnya, semangat kebersamaan seluruh daerah menjadi modal penting dalam menjaga eksistensi dan kualitas penyelenggaraan MTQ di masa mendatang.
+
+
+Selain itu, Bupati Lombok Tengah memaparkan sejumlah program unggulan daerah dalam mendukung pembinaan generasi Qur'ani, di antaranya pemberian penghargaan umrah bagi para juara MTQ, pembinaan guru ngaji, hingga program beasiswa bagi hafiz dan hafizah untuk melanjutkan pendidikan tinggi, termasuk di bidang kedokteran.
+
+
+Sementara itu, Gubernur Nusa Tenggara Barat dalam sambutannya menegaskan bahwa penyelenggaraan MTQ merupakan ikhtiar bersama untuk semakin mendekatkan masyarakat kepada Al-Qur'an. Menurutnya, Al-Qur'an tidak hanya dibaca dengan suara yang indah, tetapi harus menjadi pedoman dalam membangun kehidupan yang penuh kebaikan, kedamaian, dan kemajuan.
+
+
+Gubernur NTB menyampaikan bahwa tema "Masmirah Mendunia, Menebar Rahmatan Lil'Alamin" mengandung pesan mendalam agar nilai-nilai Al-Qur'an yang tumbuh dan berkembang di tengah masyarakat NTB terus hidup sebagai sumber persaudaraan dan pembangunan daerah.
+
+
+"Nusa Tenggara Barat memiliki tradisi panjang dalam menjaga nilai-nilai agama dan budaya. Kita tumbuh dengan masjid-masjid yang menjadi pusat kehidupan masyarakat, pesantren yang melahirkan generasi berilmu, serta semangat gotong royong yang menjadi kekuatan bersama," ungkapnya.
+
+
+Gubernur juga mengapresiasi lahirnya qari dan qariah berprestasi asal NTB yang telah mengharumkan nama daerah di tingkat nasional maupun internasional. Prestasi tersebut menunjukkan bahwa pembinaan Al-Qur'an di NTB memiliki fondasi yang kuat dan perlu terus diperkuat.
+
+
+Pada kesempatan itu, Gubernur NTB mengajak seluruh elemen masyarakat untuk menjadikan MTQ sebagai momentum kebangkitan Tilawatil Qur'an di Nusa Tenggara Barat. Ia menyampaikan harapannya agar NTB kembali menjadi salah satu daerah terbaik dalam ajang MTQ tingkat nasional.
+
+
+"Kalau Aceh dikenal sebagai Serambi Mekah, maka kita bercita-cita menjadikan NTB sebagai Serambi Al-Qur'an. Ini adalah titik kebangkitan kembali Tilawatil Qur'an di Nusa Tenggara Barat," tegasnya.
+
+
+Gubernur NTB juga memberikan apresiasi kepada Pemerintah Kabupaten Lombok Tengah beserta seluruh panitia yang telah bekerja keras mempersiapkan penyelenggaraan MTQ ke-31 dengan sangat baik. Menurutnya, pelaksanaan MTQ tahun ini memiliki kualitas yang sangat membanggakan dan layak disebut sebagai penyelenggaraan MTQ tingkat provinsi dengan nuansa nasional.
+
+
+Di akhir sambutannya, Gubernur berpesan kepada seluruh peserta agar mengikuti seluruh rangkaian kegiatan dengan penuh semangat, menjunjung tinggi sportivitas, serta menjadikan MTQ sebagai sarana meningkatkan kecintaan terhadap Al-Qur'an dan pengamalannya dalam kehidupan sehari-hari.
+
+
+Setelah menyampaikan sambutan, Gubernur Nusa Tenggara Barat secara resmi membuka MTQ ke-31 Tingkat Provinsi NTB Tahun 2026 dengan mengucapkan "Bismillahirrahmanirrahim."
+
+
+Wakil Bupati Sumbawa, Drs. H. Mohamad Ansori, menyampaikan harapannya agar seluruh peserta Kafilah Kabupaten Sumbawa dapat mengikuti seluruh rangkaian perlombaan dengan baik, menjunjung tinggi sportivitas, serta mampu menampilkan kemampuan terbaik untuk mengharumkan nama daerah.
+
+
+"Kehadiran Kafilah Kabupaten Sumbawa dalam MTQ ini bukan hanya untuk meraih prestasi, tetapi juga sebagai bagian dari upaya memperkuat syiar Islam dan membangun generasi Qur'ani yang berakhlak mulia," ujarnya.
+
+
+Pembukaan MTQ ke-31 Tingkat Provinsi NTB berlangsung khidmat dan meriah dengan berbagai penampilan seni Islami serta parade kafilah dari seluruh kabupaten/kota se-Nusa Tenggara Barat. Kegiatan ini akan berlangsung selama beberapa hari ke depan dengan mempertandingkan berbagai cabang musabaqah yang diikuti oleh qari, qariah, hafiz, hafizah, mufasir, mufasirah, khattat, dan peserta terbaik dari seluruh daerah di NTB.
+
+`,
     date: "6 Oktober 2025",
     readTime: "4 menit",
     category: "Siaran Pers",
     newsCategory: "daerah",
     author: "Admin SumbawaKab",
-    image:
-      "https://images.unsplash.com/photo-1650978810641-6610f4b6d15a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHBhcnRuZXJzaGlwJTIwY29vcGVyYXRpb258ZW58MXx8fHwxNzcwNjkwNjczfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "News_pic/20260615111858.jpg",
     views: "5.2k",
   },
   {
     id: 5,
-    title: "PJS BUPATI SAMBUT KEDATANGAN WAKIL MENTERI PKP RI",
+    title: "BUPATI CARI SOLUSI PENGELOLAAN LAHAN PENANAMAN JAGUNG",
     excerpt:
-      "Pjs Bupati Sumbawa Sambut Kedatangan Wakil Menteri Perumahan dan Kawasan Permukiman Republik Indonesia...",
-    content: `Pjs Bupati Sumbawa Sambut Kedatangan Wakil Menteri Perumahan dan Kawasan Permukiman Republik Indonesia (PKP RI), Beserta Rombongannya. Kedatangan Wakil Menteri PKP RI ini dalam rangka Kunjungan kerja terkait Program Nasional “3 Juta Rumah Sehat dan Layak Huni” bagi masyarakat Indonesia, terutama Masyarakat Berpenghasilan Rendah (MBR). Penyambutan ini, berlangsung di Aula H. Madilaoe ADT Lantai 3 Kantor Bupati Sumbawa pada Sabtu, (16/11/2024). 
-    Hadir juga Pjs Bupati Sumbawa Barat, Sekretaris Daerah Kabupaten Sumbawa, Forkopimda Kabupaten Sumbawa, Para Asisten Pemkab Sumbawa, OPD Terkait, serta Sejumlah Kepala Desa se-Kabupaten Sumbawa. Wakil Menteri PKP RI, H. Fahri Hamzah, S.E., menyampaikan kunjungan ini berkaitan dengan Program Nasional 3 Juta Rumah Sehat dan Layak Huni bagi Rakyat Indonesia, terutama Masyarakat Berpenghasilan Rendah (MBR). Kementerian PKP, memiliki tugas penting dalam menyelesaikan salah satu kebutuhan pokok manusia, yakni tempat tinggal atau rumah. Masih banyak masyarakat Indonesia terutama di Sumbawa yang masih belum punya rumah layak huni. Oleh sebab itu, penting program pembangunan 3 juta rumah ini, sebagai solusi untuk menyelesaikan persoalan perumahan bagi masyarakat. 
-    Dengan target 1 juta rumah di kawasan perkotaan dan 2 juta rumah di desa. Sumbawa memiliki potensi besar untuk menjadi pilot project program ini. Antusiasme dan kesiapan pemerintah daerah serta masyarakat adalah modal penting untuk kesuksesan program nasional ini. Ujarnya. Pjs Bupati Sumbawa, Dr. Najamuddin Amy, S.Sos., M.M., menyampaikan kehadiran Wakil Menteri di Kabupaten Sumbawa ini, sebagai kunjungan perdana yang tidak boleh disia-siakan kesempatan ini untuk membangun Kabupaten Sumbawa. Pemerintah Kabupaten Sumbawa sendiri siap berkontribusi dalam menjalankan program 3 Juta Rumah bagi masyarakat miskin ataupun berpenghasilan rendah dengan aset tanah yang dimiliki pemerintah Kabupaten Sumbawa. Oleh karena itu, koordinasi antara pemerintah Pusat, Provinsi dan Kabupaten/Kota sangatlah dibutuhkan dalam menyukseskan program nasional ini. Pemerintah Kabupaten Sumbawa dan Sumbawa Barat berharap, Kementerian PKP RI dapat menjadikan Sumbawa sebagai Pilot Project dari program nasional ini. Cetusnya.`,
-    date: "15 Oktober 2025",
+      "Bupati Sumbawa, Ir. H. Syarafuddin Jarot, M.P., bertemu masyarakat Kecamatan Moyo Utara terkait pengelolaan lahan penanaman jagung di Ruang Rapat Lantai I Kantor Bupati Sumbawa...",
+    content: `
+Sumbawa, 12 Juni 2026 – Bupati Sumbawa, Ir. H. Syarafuddin Jarot, M.P., bertemu masyarakat Kecamatan Moyo Utara terkait pengelolaan lahan penanaman jagung di Ruang Rapat Lantai I Kantor Bupati Sumbawa, Jumat (12/6/2026). Pertemuan tersebut turut dihadiri Asisten Perekonomian dan Pembangunan Sekretaris Daerah Kabupaten Sumbawa, Camat Moyo Utara, para Kepala Desa se-Kecamatan Moyo Utara, serta perwakilan masyarakat.
+
+
+Dalam pertemuan tersebut, Bupati Sumbawa menyampaikan bahwa Pemerintah Daerah berupaya mencari solusi terbaik terkait pengelolaan lahan penanaman jagung yang berada di kawasan penghijauan. Menurutnya, diperlukan pola pengelolaan baru yang mampu menyeimbangkan kepentingan pelestarian lingkungan dengan kebutuhan ekonomi masyarakat.
+
+
+“Penghijauan jalan, tetapi masyarakat harus tetap hidup” ujar Bupati.
+
+
+Lebih lanjut, Bupati menjelaskan bahwa kondisi di lapangan menunjukkan tidak seluruh masyarakat memiliki lahan pertanian pribadi. Oleh karena itu, sebagian masyarakat memanfaatkan lahan yang berada dalam kawasan penghijauan untuk kegiatan bercocok tanam, lanjutnya.
+
+
+Bupati melanjutkan, dalam pertemuan tersebut, masyarakat menyampaikan harapannya agar ke depan pola penanaman jagung dapat dikombinasikan dengan tanaman kehutanan seperti tanaman kayu maupun tanaman buah. Untuk hal ini, Pemerintah Daerah akan berkoordinasi lebih lanjut dengan Kesatuan Pengelolaan Hutan (KPH) agar program penghijauan tidak dilakukan secara menyeluruh dalam satu waktu, melainkan secara bertahap sehingga tanaman kehutanan dan tanaman jagung dapat tumbuh berdampingan, tutupnya.
+
+
+Dengan pendekatan tersebut, diharapkan keseimbangan antara upaya pelestarian lingkungan dan keberlangsungan ekonomi masyarakat dapat terus terjaga.
+
+`,
+    date: "12 June, 2026",
     readTime: "7 menit",
     category: "Berita Utama",
     newsCategory: "nasional",
     author: "Admin SumbawaKab",
-    image: "/News_pic/20241116064414.jpg",
+    image: "/News_pic/20260615112401.jpg",
     views: "5.2k",
   },
   {

@@ -116,7 +116,7 @@ export function News() {
                     <Link key={item.id} to={`/berita/${item.id}`}>
                       <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-gray-200 group">
                         <div className="flex gap-3 p-3">
-                          <div className="relative w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden">
+                          <div className="relative w-24 h-24 shrink-0 rounded-lg overflow-hidden">
                             <ImageWithFallback
                               src={item.image}
                               alt={item.title}
@@ -223,7 +223,7 @@ export function News() {
                     <Link key={item.id} to={`/berita/${item.id}`}>
                       <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-gray-200 group">
                         <div className="flex gap-3 p-3">
-                          <div className="relative w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden">
+                          <div className="relative w-24 h-24 shrink-0 rounded-lg overflow-hidden">
                             <ImageWithFallback
                               src={item.image}
                               alt={item.title}

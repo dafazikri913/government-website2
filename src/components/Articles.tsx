@@ -132,7 +132,7 @@ function ArticleCard({ article }: { article: any }) {
       <div className="bg-white rounded-lg overflow-hidden border-2 border-gray-100 hover:border-[#84CC16] transition-all shadow-sm hover:shadow-md group cursor-pointer h-full">
         <div className="flex flex-col sm:flex-row gap-5 p-5 h-full">
           {/* Image */}
-          <div className="relative w-full sm:w-48 h-48 flex-shrink-0 rounded-lg overflow-hidden">
+          <div className="relative w-full sm:w-48 h-48 shrink-0 rounded-lg overflow-hidden">
             <ImageWithFallback
               src={article.image}
               alt={article.title}

@@ -119,7 +119,7 @@ export function NewsDetailPage() {
                               <ImageWithFallback
                                 src={item.image}
                                 alt={item.title}
-                                className="w-20 h-20 rounded-lg object-cover flex-shrink-0"
+                                className="w-20 h-20 rounded-lg object-cover shrink-0"
                               />
                               <div className="flex-1 min-w-0">
                                 <h4 className="text-sm line-clamp-2 group-hover:text-[#84CC16] transition-colors mb-1">
@@ -152,7 +152,7 @@ export function NewsDetailPage() {
                               <ImageWithFallback
                                 src={item.image}
                                 alt={item.title}
-                                className="w-20 h-20 rounded-lg object-cover flex-shrink-0"
+                                className="w-20 h-20 rounded-lg object-cover shrink-0"
                               />
                               <div className="flex-1 min-w-0">
                                 <h4 className="text-sm line-clamp-2 group-hover:text-[#84CC16] transition-colors mb-1">

@@ -27,63 +27,74 @@ export function NewsPage() {
   const nasionalNews: NewsItem[] = [
     {
       id: 1,
-      title: "Presiden Resmikan Proyek Infrastruktur Nasional di NTB",
-      excerpt: "Presiden RI meresmikan proyek infrastruktur strategis yang akan meningkatkan konektivitas antar pulau di Nusa Tenggara Barat.",
-      date: "5 Desember 2025",
+      title: "PJS BUPATI SAMBUT KEDATANGAN WAKIL MENTERI PKP RI",
+      excerpt:
+        "Pjs Bupati Sumbawa Sambut Kedatangan Wakil Menteri Perumahan dan Kawasan Permukiman Republik Indonesia ...",
+      date: "16 November, 2024",
       category: "Infrastruktur",
-      location: "Jakarta",
+      location: "Sumbawa Besar",
       views: 1234,
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop"
+      image: "/News_pic/20241116064414.jpg",
     },
     {
       id: 2,
       title: "Kementerian Pertanian Luncurkan Program Ketahanan Pangan 2025",
-      excerpt: "Program baru untuk meningkatkan produktivitas pertanian dan ketahanan pangan nasional dengan fokus pada daerah-daerah potensial.",
+      excerpt:
+        "Program baru untuk meningkatkan produktivitas pertanian dan ketahanan pangan nasional dengan fokus pada daerah-daerah potensial.",
       date: "3 Desember 2025",
       category: "Pertanian",
       location: "Jakarta",
       views: 987,
-      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=600&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=600&fit=crop",
     },
     {
       id: 3,
       title: "Pemerintah Tingkatkan Anggaran Pendidikan di Daerah Terpencil",
-      excerpt: "Kebijakan baru alokasi anggaran pendidikan untuk meningkatkan kualitas pendidikan di daerah terpencil dan perbatasan.",
+      excerpt:
+        "Kebijakan baru alokasi anggaran pendidikan untuk meningkatkan kualitas pendidikan di daerah terpencil dan perbatasan.",
       date: "1 Desember 2025",
       category: "Pendidikan",
       location: "Jakarta",
       views: 876,
-      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
     },
     {
       id: 4,
       title: "Menteri Kesehatan Canangkan Gerakan Indonesia Sehat 2025",
-      excerpt: "Gerakan nasional untuk meningkatkan kesadaran masyarakat tentang pentingnya hidup sehat dan pencegahan penyakit.",
+      excerpt:
+        "Gerakan nasional untuk meningkatkan kesadaran masyarakat tentang pentingnya hidup sehat dan pencegahan penyakit.",
       date: "28 November 2025",
       category: "Kesehatan",
       location: "Jakarta",
       views: 1456,
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
     },
     {
       id: 5,
       title: "Program Digitalisasi Pemerintahan Diperluas ke Seluruh Indonesia",
-      excerpt: "Pemerintah mempercepat transformasi digital layanan publik untuk meningkatkan efisiensi dan transparansi.",
+      excerpt:
+        "Pemerintah mempercepat transformasi digital layanan publik untuk meningkatkan efisiensi dan transparansi.",
       date: "25 November 2025",
       category: "Teknologi",
       location: "Jakarta",
       views: 2341,
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop",
     },
     {
       id: 6,
       title: "Kementerian ESDM Targetkan Energi Terbarukan 30% di 2025",
-      excerpt: "Target ambisius penggunaan energi terbarukan untuk mengurangi emisi karbon dan ketergantungan energi fosil.",
+      excerpt:
+        "Target ambisius penggunaan energi terbarukan untuk mengurangi emisi karbon dan ketergantungan energi fosil.",
       date: "22 November 2025",
       category: "Energi",
       location: "Jakarta",
       views: 1567,
-      image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=600&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=600&fit=crop",
     },
   ];
 
@@ -91,82 +102,98 @@ export function NewsPage() {
     {
       id: 1,
       title: "Bupati Sumbawa Launching Program Sumbawa Maju Bersama",
-      excerpt: "Program pemberdayaan masyarakat yang fokus pada peningkatan ekonomi lokal dan kesejahteraan masyarakat Sumbawa.",
+      excerpt:
+        "Program pemberdayaan masyarakat yang fokus pada peningkatan ekonomi lokal dan kesejahteraan masyarakat Sumbawa.",
       date: "6 Desember 2025",
       category: "Pembangunan",
       location: "Sumbawa",
       views: 2456,
-      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop",
     },
     {
       id: 2,
       title: "Festival Budaya Sumbawa 2025 Siap Digelar",
-      excerpt: "Festival tahunan yang menampilkan kekayaan budaya dan tradisi Sumbawa akan diselenggarakan selama 5 hari.",
+      excerpt:
+        "Festival tahunan yang menampilkan kekayaan budaya dan tradisi Sumbawa akan diselenggarakan selama 5 hari.",
       date: "4 Desember 2025",
       category: "Budaya",
       location: "Sumbawa",
       views: 1876,
-      image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&h=600&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&h=600&fit=crop",
     },
     {
       id: 3,
       title: "Pemkab Sumbawa Resmikan Pasar Rakyat Modern",
-      excerpt: "Pasar rakyat dengan fasilitas modern diresmikan untuk meningkatkan kenyamanan pedagang dan pembeli.",
+      excerpt:
+        "Pasar rakyat dengan fasilitas modern diresmikan untuk meningkatkan kenyamanan pedagang dan pembeli.",
       date: "2 Desember 2025",
       category: "Ekonomi",
       location: "Sumbawa",
       views: 1234,
-      image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800&h=600&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800&h=600&fit=crop",
     },
     {
       id: 4,
       title: "Produksi Madu Sumbawa Tembus Pasar Ekspor",
-      excerpt: "Madu berkualitas tinggi dari Sumbawa berhasil menembus pasar ekspor ke beberapa negara Asia dan Eropa.",
+      excerpt:
+        "Madu berkualitas tinggi dari Sumbawa berhasil menembus pasar ekspor ke beberapa negara Asia dan Eropa.",
       date: "30 November 2025",
       category: "Ekonomi",
       location: "Sumbawa",
       views: 3421,
-      image: "https://images.unsplash.com/photo-1587049352846-4a222e784e38?w=800&h=600&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1587049352846-4a222e784e38?w=800&h=600&fit=crop",
     },
     {
       id: 5,
       title: "Rumah Sakit Daerah Sumbawa Tambah Layanan Unggulan",
-      excerpt: "Fasilitas kesehatan baru dan layanan spesialis ditambahkan untuk meningkatkan kualitas pelayanan kesehatan.",
+      excerpt:
+        "Fasilitas kesehatan baru dan layanan spesialis ditambahkan untuk meningkatkan kualitas pelayanan kesehatan.",
       date: "27 November 2025",
       category: "Kesehatan",
       location: "Sumbawa",
       views: 987,
-      image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop",
     },
     {
       id: 6,
       title: "Sumbawa Raih Penghargaan Kabupaten Inovatif 2025",
-      excerpt: "Penghargaan dari pemerintah pusat atas inovasi dalam pelayanan publik dan pembangunan daerah.",
+      excerpt:
+        "Penghargaan dari pemerintah pusat atas inovasi dalam pelayanan publik dan pembangunan daerah.",
       date: "24 November 2025",
       category: "Prestasi",
       location: "Sumbawa",
       views: 2134,
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
     },
     {
       id: 7,
       title: "Destinasi Wisata Moyo Masuk Nominasi Wisata Terbaik Indonesia",
-      excerpt: "Pulau Moyo dinominasikan sebagai salah satu destinasi wisata terbaik di Indonesia tahun 2025.",
+      excerpt:
+        "Pulau Moyo dinominasikan sebagai salah satu destinasi wisata terbaik di Indonesia tahun 2025.",
       date: "20 November 2025",
       category: "Pariwisata",
       location: "Sumbawa",
       views: 4567,
-      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop",
     },
     {
       id: 8,
       title: "Petani Sumbawa Adopsi Teknologi Pertanian Modern",
-      excerpt: "Program pemerintah daerah membantu petani mengadopsi teknologi modern untuk meningkatkan produktivitas.",
+      excerpt:
+        "Program pemerintah daerah membantu petani mengadopsi teknologi modern untuk meningkatkan produktivitas.",
       date: "18 November 2025",
       category: "Pertanian",
       location: "Sumbawa",
       views: 1543,
-      image: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&h=600&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&h=600&fit=crop",
     },
   ];
 
@@ -180,7 +207,7 @@ export function NewsPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      
+
       <main className="pt-24">
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -208,8 +235,7 @@ export function NewsPage() {
                       activeTab === tab.id
                         ? "text-[#EE0000] border-b-2 border-[#EE0000]"
                         : "text-gray-600 hover:text-gray-900"
-                    }`}
-                  >
+                    }`}>
                     {tab.label}
                   </button>
                 ))}
@@ -221,8 +247,7 @@ export function NewsPage() {
               {currentNews.map((news) => (
                 <div
                   key={news.id}
-                  className="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow group cursor-pointer"
-                >
+                  className="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow group cursor-pointer">
                   {/* Image */}
                   <div className="relative h-48 overflow-hidden">
                     <img
