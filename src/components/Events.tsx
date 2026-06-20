@@ -242,10 +242,6 @@ export function Events() {
               Kalender Acara
             </p>
             <h2 className="text-black mb-3">Acara Mendatang</h2>
-            <p className="text-gray-600 text-lg">
-              Bergabunglah dengan kami dalam berbagai acara dan kegiatan
-              masyarakat
-            </p>
           </div>
         </div>
 

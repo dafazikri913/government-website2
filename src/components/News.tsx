@@ -51,13 +51,9 @@ export function News() {
         <div className="mb-8">
           <div className="max-w-2xl">
             <p className="uppercase tracking-wider text-[#84CC16] mb-2 text-sm">
-              Berita Terbaru
+              Berita
             </p>
-            <h2 className="text-black mb-2">Berita & Pengumuman</h2>
-            <p className="text-gray-600">
-              Tetap terinformasi dengan berita dan pembaruan terkini dari
-              pemerintah
-            </p>
+            <h2 className="text-black mb-2">Berita Nasional & Daerah</h2>
           </div>
         </div>
 

@@ -64,13 +64,9 @@ export function AllNewsPage() {
           <div className="mb-12">
             <div className="text-center max-w-2xl mx-auto">
               <p className="uppercase tracking-wider text-[#84CC16] mb-3">
-                Semua Berita Terkini
+                Semua Berita
               </p>
-              <h1 className="text-black mb-3">Berita & Pengumuman</h1>
-              <p className="text-gray-600 text-lg">
-                Informasi terbaru dan terlengkap dari pemerintah daerah dan
-                nasional
-              </p>
+              <h1 className="text-black mb-3">Nasional & Daerah</h1>
             </div>
           </div>
 

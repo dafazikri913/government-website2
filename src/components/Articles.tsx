@@ -51,13 +51,7 @@ export function Articles() {
         {/* Header */}
         <div className="mb-12">
           <div className="max-w-2xl">
-            <p className="uppercase tracking-wider text-[#84CC16] mb-3">
-              Artikel Pilihan
-            </p>
             <h2 className="text-black mb-3">Artikel & Pengumuman</h2>
-            <p className="text-gray-600 text-lg">
-              Bacaan mendalam dan informasi penting seputar kebijakan daerah
-            </p>
           </div>
         </div>
 
