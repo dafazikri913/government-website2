@@ -19,11 +19,20 @@ export function ArticlePage() {
   // Fungsi untuk parse tanggal Indonesia ke Date object
   const parseIndonesianDate = (dateStr: string) => {
     const months: { [key: string]: number } = {
-      'Januari': 0, 'Februari': 1, 'Maret': 2, 'April': 3,
-      'Mei': 4, 'Juni': 5, 'Juli': 6, 'Agustus': 7,
-      'September': 8, 'Oktober': 9, 'November': 10, 'Desember': 11
+      Januari: 0,
+      Februari: 1,
+      Maret: 2,
+      April: 3,
+      Mei: 4,
+      Juni: 5,
+      Juli: 6,
+      Agustus: 7,
+      September: 8,
+      Oktober: 9,
+      November: 10,
+      Desember: 11,
     };
-    const parts = dateStr.split(' ');
+    const parts = dateStr.split(" ");
     const day = parseInt(parts[0]);
     const month = months[parts[1]];
     const year = parseInt(parts[2]);
@@ -38,9 +47,10 @@ export function ArticlePage() {
   });
 
   // Filter berdasarkan activeTab
-  const currentItems = activeTab === "artikel" 
-    ? sortedArticles.filter(item => item.articleType === "artikel")
-    : sortedArticles.filter(item => item.articleType === "pengumuman");
+  const currentItems =
+    activeTab === "artikel"
+      ? sortedArticles.filter((item) => item.articleType === "artikel")
+      : sortedArticles.filter((item) => item.articleType === "pengumuman");
 
   const Icon = activeTab === "artikel" ? FileText : Megaphone;
 
@@ -52,7 +62,7 @@ export function ArticlePage() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      
+
       <main className="pt-24">
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -82,8 +92,7 @@ export function ArticlePage() {
                         activeTab === tab.id
                           ? "text-[#EE0000] border-b-2 border-[#EE0000]"
                           : "text-gray-600 hover:text-gray-900"
-                      }`}
-                    >
+                      }`}>
                       <TabIcon className="w-5 h-5" />
                       <span>{tab.label}</span>
                     </button>
@@ -95,13 +104,14 @@ export function ArticlePage() {
             {/* Articles/Announcements List */}
             <div className="space-y-6">
               {currentItems.map((item) => (
-                <Link to={`/artikel/${item.id}`} key={item.id} className="block">
-                  <div
-                    className="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow group cursor-pointer"
-                  >
+                <Link
+                  to={`/artikel/${item.id}`}
+                  key={item.id}
+                  className="block">
+                  <div className="bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow group cursor-pointer">
                     <div className="md:flex">
                       {/* Image */}
-                      <div className="md:w-80 h-64 md:h-auto overflow-hidden flex-shrink-0">
+                      <div className="md:w-80 h-64 md:h-auto overflow-hidden shrink-0">
                         <ImageWithFallback
                           src={item.image}
                           alt={item.title}
@@ -115,7 +125,9 @@ export function ArticlePage() {
                           <div className="flex items-center gap-2">
                             <Icon className="w-5 h-5 text-[#EE0000]" />
                             <span className="text-xs uppercase tracking-wider text-[#EE0000]">
-                              {activeTab === "artikel" ? "Artikel" : "Pengumuman"}
+                              {activeTab === "artikel"
+                                ? "Artikel"
+                                : "Pengumuman"}
                             </span>
                           </div>
                         </div>
@@ -123,9 +135,7 @@ export function ArticlePage() {
                         <h3 className="text-black mb-3 group-hover:text-[#EE0000] transition-colors">
                           {item.title}
                         </h3>
-                        <p className="text-gray-600 mb-4">
-                          {item.excerpt}
-                        </p>
+                        <p className="text-gray-600 mb-4">{item.excerpt}</p>
 
                         {/* Meta Info */}
                         <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500">
@@ -136,10 +146,6 @@ export function ArticlePage() {
                           <div className="flex items-center gap-2">
                             <User className="w-4 h-4" />
                             <span>{item.author}</span>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <Eye className="w-4 h-4" />
-                            <span>{item.views.toLocaleString()} views</span>
                           </div>
                         </div>
 

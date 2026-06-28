@@ -4,7 +4,7 @@ export interface ArticleItem {
   excerpt: string;
   content: string; // Sekarang menggunakan string tunggal
   author: string;
-  views: string;
+
   date: string;
   readTime: string;
   category: string;
@@ -37,104 +37,175 @@ Nah jika ada diantara kalian yang seorang perokok dan ingin berhenti merokok mun
     category: "",
     articleType: "artikel",
     author: "Lala Asri Juniarsih, Harmili,S.Kep.,Ns.,M.Kep",
-    views: "2.4k",
+
     image:
       "../src/assets/article_pic/a77fb3eb15b008561d074d077f87c6810d61bd73.png",
   },
   {
     id: 2,
-    title: "Pengelolaan Keuangan Daerah yang Transparan dan Akuntabel",
+    title:
+      "Indonesia, Negara Asia Tenggara Pertama yang Terpilih Menjadi Tuan Rumah World Water Forum!",
     excerpt:
-      "Artikel ini membahas pentingnya transparansi dan akuntabilitas...",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Transparansi dan akuntabilitas dalam pengelolaan keuangan daerah merupakan pilar utama good governance yang menjadi komitmen pemerintah daerah.
+      "Dari Marrakes sampai Bali 🚀 Yuk, kita ikutin perjalanan forum yang berusaha wujudkan air dunia tetap bersih lestari 🌊",
 
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sistem informasi keuangan daerah yang terintegrasi memungkinkan masyarakat untuk mengakses informasi anggaran secara real-time.
+    content: `
+Pagelaran penting ini akan segera dilaksanakan di tanah air dengan tema “Water For Shared Prosperity”
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Audit internal dan eksternal dilakukan secara berkala untuk memastikan tidak ada penyimpangan dalam penggunaan anggaran.
+✨ The 10th World Water Forum 💧
+🗓️ 18-25 Mei
+📍 Bali, Indonesia
 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Partisipasi publik dalam penyusunan anggaran menjadi mekanisme penting untuk memastikan anggaran benar-benar mencerminkan kebutuhan masyarakat.`,
+Ikutin terus update informasinya, ya! 😉
+
+#10thWorldWaterForum
+#WaterForSharedProsperity
+#WonderfulIndonesia
+#PesonaIndonesia
+#DiIndonesiaAja
+#BanggaBerwisataDiIndonesia
+
+
+From Marrakech to Bali 🚀 
+Let’s explore the milestones of the World Water Forum and shining a light on global efforts for sustainable water. 🌊
+
+This significant event will soon take place in our country with the theme “Water For Shared Prosperity”!
+
+✨ The 10th World Water Forum 💧
+🗓️ May 18-25
+📍 Bali, Indonesia
+
+Stay tuned for updates! 😉
+
+#10thWorldWaterForum
+#WaterForSharedProsperity
+#WonderfulIndonesia
+#PesonaIndonesia
+#DiIndonesiaAja
+#BanggaBerwisataDiIndonesia
+`,
     date: "5 Desember 2025",
     readTime: "7 menit",
     category: "",
     articleType: "artikel",
-    author: "Prof. Siti Aminah, M.Si",
-    views: "3.1k",
-    image:
-      "https://images.unsplash.com/photo-1764983253036-edd0f55af679?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGNpdHklMjB0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbnxlbnwxfHx8fDE3NzA2OTA2NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    author: "Admin Sumbawakab",
+    image: "/public/article_pic/DSC03671.jpg",
   },
   {
     id: 3,
-    title: "Pengumuman: Pemberlakuan Jam Malam Selama Festival Budaya 2026",
-    excerpt: "Pemerintah daerah mengumumkan pemberlakuan jam malam khusus...",
-    content: `Dalam rangka menjaga keamanan dan ketertiban selama Festival Budaya Tahunan 2026, Pemerintah Kabupaten Sumbawa menetapkan pemberlakuan jam malam khusus yang akan berlaku mulai 15 Januari hingga 20 Januari 2026.
-
-Masyarakat diimbau untuk tetap berada di area festival atau kembali ke tempat penginapan setelah pukul 23.00 WITA. Petugas keamanan gabungan dari TNI, Polri, dan Satpol PP akan melakukan patroli rutin di area festival.
-
-Pengecualian jam malam diberikan kepada penyelenggara acara, panitia festival, petugas keamanan, dan tenaga medis yang bertugas. Mereka wajib menunjukkan identitas resmi saat melewati pos pengamanan.`,
-    date: "10 Desember 2025",
+    title: "Digital Entrepreneurship Academy",
+    excerpt:
+      "BPSDMP Kominfo Surabaya* mengadakan pelatihan yang dilaksanakan secara tatap muka dan gratis* untuk *UMKM di Kab. Sumbawa",
+    content: `dengan mengusung tema *Pemasaran Digital Dasar Batch 16* *📦 Kuota Peserta* 150 Peserta *⌛ Pendaftaran* 23 Mei - 12 Juni 2024 *⏰ 
+    Pelaksanaan Pelatihan* 13 Juni - 14 Juni 2024 *⏳ Durasi Pelatihan* 2 Hari * Hari 1 - 7JP (5 Jam 25 Menit) * 
+    Hari 2 - 6 JP (4 Jam 50 Menit) *Peserta wajib berkomitmen mengikuti pelatihan selama 2 hari penuh* *📝 
+    Persyaratan Peserta* 1. Warga Negara Indonesia dibuktikan dengan KTP/KK 3. Terdaftar di web Digitalent 2. 
+    Diutamakan berusia 17-50 tahun 3. Sudah memiliki usaha namun belum memanfaatkan teknologi digital 
+    4. Memiliki email pribadi/ usaha 5. Telah lulus dari Pelatihan Kewirausahaan Digital Dasar (Dasar I) Optional atau Lulus Tes Penempatan Pelatihan Pemasaran Digital Dasar (Dasar II) *📲 Link Pendaftaran* Pemasaran Digital Dasar https://komin.fo/pdd1624 *📲 Cara Pendaftaran* Step 1 (Daftar Akun) https://komin.fo/daftarakun Step 2 (Daftar Pelatihan) https://youtu.be/pAVP9_-MVHE?si=je15mDRw70k-_ool *📣 Info* Harap pada waktu pendaftaran agar mencantumkan nomor telepon yang bisa dihubungi (agar kami pihak panitia bisa menghubungi langsung kepada peserta) *☎ Contact Person* Lingga 083830953020 Pak Khusaeri 085730406938 Riska 085231631 *NOTE* * Peserta melalui proses seleksi * Peserta tidak mendapatkan penginapan * Peserta tidak mendapatkan uang transport dan uang harian * Peserta hanya mendapatkan konsumsi * Peserta yang lulus akan dihubungi melalui grup WA * Peserta yang bisa menyelesaikan pelatihan akan mendapatkan Sertifikat Pelatihan.`,
+    date: "10 Mei 2024",
     readTime: "5 menit",
     category: "",
     articleType: "pengumuman",
-    author: "Humas Kabupaten Sumbawa",
-    views: "5.2k",
-    image:
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdWx0dXJhbCUyMGZlc3RpdmFsJTIwaW5kb25lc2lhfGVufDF8fHx8MTc3MDY5MDY3N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    author: "Admin Sumbawakab",
+
+    image: "/public/article_pic/20240605020013.jpg",
   },
   {
     id: 4,
-    title: "Potensi Ekonomi Kreatif sebagai Penggerak Ekonomi Lokal",
+    title: "MENTERI ESDM RI RESMIKAN INFRASTRUKTUR KELISTRIKAN DI NTB DAN NTT",
     excerpt:
-      "Mengeksplorasi bagaimana ekonomi kreatif dapat menjadi motor penggerak...",
-    content: `Ekonomi kreatif memiliki potensi besar sebagai penggerak pertumbuhan ekonomi lokal yang inklusif dan berkelanjutan. Sektor ini tidak hanya menciptakan nilai ekonomi tetapi juga melestarikan budaya lokal.
+      "Menteri Energi dan Sumber Daya Mineral Republik Indonesia Ignasius Jonan didampingi Gubernur NTB, Bupati Sumbawa, dan Wakil Bupati Dompu,",
+    content: `Dirjen Ketenagalistrikan Kementerian ESDM , Plt Direktur Utama PT. PLN, meresmikan infrastruktur kelistrikan di Nusa Tenggara Barat dan Nusa Tenggara Timur, yang ditandai dengan penekanan tombol sirine dan penandatanganan prasasti, pada Kamis sore (25/7) di PLTMG Sumbawa 50 MW di Labuhan Badas.
 
-Industri kreatif di daerah mencakup berbagai subsektor seperti kerajinan tangan, fashion, kuliner, musik, film, dan seni pertunjukan. Digitalisasi membuka peluang baru bagi pelaku ekonomi kreatif.
+Menteri ESDM RI Ignasius Jonan dalam sambutannya mengharapkan agar hadirnya infrastruktur kelistrikan ini akan membuat kelistrikan di NTB dan NTT akan semakin handal, sehingga pembangkit-pembangkit baru dapat meningkatkan kapasitas penyediaan listrik, selain itu, dengan beroperainya Tol Listrik Sumbawa sepanjang 461 kms membuat sistem kelistrikan Sumbawa dan Bima menjadi interkoneksi.
 
-Pemerintah daerah memberikan dukungan melalui berbagai program seperti pelatihan kewirausahaan, akses permodalan, dan fasilitasi akses pasar. Hub kreatif dan co-working space juga disediakan sebagai tempat kolaborasi.`,
-    date: "3 Desember 2025",
+Dikatakan, khusus di NTB, hingga Bulan Juni 2019, rasio elektrifikasi telah mencapai 97,9 persen. Beroperasinya infrastruktur-infrastruktur kelistrikan baru ini dapat meningkatkan rasio elektrifikasi mencapai 99 persen di akhir tahun 2019. Kehadiran infrastruktur kelistrikan juga diharapkan dapat mendorong munculnya bisnis dan industri di Pulau Sumbawa. “Kita harus sepakati akhir tahun 2019 untuk NTB mencapai 99 persen. PLN terus bekerja keras, tentu dibantu Pemerintah Daerah,” ucap Jonan. Terkait hal tersebut, Menteri menghimbau kepada Gubernur dan Bupati untuk dapat mengalokasikan sebagian anggaran untuk layanan sambung gratis bagi rumah tangga kurang mampu.
+
+Dalam kesempatan baik tersebut, Menteri menghadiahkan Politeknik Pertambangan untuk Kabupaten Sumbawa, yang diharapkan dapat bergabung atau dijadikan satu dengan UTS (Universitas Teknologi Sumbawa), agar UTS ke depan tambah besar dan menjadi institusi pendidikan yang terkenal di seluruh Indonesia.
+
+Sementara itu, Gubernur NTB Dr. H. Zulkiflimansyah, SE.,M.Sc dalam sambutan singkatnya menyampaikan kapal besar “Jatra” yang melayani rute Surabaya—Pelabuhan Badas Sumbawa akan segera beroperasi. Kepastian ini setelah dirinya menemui Dirjen Perhubungan Laut dan Dirjen Perhubungan Darat di Jakarta untuk penyelesaian ijin track kapal tersebut. “Insyaa Allah 17 Agustus nanti akan berlayar dari Surabaya ke Badas,” ucap Gubernur.
+
+Untuk menyambut kehadiran Jatra, Gubernur berharap Pelabuhan Badas Sumbawa ditata lebih baik dan seksi sehingga nanti mobilitas manusia dan barang cukup besar.
+Untuk diketahui, selain menemui Dirjen Perhubungan Laut dan Dirjen Perhubungan Darat, sebelumnya orang nomor satu di NTB ini bersilaturrahim dengan Direktur Utama PT ASDP Indonesia Ferry (Persero), Ira Puspadewi di Kantor ASDP Jakarta, Rabu (24/7/2019). Dalam pertemuan itu, Gubernur diberikan kapal besar dari Surabaya langsung ke Pelabuhan Badas, Kabupaten Sumbawa. Kapal Jatra ini sama dengan Kapal Legundi yang sudah melayani rute Surabaya langsung ke Pelabuhan Lembar, Lombok.
+
+Sebelumnya, Dirjen Ketenagalistrikan Kementerian ESDM Rida Mulyana melaporkan kegiatan ini merupakan wujud nyata dari PLN untuk mempercepat penyediaan infrastruktur yang handal dan berkesinambungan dengan harga terjangkau. Adapun proyek kelistrikan yang diresmikan di Wilayah NTB adalah PLTMG Sumbawa 50 MV, PLTMG Bima 50 MV, GI (Gardu Induk) 150 KV Empang 20 MVA, GI 70 KV/150 KV Dompu Extention 60 MVA, GI 70 KV Bima extention 30 MVA, dan GI 70 kKV Bonto Extention, dan Tol Listrik Sumbawa yaitu SUTT 150 KV GI Taliwang - PLTU Sumbawa Barat, SUTT 150 KV PLTMG Sumbawa - GI Labuhan, SUTT 150 KV Labuhan – Empang, SUTT 150 KV Empang – Dompu. Sementara proyek kelistrikan di NTT yang diresmikan adalah PLTM (Pembangkit Listrik Tenaga Matahari) Maumere 40 MV, PLTS Maumere Ropa Ende 2x1 MWp, dan PLTMH (Pembangkit Listrik Tenaga Mikro Hidro) Sita – Borong 2x500 KW.
+
+PT. PLN melalui program PLN Peduli memberikan bantuan sambungan listrik gratis masing-masing kepada 1.000 rumah tangga tidak mampu. Pemerintah Provinsi NTB juga memberikan hibah berupa sambungan listrik gratis kepada 950 rumah tangga tidak mampu.
+
+Dalam acara tersebut juga diputarkan video profile proyek kelistrikan di NTB dan NTT. Kegiatan dilanjutkan dengan peninjauan secara langsung proyek PLTMG 50 Sumbawa, dan peninjauan dan penyalaan listrik gratis pada rumah warga di Dusun Kanar Desa Labuhan Badas oleh Menteri ESDM. 
+
+SUMBER : Siaran Pers Humas Setda Kabupaten Sumbawa`,
+    date: "26 July, 2019",
     readTime: "7 menit",
     category: "",
     articleType: "artikel",
-    author: "Ir. Budi Santoso, M.M",
-    views: "1.8k",
-    image:
-      "https://images.unsplash.com/photo-1555069855-e580a9adbf43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBwYXJ0aWNpcGF0aW9uJTIwbWVldGluZ3xlbnwxfHx8fDE3NzA2OTA2NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    author: "Admin Sumbawakab",
+
+    image: "/public/article_pic/20190728112248.jpg",
   },
   {
     id: 5,
-    title: "Pengumuman: Penutupan Sementara Jalan Utama untuk Perbaikan",
+    title: "Rute Baru Penerbangan Sumbawa-Denpasar",
     excerpt:
-      "Dinas Pekerjaan Umum mengumumkan penutupan sementara Jalan Utama...",
-    content: `Dinas Pekerjaan Umum dan Penataan Ruang Kabupaten Sumbawa mengumumkan akan dilakukan penutupan sementara Jalan Lintas Sumbawa KM 15-20 mulai pada 25 Desember 2025 hingga 8 Januari 2026.
-
-Penutupan jalan ini diperlukan untuk melakukan perbaikan menyeluruh pada struktur jalan yang mengalami kerusakan akibat cuaca ekstrem. Pekerjaan meliputi pengaspalan ulang dan perbaikan drainase.
-
-Selama periode penutupan, pengguna jalan dapat menggunakan rute alternatif melalui Jalan Bypass Sumbawa atau Jalan Lama Moyo. Rambu-rambu penunjuk arah akan dipasang di beberapa titik strategis.`,
+      "Penerbangan baru dengan Wings Air akan dibuka setiap hari mulai 21 Juni 2024",
+    content: `Penerbangan baru dengan Wings Air akan dibuka setiap hari mulai 21 Juni 2024`,
     date: "20 Desember 2025",
     readTime: "4 menit",
     category: "",
     articleType: "pengumuman",
-    author: "Dinas PU Kabupaten Sumbawa",
-    views: "6.8k",
-    image:
-      "https://images.unsplash.com/photo-1581094271901-8022df4466f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2FkJTIwY29uc3RydWN0aW9uJTIwd29ya2Vyc3xlbnwxfHx8fDE3NzA2OTA2Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    author: "Admin Sumbawakab",
+
+    image: "/public/article_pic/20240611112657.jpg",
   },
   {
     id: 6,
-    title: "Inovasi Pelayanan Publik Berbasis Teknologi",
+    title:
+      "PANITIA HUT Ke 65 KABUPATEN SUMBAWA TAHUN 2024 SEKSI KARNAVAL BUDAYA DAN KIRAB PATAKA",
     excerpt:
-      "Studi kasus implementasi teknologi informasi dalam meningkatkan kualitas...",
-    content: `Inovasi dalam pelayanan publik menjadi keharusan di era digital untuk memenuhi ekspektasi masyarakat yang semakin tinggi. Teknologi informasi memberikan solusi untuk meningkatkan kecepatan dan akurasi.
+      " Panitia Seksi Karnaval Budaya dan Kirab Pataka dalam rangka HUT ke 65 Kabupaten Sumbawa dengan ini menyampaikan nama peserta/barisan dengan nilai pemenuhan kriteria tertinggi sebagaimana diatur dalam Panduan Karnaval Budaya.",
+    content: `Adapun nama peserta/barisan tersebut dan urutan nilai tertinggi adalah sebagai berikut:
 
-Implementasi sistem pelayanan online memungkinkan masyarakat mengurus berbagai keperluan administrasi tanpa harus datang ke kantor. Aplikasi mobile menyediakan akses 24/7.
+Jenjang PAUD
+Juara I =TK IT Taamasa, Labuhan Badas
 
-Dashboard monitoring memungkinkan pimpinan untuk memantau kinerja pelayanan secara real-time. Inovasi ini bukan hanya tentang digitalisasi, tetapi transformasi budaya pelayanan yang responsif.`,
-    date: "1 Desember 2025",
+Juara II =HIMPAUDI, Empang
+
+Juara III =TK Sandhy Putra Telkom, Sumbawa
+
+Jenjang SD
+Juara I =SDN 4, Sumbawa
+
+Juara II =SDN 1, Lape
+
+Juara III =SDN 2, Sumbawa
+
+Jenjang SMP
+Juara I =SMPN 2, Labuhan Badas
+
+Juara II =SMPN 3, Sumbawa
+
+Juara III =SMPN 1, Sumbawa
+
+Jenjang SMA
+Juara I =SMAN 2, Sumbawa
+
+Juara II =SMAN 1, Sumbawa
+
+Juara III =SMKN 1, Sumbawa
+
+Instansi dan Umum
+Juara I =Kecamatan Buer
+
+Juara II =Kecamatan Lopok
+
+Juara III =Kecamatan Maronge
+
+Kategori luar biasa = SLB Sumbawa`,
+    date: "24 January, 2024",
     readTime: "6 menit",
     category: "",
     articleType: "artikel",
     author: "Drs. Hendra Pratama",
-    views: "2.7k",
-    image:
-      "https://images.unsplash.com/photo-1605152276897-4f618f831968?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwdWJsaWMlMjBzZXJ2aWNlJTIwY3VzdG9tZXIlMjBzdXBwb3J0fGVufDF8fHx8MTc3MDY5MDY3N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+
+    image: "/public/article_pic/20240124122913.jpeg",
   },
 ];

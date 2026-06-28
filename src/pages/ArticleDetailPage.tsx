@@ -75,7 +75,7 @@ export function ArticleDetailPage() {
                           <ImageWithFallback
                             src={item.image}
                             alt={item.title}
-                            className="w-20 h-20 rounded-lg object-cover flex-shrink-0"
+                            className="w-20 h-20 rounded-lg object-cover shrink-0"
                           />
                           <div className="flex-1 min-w-0">
                             <h4 className="text-sm line-clamp-2 group-hover:text-[#84CC16] transition-colors mb-1">
@@ -98,7 +98,7 @@ export function ArticleDetailPage() {
                 <div className="px-8 pt-8">
                   <div className="flex items-center gap-2 mb-4">
                     <Tag className="w-4 h-4 text-[#84CC16]" />
-                    <span className="text-sm uppercase tracking-wider text-[#84CC16] capitalize">
+                    <span className="text-sm tracking-wider text-[#84CC16] capitalize">
                       {article.articleType === "artikel"
                         ? "Artikel"
                         : "Pengumuman"}

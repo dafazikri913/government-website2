@@ -1,4 +1,4 @@
-import { User, ArrowRight, Eye } from "lucide-react";
+import { User, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Link } from "react-router";
@@ -156,7 +156,6 @@ function ArticleCard({ article }: { article: any }) {
               </div>
               <div className="flex items-center gap-3 text-gray-500 text-sm">
                 <div className="flex items-center gap-1">
-                  <Eye className="w-4 h-4" />
                   <span>{article.views}</span>
                 </div>
               </div>
