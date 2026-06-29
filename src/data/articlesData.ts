@@ -88,7 +88,7 @@ Stay tuned for updates! 😉
     category: "",
     articleType: "artikel",
     author: "Admin Sumbawakab",
-    image: "/public/article_pic/DSC03671.jpg",
+    image: "/article_pic/DSC03671.jpg",
   },
   {
     id: 3,
@@ -107,7 +107,7 @@ Stay tuned for updates! 😉
     articleType: "pengumuman",
     author: "Admin Sumbawakab",
 
-    image: "/public/article_pic/20240605020013.jpg",
+    image: "/article_pic/20240605020013.jpg",
   },
   {
     id: 4,
@@ -140,7 +140,7 @@ SUMBER : Siaran Pers Humas Setda Kabupaten Sumbawa`,
     articleType: "artikel",
     author: "Admin Sumbawakab",
 
-    image: "/public/article_pic/20190728112248.jpg",
+    image: "/article_pic/20190728112248.jpg",
   },
   {
     id: 5,
@@ -154,7 +154,7 @@ SUMBER : Siaran Pers Humas Setda Kabupaten Sumbawa`,
     articleType: "pengumuman",
     author: "Admin Sumbawakab",
 
-    image: "/public/article_pic/20240611112657.jpg",
+    image: "/article_pic/20240611112657.jpg",
   },
   {
     id: 6,
@@ -206,6 +206,6 @@ Kategori luar biasa = SLB Sumbawa`,
     articleType: "artikel",
     author: "Drs. Hendra Pratama",
 
-    image: "/public/article_pic/20240124122913.jpeg",
+    image: "/article_pic/20240124122913.jpeg",
   },
 ];
