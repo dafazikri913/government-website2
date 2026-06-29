@@ -38,8 +38,7 @@ Nah jika ada diantara kalian yang seorang perokok dan ingin berhenti merokok mun
     articleType: "artikel",
     author: "Lala Asri Juniarsih, Harmili,S.Kep.,Ns.,M.Kep",
 
-    image:
-      "../src/assets/article_pic/a77fb3eb15b008561d074d077f87c6810d61bd73.png",
+    image: "/article_pic/a77fb3eb15b008561d074d077f87c6810d61bd73.png",
   },
   {
     id: 2,
