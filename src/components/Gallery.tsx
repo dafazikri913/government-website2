@@ -19,7 +19,7 @@ export const allGalleryItems: GalleryItem[] = [
   // Foto
   {
     id: 1,
-    title: "Wonderful Sail to Indonesia ",
+    title: "Acara Festival Budaya Kantor Bupati ",
     category: "foto",
     date: "17 Agustus 2024",
     description: "Wonderful Sail to Indonesia 2019",
@@ -27,7 +27,7 @@ export const allGalleryItems: GalleryItem[] = [
   },
   {
     id: 2,
-    title: "Kunjungan Kerja Gubernur ke Kabupaten Sumbawa",
+    title: "Perlombaan Tarian Lenggo",
     category: "foto",
     date: "15 Agustus 2024",
     description: "Wonderful Sail to Indonesia 2019",
@@ -43,7 +43,7 @@ export const allGalleryItems: GalleryItem[] = [
   },
   {
     id: 4,
-    title: "Pembukaan Jembatan Penghubung Antar Desa",
+    title: "Istana Bale Loka Sumbawa",
     category: "foto",
     date: "5 Agustus 2024",
     description:
@@ -52,7 +52,7 @@ export const allGalleryItems: GalleryItem[] = [
   },
   {
     id: 5,
-    title: "Vaksinasi Massal COVID-19",
+    title: "Wonderful Sail to Indonesia 2019",
     category: "foto",
     date: "1 Agustus 2024",
     description: "Kegiatan vaksinasi massal untuk masyarakat Kabupaten Sumbawa",
@@ -60,7 +60,7 @@ export const allGalleryItems: GalleryItem[] = [
   },
   {
     id: 6,
-    title: "Pasar Rakyat Murah Ramadan",
+    title: "Kunjungan Australia Pada Festival Budaya",
     category: "foto",
     date: "25 Juli 2024",
     description:
@@ -69,7 +69,7 @@ export const allGalleryItems: GalleryItem[] = [
   },
   {
     id: 13,
-    title: "Pelatihan UMKM Digital Marketing",
+    title: "Kunjungan Australia Pada Festival Budaya 2",
     category: "foto",
     date: "22 Juli 2024",
     description:
@@ -449,7 +449,7 @@ export function Gallery() {
                     </div>
                   </>
                 ) : (
-                  <div className="bg-gradient-to-br from-[#84CC16]/20 to-[#65A30D]/20 h-48 flex items-center justify-center">
+                  <div className="bg-linear-to-br from-[#84CC16]/20 to-[#65A30D]/20 h-48 flex items-center justify-center">
                     {item.category === "foto" ? (
                       <Camera className="w-16 h-16 text-[#84CC16]/40" />
                     ) : (

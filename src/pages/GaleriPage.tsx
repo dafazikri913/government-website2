@@ -155,7 +155,7 @@ export default function GaleriPage() {
                         </div>
                       </>
                     ) : (
-                      <div className="bg-gradient-to-br from-[#84CC16]/20 to-[#65A30D]/20 h-48 flex items-center justify-center">
+                      <div className="bg-linear-to-br from-[#84CC16]/20 to-[#65A30D]/20 h-48 flex items-center justify-center">
                         {item.category === "foto" ? (
                           <Camera className="w-16 h-16 text-[#84CC16]/40" />
                         ) : (

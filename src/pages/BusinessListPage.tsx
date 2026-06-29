@@ -446,7 +446,7 @@ export function BusinessListPage() {
                 key={business.id}
                 className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all group flex flex-col">
                 {/* Image */}
-                <div className="relative h-48 overflow-hidden flex-shrink-0">
+                <div className="relative h-48 overflow-hidden shrink-0">
                   <ImageWithFallback
                     src={business.image}
                     alt={business.name}
@@ -520,7 +520,7 @@ export function BusinessListPage() {
               <div className="space-y-4">
                 <div className="border-b border-gray-200 pb-4">
                   <div className="flex items-start gap-3">
-                    <Globe className="w-5 h-5 text-[#84CC16] mt-1 flex-shrink-0" />
+                    <Globe className="w-5 h-5 text-[#84CC16] mt-1 shrink-0" />
                     <div className="flex-1">
                       <p className="text-gray-500 text-sm mb-1">Nama Website</p>
                       {selectedBusiness.website !== "-" ? (
@@ -540,7 +540,7 @@ export function BusinessListPage() {
 
                 <div className="border-b border-gray-200 pb-4">
                   <div className="flex items-start gap-3">
-                    <Phone className="w-5 h-5 text-[#84CC16] mt-1 flex-shrink-0" />
+                    <Phone className="w-5 h-5 text-[#84CC16] mt-1 shrink-0" />
                     <div className="flex-1">
                       <p className="text-gray-500 text-sm mb-1">Telp</p>
                       <p className="text-black">{selectedBusiness.phone}</p>
@@ -550,7 +550,7 @@ export function BusinessListPage() {
 
                 <div className="border-b border-gray-200 pb-4">
                   <div className="flex items-start gap-3">
-                    <Mail className="w-5 h-5 text-[#84CC16] mt-1 flex-shrink-0" />
+                    <Mail className="w-5 h-5 text-[#84CC16] mt-1 shrink-0" />
                     <div className="flex-1">
                       <p className="text-gray-500 text-sm mb-1">Email</p>
                       {selectedBusiness.email !== "-" ? (
@@ -568,7 +568,7 @@ export function BusinessListPage() {
 
                 <div className="border-b border-gray-200 pb-4">
                   <div className="flex items-start gap-3">
-                    <User className="w-5 h-5 text-[#84CC16] mt-1 flex-shrink-0" />
+                    <User className="w-5 h-5 text-[#84CC16] mt-1 shrink-0" />
                     <div className="flex-1">
                       <p className="text-gray-500 text-sm mb-1">Nama Pemilik</p>
                       <p className="text-black">{selectedBusiness.owner}</p>
@@ -578,7 +578,7 @@ export function BusinessListPage() {
 
                 <div className="pb-4">
                   <div className="flex items-start gap-3">
-                    <Briefcase className="w-5 h-5 text-[#84CC16] mt-1 flex-shrink-0" />
+                    <Briefcase className="w-5 h-5 text-[#84CC16] mt-1 shrink-0" />
                     <div className="flex-1">
                       <p className="text-gray-500 text-sm mb-1">
                         Jenis Layanan
