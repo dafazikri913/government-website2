@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import "../index.css";
 
 export const metadata: Metadata = {
@@ -18,7 +17,7 @@ export default function RootLayout({
       <body
         className="antialiased min-h-screen bg-white"
         suppressHydrationWarning>
-        <Suspense fallback={null}>{children}</Suspense>
+        {children}
       </body>
     </html>
   );

@@ -184,7 +184,7 @@ Pembukaan MTQ ke-31 Tingkat Provinsi NTB berlangsung khidmat dan meriah dengan b
     category: "Siaran Pers",
     newsCategory: "daerah",
     author: "Admin SumbawaKab",
-    image: "News_pic/20260615111858.jpg",
+    image: "/News_pic/20260615111858.jpg",
     views: "5.2k",
   },
   {
