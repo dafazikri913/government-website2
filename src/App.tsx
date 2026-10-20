@@ -1,18 +1,18 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router";
-import { HomePage } from "./pages/HomePage";
-import { AccessToSumbawaPage } from "./pages/AccessToSumbawaPage";
-import { NewsPage } from "./pages/NewsPage";
-import { ArticlePage } from "./pages/ArticlePage";
-import { ArticleDetailPage } from "./pages/ArticleDetailPage";
-import { EventsPage } from "./pages/EventsPage";
-import { MarketPricePage } from "./pages/MarketPricePage";
-import { NewsDetailPage } from "./pages/NewsDetailPage";
-import { AllNewsPage } from "./pages/AllNewsPage";
-import GaleriPage from "./pages/GaleriPage";
-import { BusinessListPage } from "./pages/BusinessListPage";
-import { SearchPage } from "./pages/SearchPage";
-import { InformasiUmumPage } from "./pages/InformasiUmumPage";
-import { PemerintahanPage } from "./pages/PemerintahanPage";
+import { HomePage } from "./views/HomePage";
+import { AccessToSumbawaPage } from "./views/AccessToSumbawaPage";
+import { NewsPage } from "./views/NewsPage";
+import { ArticlePage } from "./views/ArticlePage";
+import { ArticleDetailPage } from "./views/ArticleDetailPage";
+import { EventsPage } from "./views/EventsPage";
+import { MarketPricePage } from "./views/MarketPricePage";
+import { NewsDetailPage } from "./views/NewsDetailPage";
+import { AllNewsPage } from "./views/AllNewsPage";
+import GaleriPage from "./views/GaleriPage";
+import { BusinessListPage } from "./views/BusinessListPage";
+import { SearchPage } from "./views/SearchPage";
+import { InformasiUmumPage } from "./views/InformasiUmumPage";
+import { PemerintahanPage } from "./views/PemerintahanPage";
 
 export default function App() {
   return (

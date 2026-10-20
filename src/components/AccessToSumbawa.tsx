@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { Car, Ship, Plane, ArrowRight } from "lucide-react";
 import { Link } from "react-router";

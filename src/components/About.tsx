@@ -1,3 +1,4 @@
+"use client";
 import { Shield, Users, FileText, Award } from "lucide-react";
 
 export function About() {

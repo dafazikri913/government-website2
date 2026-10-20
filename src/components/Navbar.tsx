@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import { ChevronDown, Menu, X, Search } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router";
@@ -456,7 +457,7 @@ export function Navbar() {
           <div className="flex flex-col">
             <Link to="/" className="flex items-center">
               <img
-                src={logoImage}
+                src={typeof logoImage === "object" && (logoImage as any)?.src ? (logoImage as any).src : (logoImage as any)}
                 alt="SumbawaKab - Website Resmi Pemerintah Daerah Sumbawa"
                 className="h-10"
               />

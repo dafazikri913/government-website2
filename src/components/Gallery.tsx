@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { Camera, Video, Calendar, ArrowRight, Play, X } from "lucide-react";
 import { Button } from "./ui/button";

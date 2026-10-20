@@ -1,3 +1,4 @@
+"use client";
 import { useParams, Link } from "react-router";
 import { useEffect } from "react";
 import { Calendar, Clock, User, ArrowLeft, Eye, Tag } from "lucide-react";

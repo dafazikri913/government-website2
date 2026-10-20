@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import {
   ArrowRight,
@@ -61,12 +62,18 @@ export function Hero() {
               ease: "easeInOut",
             }}
             className="absolute inset-0">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{
-                backgroundImage: `url('${slides[currentSlide]}')`,
-              }}
-            />
+            {(() => {
+              const slide = slides[currentSlide];
+              const slideUrl = typeof slide === "object" && (slide as any)?.src ? (slide as any).src : slide;
+              return (
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url('${slideUrl}')`,
+                  }}
+                />
+              );
+            })()}
           </motion.div>
         </AnimatePresence>
       </div>

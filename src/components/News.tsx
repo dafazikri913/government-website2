@@ -1,3 +1,4 @@
+"use client";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";

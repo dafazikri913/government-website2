@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import { useSearchParams, Link } from "react-router";
 import { Navbar } from "../components/Navbar";

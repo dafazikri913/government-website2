@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { Hotel, Building2, UtensilsCrossed, X, Globe, Phone, Mail, User, Briefcase, Fish, Wheat, ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";

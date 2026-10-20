@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import { Calendar, MapPin, Clock, Users } from "lucide-react";
 import { Navbar } from "../components/Navbar";

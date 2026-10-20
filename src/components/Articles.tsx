@@ -1,3 +1,4 @@
+"use client";
 import { User, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
