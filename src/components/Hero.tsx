@@ -39,13 +39,19 @@ export function Hero() {
     setCurrentSlide(index);
   };
 
-  // Get current date
-  const currentDate = new Date().toLocaleDateString("id-ID", {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+  // Get current date on client side to avoid hydration mismatch between server and client
+  const [currentDate, setCurrentDate] = useState<string>("");
+
+  useEffect(() => {
+    setCurrentDate(
+      new Date().toLocaleDateString("id-ID", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    );
+  }, []);
 
   return (
     <section id="about" className="relative h-screen overflow-hidden">
@@ -119,7 +125,9 @@ export function Hero() {
                 <Calendar className="w-4 h-4" />
                 <div className="flex flex-col">
                   <span className="text-xs opacity-80">Hari Ini</span>
-                  <span className="text-sm">{currentDate}</span>
+                  <span className="text-sm" suppressHydrationWarning>
+                    {currentDate}
+                  </span>
                 </div>
               </div>
 

@@ -14,8 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="id">
-      <body className="antialiased min-h-screen bg-white">
+    <html lang="id" suppressHydrationWarning>
+      <body
+        className="antialiased min-h-screen bg-white"
+        suppressHydrationWarning>
         <Suspense fallback={null}>{children}</Suspense>
       </body>
     </html>
