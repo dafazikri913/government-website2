@@ -58,7 +58,9 @@
     "vite": "6.3.5"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
+    "dev:turbo": "next dev --turbo",
+    "dev:webpack": "next dev",
     "build": "next build",
     "start": "next start",
     "vite:dev": "vite",

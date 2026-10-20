@@ -16,6 +16,14 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  experimental: {
+    turbo: {
+      resolveAlias: {
+        "react-router": "./src/compat/react-router.tsx",
+        "react-router-dom": "./src/compat/react-router.tsx",
+      },
+    },
+  },
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
