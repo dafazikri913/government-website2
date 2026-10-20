@@ -45,6 +45,7 @@ export function Hero() {
   useEffect(() => {
     setCurrentDate(
       new Date().toLocaleDateString("id-ID", {
+        timeZone: "Asia/Makassar",
         weekday: "long",
         year: "numeric",
         month: "long",
@@ -124,7 +125,7 @@ export function Hero() {
               <div className="bg-white/10 backdrop-blur-sm border border-white/30 rounded-lg px-4 py-2.5 flex items-center gap-2 text-white">
                 <Calendar className="w-4 h-4" />
                 <div className="flex flex-col">
-                  <span className="text-xs opacity-80">Hari Ini</span>
+                  <span className="text-xs opacity-80">Hari Ini (WITA)</span>
                   <span className="text-sm" suppressHydrationWarning>
                     {currentDate}
                   </span>
